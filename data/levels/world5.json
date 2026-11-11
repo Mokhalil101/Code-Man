@@ -1,0 +1,66 @@
+{
+ "worldId": 5,
+ "name": "Algorithm Arena",
+ "subtitle": "Searching, sorting, recursion, binary search, merge/quick sort and Big O.",
+ "topic": "algo",
+ "difficulty": "Hard",
+ "theme": {
+  "accent": "#FBBC04",
+  "bg": "#2a2108",
+  "wall": "wall5",
+  "boss": "boss5",
+  "music": "m_w5"
+ },
+ "difficultyMix": {
+  "1": 0.15,
+  "2": 0.5,
+  "3": 0.35
+ },
+ "ghostSpeed": 3.5,
+ "cycle": {
+  "scatter": 5,
+  "chase": 19
+ },
+ "parTime": 150,
+ "mechanic": "Timed arena: finish under the par time for a +300 speed bonus.",
+ "boss": {
+  "name": "The Complexity Beast",
+  "description": "Complexity and algorithm-selection challenges.",
+  "hp": 4,
+  "patterns": [
+   "dash",
+   "shield"
+  ],
+  "phases": [
+   {
+    "name": "The Complexity Beast",
+    "topics": [
+     "algo"
+    ],
+    "types": null,
+    "mix": [
+     0.15,
+     0.5,
+     0.35
+    ]
+   }
+  ]
+ },
+ "mazeLayout": [
+  "###################",
+  "#B...L...E.......B#",
+  "#.#####.#Q#.#####.#",
+  "#o....o.#.#.......#",
+  "#.#Q#o#.#.#.#.#.#D#",
+  "#.#...#S....#T..#.#",
+  "#.#.###.#.#.###.#.#",
+  "#......GGXGG......#",
+  "#Q#.#.###.###.#.#.#",
+  "#.#.....#.#...M.#T#",
+  "#.###.#.#.#.#.###Q#",
+  "#...o......Q......#",
+  "#.###############.#",
+  "#B....U..P...K...B#",
+  "###################"
+ ]
+}

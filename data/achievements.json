@@ -1,0 +1,191 @@
+[
+ {
+  "id": "first_steps",
+  "name": "First Steps",
+  "desc": "Complete your first world.",
+  "icon": "\ud83d\udc63",
+  "type": "stat",
+  "key": "levels",
+  "min": 1
+ },
+ {
+  "id": "code_collector",
+  "name": "Code Collector",
+  "desc": "Collect 100 Code Bits.",
+  "icon": "\ud83d\udcbe",
+  "type": "stat",
+  "key": "bits",
+  "min": 100
+ },
+ {
+  "id": "bit_hoarder",
+  "name": "Bit Hoarder",
+  "desc": "Collect 1000 Code Bits.",
+  "icon": "\ud83d\uddc4\ufe0f",
+  "type": "stat",
+  "key": "bits",
+  "min": 1000
+ },
+ {
+  "id": "perfect_answer",
+  "name": "Perfect Answer",
+  "desc": "Answer 10 questions correctly in a row.",
+  "icon": "\ud83c\udfaf",
+  "type": "stat",
+  "key": "bestStreak",
+  "min": 10
+ },
+ {
+  "id": "bug_hunter",
+  "name": "Bug Hunter",
+  "desc": "Defeat 20 enemies.",
+  "icon": "\ud83d\udc1e",
+  "type": "stat",
+  "key": "enemies",
+  "min": 20
+ },
+ {
+  "id": "untouchable",
+  "name": "Untouchable",
+  "desc": "Complete a world without losing a life.",
+  "icon": "\ud83d\udee1\ufe0f",
+  "type": "event",
+  "key": "flawless",
+  "min": 1
+ },
+ {
+  "id": "speed_coder",
+  "name": "Speed Coder",
+  "desc": "Answer 10 questions quickly.",
+  "icon": "\u26a1",
+  "type": "stat",
+  "key": "fast",
+  "min": 10
+ },
+ {
+  "id": "quiz_rookie",
+  "name": "Quiz Rookie",
+  "desc": "Answer 25 questions correctly.",
+  "icon": "\ud83d\udcd8",
+  "type": "stat",
+  "key": "correct",
+  "min": 25
+ },
+ {
+  "id": "quiz_master",
+  "name": "Quiz Master",
+  "desc": "Answer 100 questions correctly.",
+  "icon": "\ud83c\udf93",
+  "type": "stat",
+  "key": "correct",
+  "min": 100
+ },
+ {
+  "id": "code_sage",
+  "name": "Code Sage",
+  "desc": "Answer 300 questions correctly.",
+  "icon": "\ud83e\uddd9",
+  "type": "stat",
+  "key": "correct",
+  "min": 300
+ },
+ {
+  "id": "debug_master",
+  "name": "Debug Master",
+  "desc": "Complete the Debugging Lab.",
+  "icon": "\ud83d\udd27",
+  "type": "world",
+  "key": "6",
+  "min": 1
+ },
+ {
+  "id": "boss_slayer",
+  "name": "Boss Slayer",
+  "desc": "Defeat three bosses.",
+  "icon": "\u2694\ufe0f",
+  "type": "stat",
+  "key": "bosses",
+  "min": 3
+ },
+ {
+  "id": "explorer",
+  "name": "World Traveler",
+  "desc": "Complete four worlds.",
+  "icon": "\ud83d\uddfa\ufe0f",
+  "type": "stat",
+  "key": "worlds",
+  "min": 4
+ },
+ {
+  "id": "code_legend",
+  "name": "Code Legend",
+  "desc": "Complete all seven worlds.",
+  "icon": "\ud83d\udc51",
+  "type": "stat",
+  "key": "worlds",
+  "min": 7
+ },
+ {
+  "id": "core_destroyer",
+  "name": "Core Destroyer",
+  "desc": "Defeat the Core Virus.",
+  "icon": "\ud83d\udca5",
+  "type": "event",
+  "key": "coreDown",
+  "min": 1
+ },
+ {
+  "id": "secret_hunter",
+  "name": "Secret Hunter",
+  "desc": "Find 3 secret collectibles.",
+  "icon": "\u2b50",
+  "type": "stat",
+  "key": "secrets",
+  "min": 3
+ },
+ {
+  "id": "power_user",
+  "name": "Power User",
+  "desc": "Collect 15 power-ups.",
+  "icon": "\ud83d\udd0b",
+  "type": "stat",
+  "key": "powerups",
+  "min": 15
+ },
+ {
+  "id": "teleporter",
+  "name": "Warp Speed",
+  "desc": "Use the Teleport Chip 3 times.",
+  "icon": "\ud83c\udf00",
+  "type": "stat",
+  "key": "teleports",
+  "min": 3
+ },
+ {
+  "id": "high_scorer",
+  "name": "High Scorer",
+  "desc": "Reach a best score of 5000.",
+  "icon": "\ud83c\udfc6",
+  "type": "stat",
+  "key": "best",
+  "min": 5000
+ },
+ {
+  "id": "bug_hunter_rank",
+  "name": "Rank: Bug Hunter",
+  "desc": "Reach 800 XP.",
+  "icon": "\ud83c\udf96\ufe0f",
+  "type": "stat",
+  "key": "xp",
+  "min": 800
+ },
+ {
+  "id": "last_stand",
+  "name": "Last Stand",
+  "desc": "Complete a world with only one life left.",
+  "icon": "\u2764\ufe0f",
+  "type": "event",
+  "key": "lastLife",
+  "min": 1
+ }
+]

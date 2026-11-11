@@ -1,0 +1,1505 @@
+[
+ {
+  "options": [
+   "43",
+   "51",
+   "40",
+   "28"
+  ],
+  "correctAnswer": 0,
+  "id": "GDS_001",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "data",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "attendees = [12, 7, 6]\nattendees.append(18)\nprint(sum(attendees))",
+  "explanation": "The program prints 43.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "27",
+   "43",
+   "51",
+   "20"
+  ],
+  "correctAnswer": 0,
+  "id": "GDS_002",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "data",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "talks = {'python': 12, 'flutter': 5}\ntalks['ai'] = 10\nprint(sum(talks.values()))",
+  "explanation": "The program prints 27.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "20",
+   "33",
+   "26",
+   "16"
+  ],
+  "correctAnswer": 1,
+  "id": "GDS_003",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "data",
+  "type": "output",
+  "question": "Code Man arena: What is the output?",
+  "code": "attendees = [12, 5, 10]\nattendees.append(6)\nprint(sum(attendees))",
+  "explanation": "The program prints 33.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "27",
+   "20",
+   "38",
+   "60"
+  ],
+  "correctAnswer": 2,
+  "id": "GDS_004",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "data",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: What is the output?",
+  "code": "attendees = [13, 6, 4]\nattendees.append(15)\nprint(sum(attendees))",
+  "explanation": "The program prints 38.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "28",
+   "27",
+   "43",
+   "34"
+  ],
+  "correctAnswer": 0,
+  "id": "GDS_005",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "data",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: What is the output?",
+  "code": "attendees = [17, 4, 5]\nattendees.append(2)\nprint(sum(attendees))",
+  "explanation": "The program prints 28.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "51",
+   "60",
+   "38",
+   "36"
+  ],
+  "correctAnswer": 1,
+  "id": "GDS_006",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "data",
+  "type": "output",
+  "question": "Community code review: What is the output?",
+  "code": "attendees = [8, 20, 20]\nattendees.append(12)\nprint(sum(attendees))",
+  "explanation": "The program prints 60.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "28",
+   "26",
+   "51",
+   "34"
+  ],
+  "correctAnswer": 1,
+  "id": "GDS_007",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "data",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "talks = {'python': 17, 'flutter': 4}\ntalks['ai'] = 5\nprint(sum(talks.values()))",
+  "explanation": "The program prints 26.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "9",
+   "40",
+   "2",
+   "6"
+  ],
+  "correctAnswer": 2,
+  "id": "GDS_008",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "Code Man arena: What is the output?",
+  "code": "s = {17, 4, 17}\nprint(len(s))",
+  "explanation": "The program prints 2.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "0",
+   "15",
+   "34",
+   "40"
+  ],
+  "correctAnswer": 1,
+  "id": "GDS_009",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "t = (12, 5, 10)\nprint(t[1] + t[-1])",
+  "explanation": "The program prints 15.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "22",
+   "6",
+   "3",
+   "13"
+  ],
+  "correctAnswer": 3,
+  "id": "GDS_010",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "DevFest Assiut challenge: What is the output?",
+  "code": "t = (12, 7, 6)\nprint(t[1] + t[-1])",
+  "explanation": "The program prints 13.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "2",
+   "40",
+   "15",
+   "10"
+  ],
+  "correctAnswer": 0,
+  "id": "GDS_011",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "s = {12, 10, 12}\nprint(len(s))",
+  "explanation": "The program prints 2.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "40",
+   "34",
+   "20",
+   "4"
+  ],
+  "correctAnswer": 3,
+  "id": "GDS_012",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "words = ['TensorFlow', 'Firebase', 'Hackathon', 'DevFest']\nprint(len([w for w in words if len(w) > 6]))",
+  "explanation": "The program prints 4.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "9",
+   "2",
+   "1",
+   "8"
+  ],
+  "correctAnswer": 1,
+  "id": "GDS_013",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "s = {8, 20, 8}\nprint(len(s))",
+  "explanation": "The program prints 2.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "4",
+   "34",
+   "40",
+   "13"
+  ],
+  "correctAnswer": 1,
+  "id": "GDS_014",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "DevFest Assiut challenge: What is the output?",
+  "code": "t = (4, 20, 14)\nprint(t[1] + t[-1])",
+  "explanation": "The program prints 34.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "4",
+   "6",
+   "34",
+   "3"
+  ],
+  "correctAnswer": 0,
+  "id": "GDS_015",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "words = ['Study Jam', 'Cloud Run', 'Code Man', 'Firebase']\nprint(len([w for w in words if len(w) > 7]))",
+  "explanation": "The program prints 4.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "15",
+   "11",
+   "7",
+   "9"
+  ],
+  "correctAnswer": 0,
+  "id": "GDS_016",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "data",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "data = [17, 4, 5, 2]\nprint(max(data) - min(data))",
+  "explanation": "The program prints 15.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "12",
+   "7",
+   "16",
+   "15"
+  ],
+  "correctAnswer": 0,
+  "id": "GDS_017",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "data",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "data = [13, 6, 14, 18]\nprint(max(data) - min(data))",
+  "explanation": "The program prints 12.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "15",
+   "12",
+   "3",
+   "9"
+  ],
+  "correctAnswer": 2,
+  "id": "GDS_018",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "data",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "words = ['Study Jam', 'Cloud Run', 'Flutter', 'Hackathon']\nprint(len([w for w in words if len(w) > 8]))",
+  "explanation": "The program prints 3.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "4",
+   "10",
+   "3",
+   "7"
+  ],
+  "correctAnswer": 2,
+  "id": "GDS_019",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "data",
+  "type": "output",
+  "question": "GDG Assiut bootcamp: What is the output?",
+  "code": "words = ['Code Man', 'Study Jam', 'GDG Assiut', 'TensorFlow']\nprint(len([w for w in words if len(w) > 8]))",
+  "explanation": "The program prints 3.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "Study Jam",
+   "Firebase",
+   "Cloud Run",
+   "Flutter"
+  ],
+  "correctAnswer": 2,
+  "id": "GDS_020",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is printed?",
+  "code": "from collections import deque\nq = deque(['DevFest', 'Cloud Run', 'Android'])\nq.popleft()\nprint(q[0])",
+  "explanation": "The program prints Cloud Run.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "GDG Assiut",
+   "Hackathon",
+   "Cloud Run",
+   "Firebase"
+  ],
+  "correctAnswer": 1,
+  "id": "GDS_021",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "Community code review: What is printed?",
+  "code": "stack = []\nstack.append('GDG Assiut')\nstack.append('Hackathon')\nprint(stack.pop())",
+  "explanation": "The program prints Hackathon.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "Android",
+   "Hackathon",
+   "GDG Assiut",
+   "Firebase"
+  ],
+  "correctAnswer": 0,
+  "id": "GDS_022",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "What is printed?",
+  "code": "stack = []\nstack.append('TensorFlow')\nstack.append('Android')\nprint(stack.pop())",
+  "explanation": "The program prints Android.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "GDG Assiut",
+   "Hackathon",
+   "DevFest",
+   "Study Jam"
+  ],
+  "correctAnswer": 2,
+  "id": "GDS_023",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "Hackathon judge asks: What is printed?",
+  "code": "stack = []\nstack.append('Firebase')\nstack.append('DevFest')\nprint(stack.pop())",
+  "explanation": "The program prints DevFest.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "Flutter",
+   "Code Man",
+   "Hackathon",
+   "TensorFlow"
+  ],
+  "correctAnswer": 0,
+  "id": "GDS_024",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "Community code review: What is printed?",
+  "code": "d = {'Hackathon': 1, 'Flutter': 2}\nprint(list(d)[-1])",
+  "explanation": "The program prints Flutter.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "Flutter",
+   "GDG Assiut",
+   "Code Man",
+   "Cloud Run"
+  ],
+  "correctAnswer": 0,
+  "id": "GDS_025",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "DevFest Assiut challenge: What is printed?",
+  "code": "from collections import deque\nq = deque(['Hackathon', 'Flutter', 'Cloud Run'])\nq.popleft()\nprint(q[0])",
+  "explanation": "The program prints Flutter.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "9",
+   "10",
+   "1",
+   "18"
+  ],
+  "correctAnswer": 0,
+  "id": "GDS_026",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "const m = new Map();\nm.set('a', 4);\nm.set('b', 7);\nconsole.log(m.size + m.get('b'));",
+  "explanation": "The program prints 9.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "18",
+   "13",
+   "10",
+   "28"
+  ],
+  "correctAnswer": 2,
+  "id": "GDS_027",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "const q = [2, 8, 4];\nq.shift();\nconsole.log(q[0] + q.length);",
+  "explanation": "The program prints 10.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "38",
+   "13",
+   "6",
+   "9"
+  ],
+  "correctAnswer": 2,
+  "id": "GDS_028",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "DevFest Assiut challenge: What is the output?",
+  "code": "const q = [5, 4, 7];\nq.shift();\nconsole.log(q[0] + q.length);",
+  "explanation": "The program prints 6.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "38",
+   "42",
+   "13",
+   "32"
+  ],
+  "correctAnswer": 3,
+  "id": "GDS_029",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "const arr = [3, 7, 6];\nconsole.log(arr.map(x => x * 2).reduce((s, x) => s + x, 0));",
+  "explanation": "The program prints 32.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "7",
+   "18",
+   "38",
+   "32"
+  ],
+  "correctAnswer": 0,
+  "id": "GDS_030",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "const m = new Map();\nm.set('a', 6);\nm.set('b', 5);\nconsole.log(m.size + m.get('b'));",
+  "explanation": "The program prints 7.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "11",
+   "10",
+   "42",
+   "1"
+  ],
+  "correctAnswer": 1,
+  "id": "GDS_031",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "Community code review: What is the output?",
+  "code": "const o = { events: 2 };\no.events += 8;\nconsole.log(o.events);",
+  "explanation": "The program prints 10.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "16",
+   "10",
+   "9",
+   "8"
+  ],
+  "correctAnswer": 0,
+  "id": "GDS_032",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "GDG Assiut bootcamp: What is the output?",
+  "code": "map<string,int> m;\nm[\"flutter\"] = 8;\nm[\"dart\"] = 8;\ncout << m.size() * m[\"dart\"];",
+  "explanation": "The program prints 16.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "12",
+   "8",
+   "6",
+   "13"
+  ],
+  "correctAnswer": 1,
+  "id": "GDS_033",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "queue<int> q;\nq.push(8);\nq.push(3);\ncout << q.front();",
+  "explanation": "The program prints 8.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "3",
+   "5",
+   "9",
+   "8"
+  ],
+  "correctAnswer": 0,
+  "id": "GDS_034",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "stack<int> s;\ns.push(3);\ns.push(9);\ns.pop();\ncout << s.top();",
+  "explanation": "The program prints 3.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "12",
+   "13",
+   "10",
+   "7"
+  ],
+  "correctAnswer": 2,
+  "id": "GDS_035",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "map<string,int> m;\nm[\"flutter\"] = 6;\nm[\"dart\"] = 5;\ncout << m.size() * m[\"dart\"];",
+  "explanation": "The program prints 10.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "9",
+   "10",
+   "7",
+   "5"
+  ],
+  "correctAnswer": 2,
+  "id": "GDS_036",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "queue<int> q;\nq.push(7);\nq.push(5);\ncout << q.front();",
+  "explanation": "The program prints 7.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "7",
+   "4",
+   "11",
+   "10"
+  ],
+  "correctAnswer": 1,
+  "id": "GDS_037",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "Code Man arena: What is the output?",
+  "code": "Deque<Integer> st = new ArrayDeque<>();\nst.push(2);\nst.push(4);\nSystem.out.println(st.pop());",
+  "explanation": "The program prints 4.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "10",
+   "8",
+   "9",
+   "4"
+  ],
+  "correctAnswer": 2,
+  "id": "GDS_038",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "Community code review: What is the output?",
+  "code": "Deque<Integer> st = new ArrayDeque<>();\nst.push(7);\nst.push(9);\nSystem.out.println(st.pop());",
+  "explanation": "The program prints 9.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "5",
+   "7",
+   "3",
+   "9"
+  ],
+  "correctAnswer": 0,
+  "id": "GDS_039",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "ArrayList<Integer> list = new ArrayList<>();\nlist.add(6);\nlist.add(3);\nSystem.out.println(list.get(1) + list.size());",
+  "explanation": "The program prints 5.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "11",
+   "9",
+   "4",
+   "3"
+  ],
+  "correctAnswer": 0,
+  "id": "GDS_040",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "ArrayList<Integer> list = new ArrayList<>();\nlist.add(6);\nlist.add(9);\nSystem.out.println(list.get(1) + list.size());",
+  "explanation": "The program prints 11.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "7",
+   "9",
+   "3",
+   "4"
+  ],
+  "correctAnswer": 0,
+  "id": "GDS_041",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "Code Man arena: What is the output?",
+  "code": "Deque<Integer> st = new ArrayDeque<>();\nst.push(4);\nst.push(7);\nSystem.out.println(st.pop());",
+  "explanation": "The program prints 7.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "values",
+   "keys",
+   "index",
+   "get"
+  ],
+  "correctAnswer": 3,
+  "id": "GDS_042",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "data",
+  "type": "fill",
+  "question": "Fill in the blank so the program prints: Flutter",
+  "code": "speakers = {'Sara': 'AI', 'Omar': 'Flutter'}\nprint(speakers.____('Omar'))",
+  "explanation": "dict.get(key) returns the value stored under the key.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "push",
+   "top",
+   "pop",
+   "remove"
+  ],
+  "correctAnswer": 2,
+  "id": "GDS_043",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "fill",
+  "question": "DevFest Assiut challenge: Fill in the blank so the program prints: c",
+  "code": "stack = ['a', 'b', 'c']\nprint(stack.____())",
+  "explanation": "pop() removes and returns the last item, which is how a stack behaves.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "tuple",
+   "set",
+   "sorted",
+   "list"
+  ],
+  "correctAnswer": 1,
+  "id": "GDS_044",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "fill",
+  "question": "Lightning-talk puzzle: Fill in the blank so the program prints: 3",
+  "code": "ids = [3, 1, 3, 2, 1]\nprint(len(____(ids)))",
+  "explanation": "set() keeps only unique values: {1, 2, 3}.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": null,
+  "correctAnswer": null,
+  "lines": [
+   "stack = []",
+   "stack.append('A')",
+   "stack.append('B')",
+   "print(stack.pop())"
+  ],
+  "id": "GDS_045",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "data",
+  "type": "arrange",
+  "question": "Arrange the stack operations. It must print: B",
+  "code": "",
+  "explanation": "Create, push A, push B, then pop returns the last pushed item.",
+  "points": 100,
+  "timeLimit": 35
+ },
+ {
+  "options": null,
+  "correctAnswer": null,
+  "lines": [
+   "info = {}",
+   "info['event'] = 'DevFest'",
+   "info['city'] = 'Assiut'",
+   "print(len(info))"
+  ],
+  "id": "GDS_046",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "arrange",
+  "question": "Code Man arena: Arrange the dictionary code. It must print: 2",
+  "code": "",
+  "explanation": "Create the dict, add two keys, then print its size.",
+  "points": 125,
+  "timeLimit": 40
+ },
+ {
+  "options": null,
+  "correctAnswer": null,
+  "lines": [
+   "from collections import deque",
+   "line = deque(['a', 'b'])",
+   "line.append('c')",
+   "print(line.popleft())"
+  ],
+  "id": "GDS_047",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "arrange",
+  "question": "Build Night at GDG Assiut: Arrange the queue code. It must print: a",
+  "code": "",
+  "explanation": "A queue is FIFO: popleft returns the first item added.",
+  "points": 125,
+  "timeLimit": 40
+ },
+ {
+  "id": "CS_002",
+  "category": "Data Structures",
+  "language": "CS",
+  "difficulty": 1,
+  "type": "conceptual",
+  "question": "Which structure is LIFO?",
+  "code": "",
+  "options": [
+   "Queue",
+   "Stack",
+   "Array",
+   "Tree"
+  ],
+  "correctAnswer": 1,
+  "explanation": "Stack = Last In, First Out.",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "data"
+ },
+ {
+  "id": "DS_002",
+  "category": "Data Structures",
+  "language": "CS",
+  "difficulty": 1,
+  "type": "conceptual",
+  "question": "Which structure is FIFO?",
+  "code": "",
+  "options": [
+   "Queue",
+   "Stack",
+   "Heap",
+   "Set"
+  ],
+  "correctAnswer": 0,
+  "explanation": "Queue = First In, First Out.",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "data"
+ },
+ {
+  "id": "PY_007",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "a = [1, 2, 3]\nprint(a[-1])",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "Error"
+  ],
+  "correctAnswer": 2,
+  "explanation": "-1 is the last element.",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "data"
+ },
+ {
+  "id": "PY_009",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "d = {'a': 1}\nprint(d.get('b', 0))",
+  "options": [
+   "None",
+   "0",
+   "KeyError",
+   "1"
+  ],
+  "correctAnswer": 1,
+  "explanation": "get returns the default.",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "data"
+ },
+ {
+  "id": "PY_010",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 3,
+  "type": "output",
+  "question": "Code Man arena: What is the output?",
+  "code": "print([x*x for x in range(4)])",
+  "options": [
+   "[1, 4, 9, 16]",
+   "[0, 1, 4, 9]",
+   "[0, 1, 2, 3]",
+   "[0, 2, 4, 6]"
+  ],
+  "correctAnswer": 1,
+  "explanation": "Squares of 0..3.",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "data"
+ },
+ {
+  "id": "PY_011",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 3,
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "a = [1, 2]\nb = a\nb.append(3)\nprint(a)",
+  "options": [
+   "[1, 2]",
+   "[1, 2, 3]",
+   "[3]",
+   "Error"
+  ],
+  "correctAnswer": 1,
+  "explanation": "b and a reference the same list.",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "data"
+ },
+ {
+  "id": "GDAT_001",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "data",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "a=[5,6,7]\nprint(a[1])",
+  "options": [
+   "10",
+   "2",
+   "3",
+   "6"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs 6.",
+  "points": 100,
+  "timeLimit": 17
+ },
+ {
+  "id": "GDAT_002",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "data",
+  "type": "output",
+  "question": "GDG Assiut bootcamp: What is the output?",
+  "code": "print(len({1,2,2,3}))",
+  "options": [
+   "2",
+   "1",
+   "6",
+   "3"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs 3.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GDAT_003",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "data",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "a=[1,2,3]\na.append(4)\nprint(len(a))",
+  "options": [
+   "10",
+   "6",
+   "4",
+   "2"
+  ],
+  "correctAnswer": 2,
+  "explanation": "The code outputs 4.",
+  "points": 100,
+  "timeLimit": 17
+ },
+ {
+  "id": "GDAT_004",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "data",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "a=[1,2,3]\nprint(a.pop())",
+  "options": [
+   "1",
+   "3",
+   "6",
+   "10"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The code outputs 3.",
+  "points": 100,
+  "timeLimit": 17
+ },
+ {
+  "id": "GDAT_005",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "data",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "d={'x':1,'y':2}\nprint(d['y'])",
+  "options": [
+   "6",
+   "10",
+   "2",
+   "1"
+  ],
+  "correctAnswer": 2,
+  "explanation": "The code outputs 2.",
+  "points": 100,
+  "timeLimit": 17
+ },
+ {
+  "id": "GDAT_006",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "data",
+  "type": "output",
+  "question": "GDG Assiut bootcamp: What is the output?",
+  "code": "t=(4,5,6)\nprint(t[0])",
+  "options": [
+   "10",
+   "3",
+   "1",
+   "4"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs 4.",
+  "points": 100,
+  "timeLimit": 17
+ },
+ {
+  "id": "GDAT_007",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "data",
+  "type": "output",
+  "question": "DevFest Assiut challenge: What is the output?",
+  "code": "d={'a':1}\nd['b']=2\nprint(len(d))",
+  "options": [
+   "10",
+   "1",
+   "4",
+   "2"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs 2.",
+  "points": 100,
+  "timeLimit": 17
+ },
+ {
+  "id": "GDAT_008",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "data",
+  "type": "output",
+  "question": "Code Man arena: What is the output?",
+  "code": "a=[3,1,2]\nprint(min(a))",
+  "options": [
+   "3",
+   "1",
+   "10",
+   "2"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The code outputs 1.",
+  "points": 100,
+  "timeLimit": 17
+ },
+ {
+  "id": "GDAT_009",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "a=[4,2,9]\na.sort()\nprint(a[-1])",
+  "options": [
+   "9",
+   "3",
+   "12",
+   "10"
+  ],
+  "correctAnswer": 0,
+  "explanation": "The code outputs 9.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GDAT_010",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "a=[[1,2],[3,4]]\nprint(a[1][0])",
+  "options": [
+   "3",
+   "6",
+   "12",
+   "4"
+  ],
+  "correctAnswer": 0,
+  "explanation": "The code outputs 3.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GDAT_011",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "print(sum(x*2 for x in [1,2,3]))",
+  "options": [
+   "4",
+   "12",
+   "9",
+   "10"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The code outputs 12.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GDAT_012",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "s={1,2,3}\ns.add(3)\nprint(len(s))",
+  "options": [
+   "12",
+   "4",
+   "3",
+   "6"
+  ],
+  "correctAnswer": 2,
+  "explanation": "The code outputs 3.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GDAT_013",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "a=[1,2,3]\na.insert(0,9)\nprint(a[0]+a[1])",
+  "options": [
+   "4",
+   "6",
+   "12",
+   "10"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs 10.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GDAT_014",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "d={'a':1,'b':2,'c':3}\nprint(sum(d.values()))",
+  "options": [
+   "3",
+   "10",
+   "6",
+   "4"
+  ],
+  "correctAnswer": 2,
+  "explanation": "The code outputs 6.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GDAT_015",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "a=[1,2,3]\nb=a[:]\nb.append(4)\nprint(len(a))",
+  "options": [
+   "9",
+   "6",
+   "4",
+   "3"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs 3.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GDAT_016",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "data",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "a=[1,2,3,4,5]\nprint(a[-2])",
+  "options": [
+   "10",
+   "6",
+   "4",
+   "3"
+  ],
+  "correctAnswer": 2,
+  "explanation": "The code outputs 4.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GDAT_017",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "data",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "a=[1,2,3,4,5,6]\nprint(sum(a[::2]))",
+  "options": [
+   "5",
+   "9",
+   "4",
+   "3"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The code outputs 9.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GDAT_018",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "data",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "a=[1,2,3]\nb=a\nb.append(4)\nprint(len(a))",
+  "options": [
+   "5",
+   "4",
+   "9",
+   "13"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The code outputs 4.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GDAT_019",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "data",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "a=list(range(10))\nprint(a[2:8:3][1])",
+  "options": [
+   "9",
+   "5",
+   "4",
+   "3"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The code outputs 5.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GDAT_020",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "data",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "print(len({x%4 for x in range(20)}))",
+  "options": [
+   "4",
+   "5",
+   "9",
+   "13"
+  ],
+  "correctAnswer": 0,
+  "explanation": "The code outputs 4.",
+  "points": 150,
+  "timeLimit": 20
+ },
+ {
+  "id": "GDAT_021",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "data",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "print(len(set('mississippi')))",
+  "options": [
+   "5",
+   "13",
+   "3",
+   "4"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs 4.",
+  "points": 150,
+  "timeLimit": 20
+ },
+ {
+  "id": "GDAT_022",
+  "category": "Data Structures",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "data",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "d={}\nfor w in 'banana':\n    d[w]=d.get(w,0)+1\nprint(d['a'])",
+  "options": [
+   "13",
+   "4",
+   "3",
+   "5"
+  ],
+  "correctAnswer": 2,
+  "explanation": "The code outputs 3.",
+  "points": 150,
+  "timeLimit": 25
+ }
+]

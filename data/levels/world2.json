@@ -1,0 +1,65 @@
+{
+ "worldId": 2,
+ "name": "Loop Valley",
+ "subtitle": "If/else, for and while loops, break/continue, nested loops and conditions.",
+ "topic": "loops",
+ "difficulty": "Easy-Medium",
+ "theme": {
+  "accent": "#34A853",
+  "bg": "#08241a",
+  "wall": "wall2",
+  "boss": "boss2",
+  "music": "m_w2"
+ },
+ "difficultyMix": {
+  "1": 0.6,
+  "2": 0.4,
+  "3": 0
+ },
+ "ghostSpeed": 3.05,
+ "cycle": {
+  "scatter": 6,
+  "chase": 16
+ },
+ "parTime": 170,
+ "mechanic": "Looping obstacles patrol the corridors (they bounce back and forth).",
+ "boss": {
+  "name": "Infinite Loop",
+  "description": "Break the endless execution cycle with loop questions.",
+  "hp": 3,
+  "patterns": [
+   "summon"
+  ],
+  "phases": [
+   {
+    "name": "Infinite Loop",
+    "topics": [
+     "loops"
+    ],
+    "types": null,
+    "mix": [
+     0.6,
+     0.4,
+     0.1
+    ]
+   }
+  ]
+ },
+ "mazeLayout": [
+  "###################",
+  "#B.......E.......B#",
+  "#D###.#######.###.#",
+  "#.#.SO.Q........#.#",
+  "#.#.#####.#####.#Q#",
+  "#.L.o...#.#.....o.#",
+  "#.###.#.#.#.#.###.#",
+  "#......GGXGG......#",
+  "#.#.###.#.#.###.#.#",
+  "#.o.T.Q.#.#.......#",
+  "#.###############.#",
+  "#.#.....U....OM.#.#",
+  "#.#.#####.#####.#.#",
+  "#B.Q.K...P.T.....B#",
+  "###################"
+ ]
+}

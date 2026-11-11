@@ -1,0 +1,1502 @@
+[
+ {
+  "options": [
+   "30",
+   "115",
+   "85",
+   "45"
+  ],
+  "correctAnswer": 0,
+  "id": "GPY_001",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "Community code review: What is the output?",
+  "code": "members = 6\nsessions = members ** 2\nprint(sessions - 6)",
+  "explanation": "The program prints 30.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "80",
+   "29",
+   "95",
+   "53"
+  ],
+  "correctAnswer": 3,
+  "id": "GPY_002",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "Code Man arena: What is the output?",
+  "code": "speakers = 8\nmembers = 9\nprint(speakers + members * 5)",
+  "explanation": "The program prints 53.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "72",
+   "12",
+   "27",
+   "22"
+  ],
+  "correctAnswer": 1,
+  "id": "GPY_003",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "workshops = 50\nprint(workshops // 5 + workshops % 6)",
+  "explanation": "The program prints 12.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "37",
+   "57",
+   "28",
+   "27"
+  ],
+  "correctAnswer": 3,
+  "id": "GPY_004",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "teams = 6\nprojects = teams ** 2\nprint(projects - 9)",
+  "explanation": "The program prints 27.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "44",
+   "13",
+   "24",
+   "9"
+  ],
+  "correctAnswer": 3,
+  "id": "GPY_005",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "teams = 16\nprint(teams // 2 + teams % 3)",
+  "explanation": "The program prints 9.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "2",
+   "105",
+   "6",
+   "76"
+  ],
+  "correctAnswer": 3,
+  "id": "GPY_006",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "volunteers = 12\nworkshops = 7\nprint((volunteers + workshops) * 4)",
+  "explanation": "The program prints 76.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "45",
+   "24",
+   "118",
+   "58"
+  ],
+  "correctAnswer": 1,
+  "id": "GPY_007",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "output",
+  "question": "Community code review: What is the output?",
+  "code": "members = 8\nmembers += 4\nmembers *= 2\nprint(members)",
+  "explanation": "The program prints 24.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "74",
+   "37",
+   "9",
+   "138"
+  ],
+  "correctAnswer": 2,
+  "id": "GPY_008",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "speakers = 6\nprint(speakers // 2 + speakers % 7)",
+  "explanation": "The program prints 9.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "1",
+   "80",
+   "19",
+   "13"
+  ],
+  "correctAnswer": 0,
+  "id": "GPY_009",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "sessions = 3\nteams = sessions ** 2\nprint(teams - 8)",
+  "explanation": "The program prints 1.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "2",
+   "141",
+   "57",
+   "7"
+  ],
+  "correctAnswer": 3,
+  "id": "GPY_010",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "sessions = 12\nprint(sessions // 4 + sessions % 8)",
+  "explanation": "The program prints 7.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "8",
+   "13",
+   "40",
+   "6"
+  ],
+  "correctAnswer": 2,
+  "id": "GPY_011",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "volunteers = 12\nworkshops = 7\nprint(volunteers + workshops * 4)",
+  "explanation": "The program prints 40.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "6",
+   "70",
+   "56",
+   "10"
+  ],
+  "correctAnswer": 3,
+  "id": "GPY_012",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "output",
+  "question": "GDG Assiut bootcamp: What is the output?",
+  "code": "workshops = 18\nprint(workshops // 3 + workshops % 7)",
+  "explanation": "The program prints 10.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "ANDROID",
+   "tuissA GDG",
+   "DevFest!!",
+   "GDG"
+  ],
+  "correctAnswer": 3,
+  "id": "GPY_013",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "community = 'GDG Assiut'\nprint(community.split()[0])",
+  "explanation": "The program prints GDG.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "esaberiF",
+   "maJ ydutS",
+   "CLOUD RUN",
+   "Flutter"
+  ],
+  "correctAnswer": 0,
+  "id": "GPY_014",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "community = 'Firebase'\nprint(community[::-1])",
+  "explanation": "The program prints esaberiF.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "Cod",
+   "wolFrosneT",
+   "Android",
+   "CLOUD RUN"
+  ],
+  "correctAnswer": 2,
+  "id": "GPY_015",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "community = 'Android'\nprint(community.replace('a', '4'))",
+  "explanation": "The program prints Android.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "Fir",
+   "tseFveD",
+   "naM edoC",
+   "DEVFEST"
+  ],
+  "correctAnswer": 2,
+  "id": "GPY_016",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "topic = 'Code Man'\nprint(topic[::-1])",
+  "explanation": "The program prints naM edoC.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "Study Jam!!",
+   "tseFveD",
+   "Firebase",
+   "Hac"
+  ],
+  "correctAnswer": 1,
+  "id": "GPY_017",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "event = 'DevFest'\nprint(event[::-1])",
+  "explanation": "The program prints tseFveD.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "And",
+   "Code M4n",
+   "Ten",
+   "Flutter!!"
+  ],
+  "correctAnswer": 3,
+  "id": "GPY_018",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "topic = 'Flutter'\nprint(topic + '!' * 2)",
+  "explanation": "The program prints Flutter!!.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "2",
+   "1",
+   "10",
+   "-1"
+  ],
+  "correctAnswer": 3,
+  "id": "GPY_019",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "output",
+  "question": "GDG Assiut bootcamp: What is the output?",
+  "code": "topic = 'Cloud Run'\nprint(topic.find('e'))",
+  "explanation": "The program prints -1.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "10",
+   "7",
+   "1",
+   "2"
+  ],
+  "correctAnswer": 2,
+  "id": "GPY_020",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "community = 'Firebase'\nprint(len(community.split()))",
+  "explanation": "The program prints 1.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "1",
+   "8",
+   "10",
+   "5"
+  ],
+  "correctAnswer": 0,
+  "id": "GPY_021",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "event = 'DevFest'\nprint(len(event.split()))",
+  "explanation": "The program prints 1.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "2",
+   "10",
+   "5",
+   "8"
+  ],
+  "correctAnswer": 0,
+  "id": "GPY_022",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "output",
+  "question": "GDG Assiut bootcamp: What is the output?",
+  "code": "topic = 'Code Man'\nprint(len(topic.split()))",
+  "explanation": "The program prints 2.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "5",
+   "0",
+   "1",
+   "8"
+  ],
+  "correctAnswer": 2,
+  "id": "GPY_023",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "output",
+  "question": "GDG Assiut bootcamp: What is the output?",
+  "code": "topic = 'TensorFlow'\nprint(topic.find('e'))",
+  "explanation": "The program prints 1.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "dict",
+   "str",
+   "bool",
+   "int"
+  ],
+  "correctAnswer": 2,
+  "id": "GPY_024",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "GDG Assiut bootcamp: What type name is printed?",
+  "code": "print(type(True).__name__)",
+  "explanation": "The program prints bool.",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "float",
+   "bool",
+   "set",
+   "list"
+  ],
+  "correctAnswer": 2,
+  "id": "GPY_025",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: What type name is printed?",
+  "code": "print(type({1, 2, 3}).__name__)",
+  "explanation": "The program prints set.",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "str",
+   "list",
+   "bool",
+   "dict"
+  ],
+  "correctAnswer": 3,
+  "id": "GPY_026",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: What type name is printed?",
+  "code": "print(type({'event': 'DevFest'}).__name__)",
+  "explanation": "The program prints dict.",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "str",
+   "float",
+   "set",
+   "tuple"
+  ],
+  "correctAnswer": 1,
+  "id": "GPY_027",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: What type name is printed?",
+  "code": "print(type(3.14).__name__)",
+  "explanation": "The program prints float.",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "float",
+   "int",
+   "bool",
+   "tuple"
+  ],
+  "correctAnswer": 1,
+  "id": "GPY_028",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What type name is printed?",
+  "code": "print(type(42).__name__)",
+  "explanation": "The program prints int.",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "Study Jam has 232 members",
+   "Code Man has 166 members",
+   "Code Man has 296 members",
+   "Hackathon has 224 members"
+  ],
+  "correctAnswer": 0,
+  "id": "GPY_029",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "name = 'Study Jam'\nmembers = 232\nprint(f\"{name} has {members} members\")",
+  "explanation": "The program prints Study Jam has 232 members.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "Study Jam has 232 members",
+   "Hackathon has 31 members",
+   "DevFest has 130 members",
+   "Hackathon has 273 members"
+  ],
+  "correctAnswer": 3,
+  "id": "GPY_030",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "name = 'Hackathon'\nmembers = 273\nprint(f\"{name} has {members} members\")",
+  "explanation": "The program prints Hackathon has 273 members.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "Hackathon has 273 members",
+   "Code Man has 296 members",
+   "DevFest has 130 members",
+   "Firebase has 34 members"
+  ],
+  "correctAnswer": 3,
+  "id": "GPY_031",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "name = 'Firebase'\nmembers = 34\nprint(f\"{name} has {members} members\")",
+  "explanation": "The program prints Firebase has 34 members.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "6",
+   "4",
+   "5",
+   "7"
+  ],
+  "correctAnswer": 2,
+  "id": "GPY_032",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "tools = ['Flutter', 'Cloud', 'Dart', 'Android']\ntools.append('Gemini')\nprint(len(tools))",
+  "explanation": "The program prints 5.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "5",
+   "4",
+   "7",
+   "6"
+  ],
+  "correctAnswer": 0,
+  "id": "GPY_033",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "Community code review: What is the output?",
+  "code": "tools = ['Android', 'Kotlin', 'Cloud', 'Flutter']\ntools.append('Gemini')\nprint(len(tools))",
+  "explanation": "The program prints 5.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "6",
+   "3",
+   "5",
+   "4"
+  ],
+  "correctAnswer": 3,
+  "id": "GPY_034",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "DevFest Assiut challenge: What is the output?",
+  "code": "tools = ['Dart', 'Flutter', 'Cloud', 'Firebase']\nprint(len(tools))",
+  "explanation": "The program prints 4.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "Android",
+   "Colab",
+   "Cloud",
+   "Dart"
+  ],
+  "correctAnswer": 2,
+  "id": "GPY_035",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "tools = ['Colab', 'Firebase', 'Android', 'Cloud']\nprint(tools[-1])",
+  "explanation": "The program prints Cloud.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "Flutter",
+   "Android",
+   "Colab",
+   "Kotlin"
+  ],
+  "correctAnswer": 0,
+  "id": "GPY_036",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "tools = ['Dart', 'Flutter', 'Cloud', 'Firebase']\nprint(tools[1:3][0])",
+  "explanation": "The program prints Flutter.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "Firebase",
+   "Cloud",
+   "Android",
+   "Dart"
+  ],
+  "correctAnswer": 2,
+  "id": "GPY_037",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "tools = ['Kotlin', 'Cloud', 'Colab', 'Android']\nprint(tools[-1])",
+  "explanation": "The program prints Android.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "Cloud",
+   "Firebase",
+   "Flutter",
+   "Dart"
+  ],
+  "correctAnswer": 0,
+  "id": "GPY_038",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "output",
+  "question": "GDG Assiut bootcamp: What is the output?",
+  "code": "tools = ['Dart', 'Android', 'Colab', 'Cloud']\nprint(tools.pop())",
+  "explanation": "The program prints Cloud.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "40",
+   "13",
+   "52",
+   "14"
+  ],
+  "correctAnswer": 3,
+  "id": "GPY_039",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "def bonus(base, extra=10):\n    return base + extra\nprint(bonus(4))",
+  "explanation": "The program prints 14.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "60",
+   "14",
+   "13",
+   "28"
+  ],
+  "correctAnswer": 3,
+  "id": "GPY_040",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "def bonus(n):\n    return n * n - 3\nprint(bonus(5) + bonus(3))",
+  "explanation": "The program prints 28.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "60",
+   "40",
+   "16",
+   "13"
+  ],
+  "correctAnswer": 1,
+  "id": "GPY_041",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "def bonus(n):\n    return n * n - 5\nprint(bonus(5) + bonus(5))",
+  "explanation": "The program prints 40.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "16 64",
+   "25 125",
+   "49 343",
+   "36 216"
+  ],
+  "correctAnswer": 0,
+  "id": "GPY_042",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "output",
+  "question": "Code Man arena: What is the output?",
+  "code": "def bonus(x, y=2):\n    return x ** y\nprint(bonus(4), bonus(4, 3))",
+  "explanation": "The program prints 16 64.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "36 216",
+   "49 343",
+   "81 729",
+   "4 8"
+  ],
+  "correctAnswer": 1,
+  "id": "GPY_043",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "def total(x, y=2):\n    return x ** y\nprint(total(7), total(7, 3))",
+  "explanation": "The program prints 49 343.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "min",
+   "sum",
+   "max",
+   "len"
+  ],
+  "correctAnswer": 1,
+  "id": "GPY_044",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "fill",
+  "question": "Fill in the blank so the program prints: 67",
+  "code": "attendees = [12, 30, 25]\nprint(____(attendees))",
+  "explanation": "sum() adds all items: 12 + 30 + 25 = 67.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "lower",
+   "title",
+   "upper",
+   "capitalize"
+  ],
+  "correctAnswer": 2,
+  "id": "GPY_045",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "fill",
+  "question": "Community code review: Fill in the blank so the program prints: DEVFEST",
+  "code": "event = 'DevFest'\nprint(event.____())",
+  "explanation": "upper() converts every letter to uppercase.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "remove",
+   "pop",
+   "append",
+   "sort"
+  ],
+  "correctAnswer": 2,
+  "id": "GPY_046",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "fill",
+  "question": "DevFest Assiut challenge: Fill in the blank so the program prints: 3",
+  "code": "teams = ['Red', 'Blue']\nteams.____('Green')\nprint(len(teams))",
+  "explanation": "append() adds one item at the end, so the length becomes 3.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": null,
+  "correctAnswer": null,
+  "lines": [
+   "members = ['Ali', 'Sara']",
+   "members.append('Omar')",
+   "print(len(members))"
+  ],
+  "id": "GPY_047",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "arrange",
+  "question": "Workshop exercise at GDG Assiut: Arrange the lines in the right order. It must print: 3",
+  "code": "",
+  "explanation": "Create the list, add an item, then print its length.",
+  "points": 100,
+  "timeLimit": 35
+ },
+ {
+  "options": null,
+  "correctAnswer": null,
+  "lines": [
+   "def welcome(name):",
+   "    return 'Welcome ' + name",
+   "print(welcome('GDG Assiut'))"
+  ],
+  "id": "GPY_048",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "arrange",
+  "question": "Lightning-talk puzzle: Arrange the function definition and its call. It must print: Welcome GDG Assiut",
+  "code": "",
+  "explanation": "Define the function first, then call it.",
+  "points": 125,
+  "timeLimit": 40
+ },
+ {
+  "id": "PY_001",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "type": "output",
+  "question": "Code Man arena: What is the output?",
+  "code": "print(2 + 3)",
+  "options": [
+   "4",
+   "5",
+   "6",
+   "7"
+  ],
+  "correctAnswer": 1,
+  "explanation": "2 + 3 = 5",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "python"
+ },
+ {
+  "id": "PY_002",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "type": "mcq",
+  "question": "Type of 3.14 in Python?",
+  "code": "",
+  "options": [
+   "int",
+   "float",
+   "str",
+   "bool"
+  ],
+  "correctAnswer": 1,
+  "explanation": "3.14 is a float.",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "python"
+ },
+ {
+  "id": "PY_003",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "type": "output",
+  "question": "DevFest Assiut challenge: What is the output?",
+  "code": "print(len([1,2,3]))",
+  "options": [
+   "2",
+   "3",
+   "4",
+   "Error"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The list has 3 items.",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "python"
+ },
+ {
+  "id": "PY_004",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "print('ab' * 2)",
+  "options": [
+   "abab",
+   "ab2",
+   "aabb",
+   "Error"
+  ],
+  "correctAnswer": 0,
+  "explanation": "String repetition.",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "python"
+ },
+ {
+  "id": "CPP_001",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 1,
+  "type": "mcq",
+  "question": "Which symbol ends a C++ statement?",
+  "code": "",
+  "options": [
+   ".",
+   ":",
+   ";",
+   ","
+  ],
+  "correctAnswer": 2,
+  "explanation": "Statements end with a semicolon.",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "python"
+ },
+ {
+  "id": "JA_001",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 1,
+  "type": "mcq",
+  "question": "Which method is the Java program entry point?",
+  "code": "",
+  "options": [
+   "start()",
+   "main()",
+   "run()",
+   "init()"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The JVM starts at main().",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "python"
+ },
+ {
+  "id": "PY_005",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "type": "output",
+  "question": "Community code review: What is the output?",
+  "code": "print(7 // 2)",
+  "options": [
+   "3",
+   "3.5",
+   "4",
+   "2"
+  ],
+  "correctAnswer": 0,
+  "explanation": "// is floor division.",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "python"
+ },
+ {
+  "id": "GBAS_001",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: What is the output?",
+  "code": "print(len('python'))",
+  "options": [
+   "1",
+   "6",
+   "3",
+   "9"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The code outputs 6.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GBAS_002",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "Community code review: What is the output?",
+  "code": "print(10 % 3)",
+  "options": [
+   "19",
+   "10",
+   "1",
+   "3"
+  ],
+  "correctAnswer": 2,
+  "explanation": "The code outputs 1.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GBAS_003",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "print(int('7') + 3)",
+  "options": [
+   "8",
+   "32",
+   "10",
+   "6"
+  ],
+  "correctAnswer": 2,
+  "explanation": "The code outputs 10.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GBAS_004",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "GDG Assiut bootcamp: What is the output?",
+  "code": "print(15 // 4)",
+  "options": [
+   "3",
+   "32",
+   "19",
+   "1"
+  ],
+  "correctAnswer": 0,
+  "explanation": "The code outputs 3.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GBAS_005",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "GDG Assiut bootcamp: What is the output?",
+  "code": "print(3 + 4 * 2)",
+  "options": [
+   "11",
+   "4",
+   "9",
+   "3"
+  ],
+  "correctAnswer": 0,
+  "explanation": "The code outputs 11.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GBAS_006",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "print((3 + 4) * 2)",
+  "options": [
+   "10",
+   "8",
+   "14",
+   "11"
+  ],
+  "correctAnswer": 2,
+  "explanation": "The code outputs 14.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GBAS_007",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "print('abc'[::-1])",
+  "options": [
+   "abcd",
+   "x5",
+   "e",
+   "cba"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs cba.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GBAS_008",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "print('a-b-c'.replace('-', ''))",
+  "options": [
+   "e",
+   "abc",
+   "x5",
+   "code"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The code outputs abc.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GBAS_009",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "Community code review: What is the output?",
+  "code": "print('x' + str(5))",
+  "options": [
+   "cba",
+   "abc",
+   "x5",
+   "Hi Hi"
+  ],
+  "correctAnswer": 2,
+  "explanation": "The code outputs x5.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GBAS_010",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "print('Code'.lower())",
+  "options": [
+   "code",
+   "x5",
+   "CODE",
+   "abc"
+  ],
+  "correctAnswer": 0,
+  "explanation": "The code outputs code.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GBAS_011",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "Hackathon judge asks: What type name is printed?",
+  "code": "print(type(True).__name__)",
+  "options": [
+   "bool",
+   "list",
+   "int",
+   "str"
+  ],
+  "correctAnswer": 0,
+  "explanation": "The code outputs bool.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GBAS_012",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "Community code review: What type name is printed?",
+  "code": "print(type(2.5).__name__)",
+  "options": [
+   "tuple",
+   "float",
+   "dict",
+   "NoneType"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The code outputs float.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GBAS_013",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "What type name is printed?",
+  "code": "print(type(5).__name__)",
+  "options": [
+   "bool",
+   "float",
+   "int",
+   "str"
+  ],
+  "correctAnswer": 2,
+  "explanation": "The code outputs int.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GBAS_014",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "GDG Assiut bootcamp: What is the output?",
+  "code": "print(bool('x'))",
+  "options": [
+   "Error",
+   "False",
+   "None",
+   "True"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs True.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GBAS_015",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "DevFest Assiut challenge: What is the output?",
+  "code": "print(5 > 3 and 2 > 4)",
+  "options": [
+   "Error",
+   "None",
+   "False",
+   "True"
+  ],
+  "correctAnswer": 2,
+  "explanation": "The code outputs False.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GBAS_016",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "python",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "print(not False)",
+  "options": [
+   "False",
+   "Error",
+   "None",
+   "True"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs True.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GBAS_017",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "print(10 - 2 - 3)",
+  "options": [
+   "5",
+   "9",
+   "50",
+   "14"
+  ],
+  "correctAnswer": 0,
+  "explanation": "The code outputs 5.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GBAS_018",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "print(int(9.99))",
+  "options": [
+   "50",
+   "4",
+   "14",
+   "9"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs 9.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GBAS_019",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "output",
+  "question": "DevFest Assiut challenge: What is the output?",
+  "code": "print(7 // 2 + 7 % 2)",
+  "options": [
+   "50",
+   "5",
+   "-4",
+   "4"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs 4.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GBAS_020",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "python",
+  "type": "output",
+  "question": "GDG Assiut bootcamp: What is the output?",
+  "code": "print(17 % 5 * 2)",
+  "options": [
+   "50",
+   "5",
+   "-4",
+   "4"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs 4.",
+  "points": 125,
+  "timeLimit": 15
+ }
+]

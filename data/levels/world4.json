@@ -1,0 +1,65 @@
+{
+ "worldId": 4,
+ "name": "OOP Fortress",
+ "subtitle": "Classes, objects, constructors, encapsulation, inheritance, polymorphism and abstraction.",
+ "topic": "oop",
+ "difficulty": "Medium",
+ "theme": {
+  "accent": "#EA4335",
+  "bg": "#2a0e12",
+  "wall": "wall4",
+  "boss": "boss4",
+  "music": "m_w4"
+ },
+ "difficultyMix": {
+  "1": 0.25,
+  "2": 0.55,
+  "3": 0.2
+ },
+ "ghostSpeed": 3.35,
+ "cycle": {
+  "scatter": 5,
+  "chase": 18
+ },
+ "parTime": 210,
+ "mechanic": "Extra Debug Shields are hidden in the fortress to survive its guards.",
+ "boss": {
+  "name": "The Class Destroyer",
+  "description": "Object-oriented design challenges.",
+  "hp": 4,
+  "patterns": [
+   "shield"
+  ],
+  "phases": [
+   {
+    "name": "The Class Destroyer",
+    "topics": [
+     "oop"
+    ],
+    "types": null,
+    "mix": [
+     0.25,
+     0.55,
+     0.2
+    ]
+   }
+  ]
+ },
+ "mazeLayout": [
+  "###################",
+  "#B.......E..TSQ.TB#",
+  "#.#####.#.#.#####.#",
+  "#Q....#.#.#.#D....#",
+  "#.#.#.#.#.#.#.#.#.#",
+  "#.#...#.....#...#.#",
+  "#o#.#.###.###.#.#.#",
+  "#......GGXGG......#",
+  "#.#.###.#.#.###.#.#",
+  "#.o.#.#...oQ#.#...#",
+  "#.#.#.#.###.#.#D#D#",
+  "#.........o.....M.#",
+  "#.#.#Q#.###.#Q#.#U#",
+  "#B..K....P...L...B#",
+  "###################"
+ ]
+}

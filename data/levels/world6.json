@@ -1,0 +1,66 @@
+{
+ "worldId": 6,
+ "name": "Debugging Lab",
+ "subtitle": "Syntax, runtime and logic errors, exceptions, testing and code tracing.",
+ "topic": "debug",
+ "difficulty": "Hard",
+ "theme": {
+  "accent": "#FF7043",
+  "bg": "#2a1208",
+  "wall": "wall6",
+  "boss": "boss6",
+  "music": "m_w6"
+ },
+ "difficultyMix": {
+  "1": 0.1,
+  "2": 0.4,
+  "3": 0.5
+ },
+ "ghostSpeed": 3.65,
+ "cycle": {
+  "scatter": 4,
+  "chase": 20
+ },
+ "parTime": 230,
+ "mechanic": "Corrupted tiles flicker, warn, then become deadly. Watch the red glitch.",
+ "boss": {
+  "name": "The Runtime Reaper",
+  "description": "Find the bug, fix the code, trace the error.",
+  "hp": 5,
+  "patterns": [
+   "teleport",
+   "summon"
+  ],
+  "phases": [
+   {
+    "name": "The Runtime Reaper",
+    "topics": [
+     "debug"
+    ],
+    "types": null,
+    "mix": [
+     0.1,
+     0.4,
+     0.5
+    ]
+   }
+  ]
+ },
+ "mazeLayout": [
+  "###################",
+  "#B..o..Q.ET....o.B#",
+  "#.###############.#",
+  "#.C.#C...o...D#.Q.#",
+  "#.#.#.#.###C#.#.#.#",
+  "#Q....#.....#Q..KC#",
+  "#.#.#.###.###.#.#S#",
+  "#......GGXGG......#",
+  "#.#######.#######U#",
+  "#...............TC#",
+  "#.#.#.###.###.#.#.#",
+  "#C....#..M..#.o...#",
+  "#.#######.#######Q#",
+  "#B.Q.....P.L.....B#",
+  "###################"
+ ]
+}

@@ -1,0 +1,1344 @@
+[
+ {
+  "options": [
+   "5",
+   "14",
+   "21",
+   "3"
+  ],
+  "correctAnswer": 1,
+  "id": "GLP_001",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "loops",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "members = 0\nfor i in range(2, 6):\n    members += i\nprint(members)",
+  "explanation": "The program prints 14.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "3",
+   "12",
+   "5",
+   "9"
+  ],
+  "correctAnswer": 2,
+  "id": "GLP_002",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "loops",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "count = 0\nfor i in range(0, 13, 3):\n    count += 1\nprint(count)",
+  "explanation": "The program prints 5.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "21",
+   "14",
+   "9",
+   "5"
+  ],
+  "correctAnswer": 0,
+  "id": "GLP_003",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "loops",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "speakers = 0\nfor i in range(1, 7):\n    speakers += i\nprint(speakers)",
+  "explanation": "The program prints 21.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "3",
+   "21",
+   "4",
+   "14"
+  ],
+  "correctAnswer": 2,
+  "id": "GLP_004",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "loops",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "count = 0\nfor i in range(1, 12, 3):\n    count += 1\nprint(count)",
+  "explanation": "The program prints 4.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "4",
+   "14",
+   "28",
+   "21"
+  ],
+  "correctAnswer": 2,
+  "id": "GLP_005",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "loops",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "attendees = 0\nfor i in range(1, 8):\n    attendees += i\nprint(attendees)",
+  "explanation": "The program prints 28.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "21",
+   "6",
+   "12",
+   "4"
+  ],
+  "correctAnswer": 3,
+  "id": "GLP_006",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "loops",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "count = 0\nfor i in range(1, 9, 2):\n    count += 1\nprint(count)",
+  "explanation": "The program prints 4.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "10",
+   "21",
+   "27",
+   "14"
+  ],
+  "correctAnswer": 1,
+  "id": "GLP_007",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "loops",
+  "type": "output",
+  "question": "Code Man arena: What is the output?",
+  "code": "projects = 0\nfor i in range(0, 7):\n    projects += i\nprint(projects)",
+  "explanation": "The program prints 21.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "9",
+   "5",
+   "3",
+   "4"
+  ],
+  "correctAnswer": 3,
+  "id": "GLP_008",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "loops",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "count = 0\nfor i in range(3, 10, 2):\n    count += 1\nprint(count)",
+  "explanation": "The program prints 4.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "5",
+   "37",
+   "3",
+   "33"
+  ],
+  "correctAnswer": 3,
+  "id": "GLP_009",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "s = 0\nfor i in range(10):\n    if i % 4 == 0:\n        continue\n    s += i\nprint(s)",
+  "explanation": "The program prints 33.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "9",
+   "28",
+   "16",
+   "15"
+  ],
+  "correctAnswer": 0,
+  "id": "GLP_010",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "total = 0\nfor i in range(3):\n    for j in range(3):\n        total += 1\nprint(total)",
+  "explanation": "The program prints 9.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "12",
+   "4",
+   "16",
+   "24"
+  ],
+  "correctAnswer": 2,
+  "id": "GLP_011",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "s = 0\nfor i in range(8):\n    if i % 2 == 0:\n        continue\n    s += i\nprint(s)",
+  "explanation": "The program prints 16.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "37",
+   "3",
+   "25",
+   "4"
+  ],
+  "correctAnswer": 2,
+  "id": "GLP_012",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "s = 0\nfor i in range(11):\n    if i % 2 == 0:\n        continue\n    s += i\nprint(s)",
+  "explanation": "The program prints 25.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "5",
+   "12",
+   "27",
+   "19"
+  ],
+  "correctAnswer": 0,
+  "id": "GLP_013",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "x = 1\nsteps = 0\nwhile x < 21:\n    x *= 2\n    steps += 1\nprint(steps)",
+  "explanation": "The program prints 5.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "9",
+   "5",
+   "15",
+   "8"
+  ],
+  "correctAnswer": 1,
+  "id": "GLP_014",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "x = 1\nsteps = 0\nwhile x < 24:\n    x *= 2\n    steps += 1\nprint(steps)",
+  "explanation": "The program prints 5.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "24",
+   "4",
+   "6",
+   "27"
+  ],
+  "correctAnswer": 1,
+  "id": "GLP_015",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "DevFest Assiut challenge: What is the output?",
+  "code": "x = 2\nsteps = 0\nwhile x < 18:\n    x *= 2\n    steps += 1\nprint(steps)",
+  "explanation": "The program prints 4.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "3",
+   "15",
+   "25",
+   "12"
+  ],
+  "correctAnswer": 0,
+  "id": "GLP_016",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "DevFest Assiut challenge: What is the output?",
+  "code": "x = 3\nsteps = 0\nwhile x < 24:\n    x *= 2\n    steps += 1\nprint(steps)",
+  "explanation": "The program prints 3.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "25",
+   "16",
+   "15",
+   "37"
+  ],
+  "correctAnswer": 2,
+  "id": "GLP_017",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "total = 0\nfor i in range(5):\n    for j in range(3):\n        total += 1\nprint(total)",
+  "explanation": "The program prints 15.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "19",
+   "27",
+   "33",
+   "24"
+  ],
+  "correctAnswer": 3,
+  "id": "GLP_018",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "DevFest Assiut challenge: What is the output?",
+  "code": "total = 0\nfor i in range(6):\n    for j in range(4):\n        total += 1\nprint(total)",
+  "explanation": "The program prints 24.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "7",
+   "8",
+   "4",
+   "6"
+  ],
+  "correctAnswer": 3,
+  "id": "GLP_019",
+  "category": "Problem Solving",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "loops",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "projects = 32\nrounds = 0\nwhile projects > 0:\n    projects -= 6\n    rounds += 1\nprint(rounds)",
+  "explanation": "The program prints 6.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "4",
+   "7",
+   "6",
+   "5"
+  ],
+  "correctAnswer": 1,
+  "id": "GLP_020",
+  "category": "Problem Solving",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "loops",
+  "type": "output",
+  "question": "DevFest Assiut challenge: What is the output?",
+  "code": "attendees = 20\nrounds = 0\nwhile attendees > 0:\n    attendees -= 3\n    rounds += 1\nprint(rounds)",
+  "explanation": "The program prints 7.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "7",
+   "5",
+   "6",
+   "4"
+  ],
+  "correctAnswer": 3,
+  "id": "GLP_021",
+  "category": "Problem Solving",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "loops",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "for i in range(20):\n    if i * i > 14:\n        break\nprint(i)",
+  "explanation": "The program prints 4.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "6",
+   "8",
+   "4",
+   "7"
+  ],
+  "correctAnswer": 2,
+  "id": "GLP_022",
+  "category": "Problem Solving",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "loops",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "for i in range(20):\n    if i * i > 11:\n        break\nprint(i)",
+  "explanation": "The program prints 4.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "8",
+   "7",
+   "4",
+   "6"
+  ],
+  "correctAnswer": 1,
+  "id": "GLP_023",
+  "category": "Problem Solving",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "loops",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "for i in range(20):\n    if i * i > 41:\n        break\nprint(i)",
+  "explanation": "The program prints 7.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "8",
+   "7",
+   "5",
+   "6"
+  ],
+  "correctAnswer": 3,
+  "id": "GLP_024",
+  "category": "Problem Solving",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "loops",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "speakers = 32\nrounds = 0\nwhile speakers > 0:\n    speakers -= 6\n    rounds += 1\nprint(rounds)",
+  "explanation": "The program prints 6.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "4",
+   "8",
+   "6",
+   "5"
+  ],
+  "correctAnswer": 1,
+  "id": "GLP_025",
+  "category": "Problem Solving",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "loops",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "for i in range(20):\n    if i * i > 53:\n        break\nprint(i)",
+  "explanation": "The program prints 8.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "4",
+   "28",
+   "3",
+   "243"
+  ],
+  "correctAnswer": 2,
+  "id": "GLP_026",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "let c = 0;\nfor (let i = 0; i < 7; i++) {\n  if (i % 2 === 0) continue;\n  c++;\n}\nconsole.log(c);",
+  "explanation": "The program prints 3.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "243",
+   "8",
+   "36",
+   "4"
+  ],
+  "correctAnswer": 3,
+  "id": "GLP_027",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "let c = 0;\nfor (let i = 0; i < 8; i++) {\n  if (i % 2 === 0) continue;\n  c++;\n}\nconsole.log(c);",
+  "explanation": "The program prints 4.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "21",
+   "16",
+   "5",
+   "7"
+  ],
+  "correctAnswer": 2,
+  "id": "GLP_028",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "let n = 15;\nlet c = 0;\nwhile (n > 0) {\n  n -= 3;\n  c++;\n}\nconsole.log(c);",
+  "explanation": "The program prints 5.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "21",
+   "243",
+   "2",
+   "4"
+  ],
+  "correctAnswer": 3,
+  "id": "GLP_029",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "let n = 12;\nlet c = 0;\nwhile (n > 0) {\n  n -= 3;\n  c++;\n}\nconsole.log(c);",
+  "explanation": "The program prints 4.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "28",
+   "15",
+   "4",
+   "2"
+  ],
+  "correctAnswer": 3,
+  "id": "GLP_030",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "let c = 0;\nfor (let i = 0; i < 4; i++) {\n  if (i % 2 === 0) continue;\n  c++;\n}\nconsole.log(c);",
+  "explanation": "The program prints 2.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "15",
+   "21",
+   "243",
+   "2"
+  ],
+  "correctAnswer": 0,
+  "id": "GLP_031",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "let total = 0;\nfor (let i = 1; i <= 5; i++) {\n  total += i;\n}\nconsole.log(total);",
+  "explanation": "The program prints 15.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "4",
+   "3",
+   "7",
+   "243"
+  ],
+  "correctAnswer": 1,
+  "id": "GLP_032",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "GDG Assiut bootcamp: What is the output?",
+  "code": "int c = 0;\nfor (int i = 0; i < 6; i++) {\n  if (i % 2 == 0) continue;\n  c++;\n}\ncout << c;",
+  "explanation": "The program prints 3.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "2",
+   "243",
+   "4",
+   "9"
+  ],
+  "correctAnswer": 0,
+  "id": "GLP_033",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "int c = 0;\nfor (int i = 0; i < 4; i++) {\n  if (i % 2 == 0) continue;\n  c++;\n}\ncout << c;",
+  "explanation": "The program prints 2.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "66",
+   "5",
+   "28",
+   "16"
+  ],
+  "correctAnswer": 0,
+  "id": "GLP_034",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "Community code review: What is the output?",
+  "code": "int total = 0;\nfor (int i = 1; i <= 11; i++) total += i;\ncout << total;",
+  "explanation": "The program prints 66.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "10",
+   "3",
+   "5",
+   "243"
+  ],
+  "correctAnswer": 2,
+  "id": "GLP_035",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: What is the output?",
+  "code": "int c = 0;\nfor (int i = 0; i < 11; i++) {\n  if (i % 2 == 0) continue;\n  c++;\n}\ncout << c;",
+  "explanation": "The program prints 5.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "16",
+   "2",
+   "5",
+   "15"
+  ],
+  "correctAnswer": 3,
+  "id": "GLP_036",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "DevFest Assiut challenge: What is the output?",
+  "code": "int total = 0;\nfor (int i = 1; i <= 5; i++) total += i;\ncout << total;",
+  "explanation": "The program prints 15.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "36",
+   "5",
+   "9",
+   "4"
+  ],
+  "correctAnswer": 3,
+  "id": "GLP_037",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "int n = 15, c = 0;\nwhile (n > 0) { n -= 4; c++; }\nSystem.out.println(c);",
+  "explanation": "The program prints 4.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "36",
+   "45",
+   "5",
+   "243"
+  ],
+  "correctAnswer": 2,
+  "id": "GLP_038",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "int c = 0;\nfor (int i = 0; i < 11; i++) {\n  if (i % 2 == 0) continue;\n  c++;\n}\nSystem.out.println(c);",
+  "explanation": "The program prints 5.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "21",
+   "4",
+   "66",
+   "45"
+  ],
+  "correctAnswer": 0,
+  "id": "GLP_039",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "Community code review: What is the output?",
+  "code": "int total = 0;\nfor (int i = 1; i <= 6; i++) total += i;\nSystem.out.println(total);",
+  "explanation": "The program prints 21.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "3",
+   "5",
+   "15",
+   "66"
+  ],
+  "correctAnswer": 0,
+  "id": "GLP_040",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "GDG Assiut bootcamp: What is the output?",
+  "code": "int c = 0;\nfor (int i = 0; i < 6; i++) {\n  if (i % 2 == 0) continue;\n  c++;\n}\nSystem.out.println(c);",
+  "explanation": "The program prints 3.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "45",
+   "10",
+   "243",
+   "28"
+  ],
+  "correctAnswer": 3,
+  "id": "GLP_041",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "int total = 0;\nfor (int i = 1; i <= 7; i++) total += i;\nSystem.out.println(total);",
+  "explanation": "The program prints 28.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "sum",
+   "range",
+   "list",
+   "len"
+  ],
+  "correctAnswer": 1,
+  "id": "GLP_042",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "loops",
+  "type": "fill",
+  "question": "Hackathon judge asks: Fill in the blank so the program prints: 6",
+  "code": "total = 0\nfor i in ____(1, 4):\n    total += i\nprint(total)",
+  "explanation": "range(1, 4) yields 1, 2, 3, which add up to 6.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "break",
+   "exit",
+   "continue",
+   "pass"
+  ],
+  "correctAnswer": 0,
+  "id": "GLP_043",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "fill",
+  "question": "Hackathon judge asks: Fill in the blank so the program prints: 0\n1\n2\nend",
+  "code": "for i in range(10):\n    if i == 3:\n        ____\n    print(i)\nprint('end')",
+  "explanation": "break leaves the loop at i == 3.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": null,
+  "correctAnswer": null,
+  "lines": [
+   "count = 0",
+   "while count < 3:",
+   "    count += 1",
+   "print(count)"
+  ],
+  "id": "GLP_044",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "loops",
+  "type": "arrange",
+  "question": "Arrange the while loop. It must print: 3",
+  "code": "",
+  "explanation": "Initialise, loop while the condition holds, update inside, then print.",
+  "points": 100,
+  "timeLimit": 35
+ },
+ {
+  "options": null,
+  "correctAnswer": null,
+  "lines": [
+   "total = 0",
+   "for i in range(1, 5):",
+   "    total += i",
+   "print(total)"
+  ],
+  "id": "GLP_045",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "arrange",
+  "question": "Lightning-talk puzzle: Arrange the summing loop. It must print: 10",
+  "code": "",
+  "explanation": "Start from zero, loop through the range, accumulate, print.",
+  "points": 125,
+  "timeLimit": 40
+ },
+ {
+  "id": "PY_006",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "type": "output",
+  "question": "What is the output?",
+  "code": "for i in range(3):\n    print(i, end='')",
+  "options": [
+   "123",
+   "012",
+   "0123",
+   "021"
+  ],
+  "correctAnswer": 1,
+  "explanation": "range(3) = 0,1,2.",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "loops"
+ },
+ {
+  "id": "GLOO_001",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "loops",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: What is the output?",
+  "code": "c=0\nfor i in range(0, 10, 2):\n    c += 1\nprint(c)",
+  "options": [
+   "5",
+   "10",
+   "15",
+   "32"
+  ],
+  "correctAnswer": 0,
+  "explanation": "The code outputs 5.",
+  "points": 100,
+  "timeLimit": 17
+ },
+ {
+  "id": "GLOO_002",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "loops",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "c=0\nfor i in range(4):\n    c += 2\nprint(c)",
+  "options": [
+   "0",
+   "10",
+   "8",
+   "5"
+  ],
+  "correctAnswer": 2,
+  "explanation": "The code outputs 8.",
+  "points": 100,
+  "timeLimit": 17
+ },
+ {
+  "id": "GLOO_003",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "loops",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "x=1\nwhile x < 20:\n    x *= 2\nprint(x)",
+  "options": [
+   "15",
+   "0",
+   "32",
+   "7"
+  ],
+  "correctAnswer": 2,
+  "explanation": "The code outputs 32.",
+  "points": 100,
+  "timeLimit": 17
+ },
+ {
+  "id": "GLOO_004",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "loops",
+  "type": "output",
+  "question": "Code Man arena: What is the output?",
+  "code": "s=0\nfor i in range(5):\n    s += i\nprint(s)",
+  "options": [
+   "7",
+   "5",
+   "15",
+   "10"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs 10.",
+  "points": 100,
+  "timeLimit": 17
+ },
+ {
+  "id": "GLOO_005",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "loops",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "print(len(list(range(2,9))))",
+  "options": [
+   "7",
+   "32",
+   "10",
+   "8"
+  ],
+  "correctAnswer": 0,
+  "explanation": "The code outputs 7.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GLOO_006",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "loops",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "n=3\nwhile n > 0:\n    n -= 1\nprint(n)",
+  "options": [
+   "32",
+   "5",
+   "0",
+   "15"
+  ],
+  "correctAnswer": 2,
+  "explanation": "The code outputs 0.",
+  "points": 100,
+  "timeLimit": 17
+ },
+ {
+  "id": "GLOO_007",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "loops",
+  "type": "output",
+  "question": "Code Man arena: What is the output?",
+  "code": "t=1\nfor i in range(1,5):\n    t *= i\nprint(t)",
+  "options": [
+   "15",
+   "24",
+   "0",
+   "32"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The code outputs 24.",
+  "points": 100,
+  "timeLimit": 17
+ },
+ {
+  "id": "GLOO_008",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "GDG Assiut bootcamp: What is the output?",
+  "code": "s=0\nfor i in range(10):\n    if i == 5:\n        break\n    s += i\nprint(s)",
+  "options": [
+   "22",
+   "10",
+   "25",
+   "6"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The code outputs 10.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GLOO_009",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "DevFest Assiut challenge: What is the output?",
+  "code": "s=0\nfor i in range(10):\n    if i % 2 == 0:\n        continue\n    s += i\nprint(s)",
+  "options": [
+   "10",
+   "9",
+   "25",
+   "22"
+  ],
+  "correctAnswer": 2,
+  "explanation": "The code outputs 25.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GLOO_010",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "Community code review: What is the output?",
+  "code": "x=0\nfor i in range(3):\n    x = x*2 + 1\nprint(x)",
+  "options": [
+   "7",
+   "22",
+   "9",
+   "50"
+  ],
+  "correctAnswer": 0,
+  "explanation": "The code outputs 7.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GLOO_011",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "c=0\nfor i in range(3):\n    for j in range(2):\n        c += 1\nprint(c)",
+  "options": [
+   "50",
+   "6",
+   "9",
+   "7"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The code outputs 6.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GLOO_012",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "Code Man arena: What is the output?",
+  "code": "print(sum(i for i in range(1,6) if i % 2))",
+  "options": [
+   "10",
+   "22",
+   "25",
+   "9"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs 9.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GLOO_013",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "Code Man arena: What is the output?",
+  "code": "c=0\nfor i in range(20, 0, -5):\n    c += i\nprint(c)",
+  "options": [
+   "50",
+   "7",
+   "10",
+   "9"
+  ],
+  "correctAnswer": 0,
+  "explanation": "The code outputs 50.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GLOO_014",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "DevFest Assiut challenge: What is the output?",
+  "code": "c=0\nfor i in range(1,4):\n    for j in range(i):\n        c += 1\nprint(c)",
+  "options": [
+   "10",
+   "9",
+   "6",
+   "22"
+  ],
+  "correctAnswer": 2,
+  "explanation": "The code outputs 6.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GLOO_015",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "loops",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "s=0\ni=10\nwhile i > 0:\n    s += i\n    i -= 3\nprint(s)",
+  "options": [
+   "10",
+   "22",
+   "50",
+   "25"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The code outputs 22.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GLOO_016",
+  "category": "Problem Solving",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "loops",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "print(sum(range(1,11,3)))",
+  "options": [
+   "9",
+   "13",
+   "22",
+   "15"
+  ],
+  "correctAnswer": 2,
+  "explanation": "The code outputs 22.",
+  "points": 150,
+  "timeLimit": 20
+ },
+ {
+  "id": "GLOO_017",
+  "category": "Problem Solving",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "loops",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: What is the output?",
+  "code": "c=0\nfor i in range(1,20):\n    if i%3==0 or i%5==0:\n        c+=1\nprint(c)",
+  "options": [
+   "22",
+   "13",
+   "15",
+   "8"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs 8.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GLOO_018",
+  "category": "Problem Solving",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "loops",
+  "type": "output",
+  "question": "GDG Assiut bootcamp: What is the output?",
+  "code": "n=12345\ns=0\nwhile n:\n    s+=n%10\n    n//=10\nprint(s)",
+  "options": [
+   "13",
+   "8",
+   "22",
+   "15"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs 15.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GLOO_019",
+  "category": "Problem Solving",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "loops",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "x=100\nc=0\nwhile x>1:\n    x//=2\n    c+=1\nprint(c)",
+  "options": [
+   "9",
+   "6",
+   "22",
+   "15"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The code outputs 6.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GLOO_020",
+  "category": "Problem Solving",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "loops",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "a,b=0,1\nfor _ in range(7):\n    a,b=b,a+b\nprint(a)",
+  "options": [
+   "13",
+   "9",
+   "15",
+   "8"
+  ],
+  "correctAnswer": 0,
+  "explanation": "The code outputs 13.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GLOO_021",
+  "category": "Problem Solving",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "loops",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: What is the output?",
+  "code": "s=0\nfor i in range(1,6):\n    for j in range(i,6):\n        if (i+j)%2==0:\n            s+=1\nprint(s)",
+  "options": [
+   "9",
+   "15",
+   "8",
+   "13"
+  ],
+  "correctAnswer": 0,
+  "explanation": "The code outputs 9.",
+  "points": 150,
+  "timeLimit": 25
+ }
+]

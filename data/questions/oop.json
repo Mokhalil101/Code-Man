@@ -1,0 +1,1412 @@
+[
+ {
+  "options": [
+   "11",
+   "13",
+   "9",
+   "12"
+  ],
+  "correctAnswer": 0,
+  "id": "GOP_001",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "Community code review: What is the output?",
+  "code": "class Wallet:\n    def __init__(self):\n        self._coins = 2\n    def add(self, n):\n        self._coins += n\n        return self._coins\nprint(Wallet().add(9))",
+  "explanation": "The code prints 11.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "14",
+   "12",
+   "6",
+   "13"
+  ],
+  "correctAnswer": 0,
+  "id": "GOP_002",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "GDG Assiut bootcamp: What is the output?",
+  "code": "class Wallet:\n    def __init__(self):\n        self._coins = 9\n    def add(self, n):\n        self._coins += n\n        return self._coins\nprint(Wallet().add(5))",
+  "explanation": "The code prints 14.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "12",
+   "13",
+   "10",
+   "15"
+  ],
+  "correctAnswer": 1,
+  "id": "GOP_003",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "class Wallet:\n    def __init__(self):\n        self._coins = 6\n    def add(self, n):\n        self._coins += n\n        return self._coins\nprint(Wallet().add(7))",
+  "explanation": "The code prints 13.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "4",
+   "9",
+   "14",
+   "10"
+  ],
+  "correctAnswer": 2,
+  "id": "GOP_004",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: What is the output?",
+  "code": "class Member:\n    def __init__(self, name, points):\n        self.name = name\n        self.points = points\n    def bonus(self):\n        return self.points + 5\nm = Member('Nour', 9)\nprint(m.bonus())",
+  "explanation": "The code prints 14.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "15",
+   "11",
+   "6",
+   "4"
+  ],
+  "correctAnswer": 2,
+  "id": "GOP_005",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "class Member:\n    def __init__(self, name, points):\n        self.name = name\n        self.points = points\n    def bonus(self):\n        return self.points + 3\nm = Member('Sara', 3)\nprint(m.bonus())",
+  "explanation": "The code prints 6.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "13",
+   "9",
+   "16",
+   "4"
+  ],
+  "correctAnswer": 2,
+  "id": "GOP_006",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "class Wallet:\n    def __init__(self):\n        self._coins = 8\n    def add(self, n):\n        self._coins += n\n        return self._coins\nprint(Wallet().add(8))",
+  "explanation": "The code prints 16.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "11",
+   "15",
+   "6",
+   "10"
+  ],
+  "correctAnswer": 0,
+  "id": "GOP_007",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "Code Man arena: What is the output?",
+  "code": "class Member:\n    def __init__(self, name, points):\n        self.name = name\n        self.points = points\n    def bonus(self):\n        return self.points + 2\nm = Member('Omar', 9)\nprint(m.bonus())",
+  "explanation": "The code prints 11.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "6",
+   "10",
+   "13",
+   "11"
+  ],
+  "correctAnswer": 2,
+  "id": "GOP_008",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "class Member:\n    def __init__(self, name, points):\n        self.name = name\n        self.points = points\n    def bonus(self):\n        return self.points + 9\nm = Member('Ali', 4)\nprint(m.bonus())",
+  "explanation": "The code prints 13.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "6",
+   "16",
+   "9",
+   "36"
+  ],
+  "correctAnswer": 3,
+  "id": "GOP_009",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "oop",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "from abc import ABC, abstractmethod\nclass Shape(ABC):\n    @abstractmethod\n    def area(self): ...\nclass Sq(Shape):\n    def __init__(self, s): self.s = s\n    def area(self): return self.s ** 2\nprint(Sq(6).area())",
+  "explanation": "The program prints 36.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "6",
+   "49",
+   "3",
+   "4"
+  ],
+  "correctAnswer": 1,
+  "id": "GOP_010",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "oop",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "from abc import ABC, abstractmethod\nclass Shape(ABC):\n    @abstractmethod\n    def area(self): ...\nclass Sq(Shape):\n    def __init__(self, s): self.s = s\n    def area(self): return self.s ** 2\nprint(Sq(7).area())",
+  "explanation": "The program prints 49.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "7",
+   "81",
+   "9",
+   "16"
+  ],
+  "correctAnswer": 1,
+  "id": "GOP_011",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "oop",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "from abc import ABC, abstractmethod\nclass Shape(ABC):\n    @abstractmethod\n    def area(self): ...\nclass Sq(Shape):\n    def __init__(self, s): self.s = s\n    def area(self): return self.s ** 2\nprint(Sq(9).area())",
+  "explanation": "The program prints 81.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "9",
+   "8",
+   "81",
+   "2"
+  ],
+  "correctAnswer": 3,
+  "id": "GOP_012",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "oop",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "class Badge:\n    count = 0\n    def __init__(self):\n        Badge.count += 1\nfor _ in range(2):\n    Badge()\nprint(Badge.count)",
+  "explanation": "The program prints 2.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "GDG Assiut Android",
+   "GDG Assiut Hackathon",
+   "Hackathon",
+   "Android Code Man"
+  ],
+  "correctAnswer": 2,
+  "id": "GOP_013",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "class P:\n    def hi(self): return 'Hackathon'\nclass K(P): pass\nprint(K().hi())",
+  "explanation": "The program prints Hackathon.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "Code Man",
+   "GDG Assiut Cloud Run",
+   "GDG Assiut",
+   "Android"
+  ],
+  "correctAnswer": 3,
+  "id": "GOP_014",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "class P:\n    def hi(self): return 'Android'\nclass K(P): pass\nprint(K().hi())",
+  "explanation": "The program prints Android.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "GDG Assiut Cloud Run",
+   "GDG Assiut Android",
+   "Flutter Workshop",
+   "Cloud Run TensorFlow"
+  ],
+  "correctAnswer": 3,
+  "id": "GOP_015",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "Code Man arena: What is the output?",
+  "code": "class Speaker:\n    def talk(self): return 'Cloud Run'\nclass Mentor(Speaker):\n    def talk(self): return 'TensorFlow'\nfor p in [Speaker(), Mentor()]:\n    print(p.talk(), end=' ')",
+  "explanation": "The program prints Cloud Run TensorFlow.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "DevFest Study Jam",
+   "GDG Assiut Cloud Run",
+   "TensorFlow Code Man",
+   "Flutter"
+  ],
+  "correctAnswer": 3,
+  "id": "GOP_016",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "class P:\n    def hi(self): return 'Flutter'\nclass K(P): pass\nprint(K().hi())",
+  "explanation": "The program prints Flutter.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "Code Man",
+   "Cloud Run TensorFlow",
+   "Android Workshop",
+   "TensorFlow Workshop"
+  ],
+  "correctAnswer": 2,
+  "id": "GOP_017",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: What is the output?",
+  "code": "class Event:\n    def title(self):\n        return 'Android'\nclass Workshop(Event):\n    def title(self):\n        return super().title() + ' Workshop'\nprint(Workshop().title())",
+  "explanation": "The program prints Android Workshop.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "12",
+   "8",
+   "10",
+   "5"
+  ],
+  "correctAnswer": 0,
+  "id": "GOP_018",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "class A { val() { return 4; } }\nclass B extends A { val() { return super.val() + 8; } }\nconsole.log(new B().val());",
+  "explanation": "The program prints 12.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "6",
+   "10",
+   "16",
+   "14"
+  ],
+  "correctAnswer": 1,
+  "id": "GOP_019",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "Code Man arena: What is the output?",
+  "code": "class A { val() { return 8; } }\nclass B extends A { val() { return super.val() + 2; } }\nconsole.log(new B().val());",
+  "explanation": "The program prints 10.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "5",
+   "14",
+   "18",
+   "6"
+  ],
+  "correctAnswer": 3,
+  "id": "GOP_020",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "DevFest Assiut challenge: What is the output?",
+  "code": "class Team {\n  constructor(n) { this.n = n; }\n  double() { return this.n * 2; }\n}\nconsole.log(new Team(3).double());",
+  "explanation": "The program prints 6.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "7",
+   "10",
+   "14",
+   "18"
+  ],
+  "correctAnswer": 1,
+  "id": "GOP_021",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "Code Man arena: What is the output?",
+  "code": "class C { static count = 8; static inc() { return ++C.count; } }\nC.inc();\nconsole.log(C.inc());",
+  "explanation": "The program prints 10.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "8",
+   "5",
+   "11",
+   "10"
+  ],
+  "correctAnswer": 2,
+  "id": "GOP_022",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "class A { val() { return 5; } }\nclass B extends A { val() { return super.val() + 6; } }\nconsole.log(new B().val());",
+  "explanation": "The program prints 11.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "14",
+   "5",
+   "12",
+   "18"
+  ],
+  "correctAnswer": 2,
+  "id": "GOP_023",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "class A { val() { return 9; } }\nclass B extends A { val() { return super.val() + 3; } }\nconsole.log(new B().val());",
+  "explanation": "The program prints 12.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "27",
+   "3",
+   "48",
+   "54"
+  ],
+  "correctAnswer": 1,
+  "id": "GOP_024",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 3,
+  "topic": "oop",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "class A { public: virtual int f() { return 9; } };\nclass B : public A { public: int f() override { return 3; } };\nA* p = new B();\ncout << p->f();",
+  "explanation": "The program prints 3.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "54",
+   "15",
+   "6",
+   "12"
+  ],
+  "correctAnswer": 3,
+  "id": "GOP_025",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 3,
+  "topic": "oop",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "class Counter {\npublic:\n  int n = 4;\n  void inc() { n += 8; }\n};\nCounter c;\nc.inc();\ncout << c.n;",
+  "explanation": "The program prints 12.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "24",
+   "32",
+   "54",
+   "6"
+  ],
+  "correctAnswer": 3,
+  "id": "GOP_026",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 3,
+  "topic": "oop",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "class Counter {\npublic:\n  int n = 4;\n  void inc() { n += 2; }\n};\nCounter c;\nc.inc();\ncout << c.n;",
+  "explanation": "The program prints 6.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "2",
+   "11",
+   "3",
+   "6"
+  ],
+  "correctAnswer": 0,
+  "id": "GOP_027",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 3,
+  "topic": "oop",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: What is the output?",
+  "code": "class A { public: virtual int f() { return 8; } };\nclass B : public A { public: int f() override { return 2; } };\nA* p = new B();\ncout << p->f();",
+  "explanation": "The program prints 2.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "27",
+   "10",
+   "8",
+   "6"
+  ],
+  "correctAnswer": 2,
+  "id": "GOP_028",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 3,
+  "topic": "oop",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "class P { int x; public: P(int v) : x(v) {} int get() { return x * 2; } };\nP p(4);\ncout << p.get();",
+  "explanation": "The program prints 8.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "11",
+   "48",
+   "16",
+   "14"
+  ],
+  "correctAnswer": 2,
+  "id": "GOP_029",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 3,
+  "topic": "oop",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "class P { int x; public: P(int v) : x(v) {} int get() { return x * 2; } };\nP p(8);\ncout << p.get();",
+  "explanation": "The program prints 16.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "4",
+   "15",
+   "14",
+   "9"
+  ],
+  "correctAnswer": 0,
+  "id": "GOP_030",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "Community code review: What is the output?",
+  "code": "class Cnt { static int c = 0; Cnt() { c++; } }\nfor (int i = 0; i < 4; i++) new Cnt();\nSystem.out.println(Cnt.c);",
+  "explanation": "The program prints 4.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "12",
+   "10",
+   "14",
+   "18"
+  ],
+  "correctAnswer": 0,
+  "id": "GOP_031",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "GDG Assiut bootcamp: What is the output?",
+  "code": "class A { int f() { return 9; } }\nclass B extends A { int f() { return super.f() + 3; } }\nSystem.out.println(new B().f());",
+  "explanation": "The program prints 12.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "12",
+   "5",
+   "15",
+   "14"
+  ],
+  "correctAnswer": 0,
+  "id": "GOP_032",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "class Box { int v; Box(int v) { this.v = v; } int twice() { return v * 2; } }\nSystem.out.println(new Box(6).twice());",
+  "explanation": "The program prints 12.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "6",
+   "9",
+   "10",
+   "4"
+  ],
+  "correctAnswer": 0,
+  "id": "GOP_033",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "class Cnt { static int c = 0; Cnt() { c++; } }\nfor (int i = 0; i < 6; i++) new Cnt();\nSystem.out.println(Cnt.c);",
+  "explanation": "The program prints 6.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "11",
+   "3",
+   "6",
+   "5"
+  ],
+  "correctAnswer": 2,
+  "id": "GOP_034",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "class Box { int v; Box(int v) { this.v = v; } int twice() { return v * 2; } }\nSystem.out.println(new Box(3).twice());",
+  "explanation": "The program prints 6.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "18",
+   "4",
+   "11",
+   "3"
+  ],
+  "correctAnswer": 2,
+  "id": "GOP_035",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "class A { int f() { return 3; } }\nclass B extends A { int f() { return super.f() + 8; } }\nSystem.out.println(new B().f());",
+  "explanation": "The program prints 11.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "self",
+   "this",
+   "cls",
+   "me"
+  ],
+  "correctAnswer": 0,
+  "id": "GOP_036",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "fill",
+  "question": "Code Man arena: Fill in the blank so the program prints: Sara",
+  "code": "class Member:\n    def __init__(self, name):\n        ____.name = name\nprint(Member('Sara').name)",
+  "explanation": "Inside a method, self is the current instance.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "self",
+   "B",
+   "object2",
+   "A"
+  ],
+  "correctAnswer": 3,
+  "id": "GOP_037",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "fill",
+  "question": "Build Night at GDG Assiut: Fill in the blank so the program prints: A",
+  "code": "class A:\n    def hi(self): return 'A'\nclass B(____):\n    pass\nprint(B().hi())",
+  "explanation": "class B(A) makes B inherit from A.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "A",
+   "self",
+   "B()",
+   "super()"
+  ],
+  "correctAnswer": 3,
+  "id": "GOP_038",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "oop",
+  "type": "fill",
+  "question": "GDG Assiut mentor's puzzle: Fill in the blank so the program prints: 2",
+  "code": "class A:\n    def f(self): return 1\nclass B(A):\n    def f(self): return ____.f() + 1\nprint(B().f())",
+  "explanation": "super() reaches the parent implementation.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": null,
+  "correctAnswer": null,
+  "lines": [
+   "class Event:",
+   "    def __init__(self, name):",
+   "        self.name = name",
+   "print(Event('DevFest').name)"
+  ],
+  "id": "GOP_039",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "arrange",
+  "question": "GDG Assiut mentor's puzzle: Arrange the class definition and use. It must print: DevFest",
+  "code": "",
+  "explanation": "Define the class, then its constructor body, then create and use an object.",
+  "points": 125,
+  "timeLimit": 40
+ },
+ {
+  "options": null,
+  "correctAnswer": null,
+  "lines": [
+   "class Shape:",
+   "    def area(self):",
+   "        return 0",
+   "class Sq(Shape):",
+   "    def area(self):",
+   "        return 4",
+   "print(Sq().area())"
+  ],
+  "id": "GOP_040",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "oop",
+  "type": "arrange",
+  "question": "Arrange the inheritance example. It must print: 4",
+  "code": "",
+  "explanation": "Parent first, then the subclass overriding the method, then the call.",
+  "points": 150,
+  "timeLimit": 45
+ },
+ {
+  "options": null,
+  "correctAnswer": null,
+  "lines": [
+   "class Counter:",
+   "    def __init__(self):",
+   "        self.n = 0",
+   "    def inc(self):",
+   "        self.n += 1",
+   "c = Counter()",
+   "c.inc()",
+   "print(c.n)"
+  ],
+  "id": "GOP_041",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "arrange",
+  "question": "Arrange the Counter class. It must print: 1",
+  "code": "",
+  "explanation": "Class body first, then create an instance, call inc, and print.",
+  "points": 125,
+  "timeLimit": 40
+ },
+ {
+  "options": [
+   "__start__",
+   "__init__",
+   "__create__",
+   "__make__"
+  ],
+  "correctAnswer": 1,
+  "id": "GOP_042",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "oop",
+  "type": "conceptual",
+  "question": "Which Python method runs when an object is created?",
+  "code": "",
+  "explanation": "__init__ initialises new instances.",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "alloc",
+   "new",
+   "make",
+   "create"
+  ],
+  "correctAnswer": 1,
+  "id": "GOP_043",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 1,
+  "topic": "oop",
+  "type": "conceptual",
+  "question": "Which Java keyword creates an object?",
+  "code": "",
+  "explanation": "new allocates and constructs an object.",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "Inheritance",
+   "Compilation",
+   "Encapsulation",
+   "Recursion"
+  ],
+  "correctAnswer": 2,
+  "id": "GOP_044",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "conceptual",
+  "question": "Which OOP principle hides internal data behind methods?",
+  "code": "",
+  "explanation": "Encapsulation restricts direct access to internals.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "Declare variables without types",
+   "Call the same method on different types with different behavior",
+   "Avoid classes",
+   "Run code faster"
+  ],
+  "correctAnswer": 1,
+  "id": "GOP_045",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "conceptual",
+  "question": "Polymorphism lets you...",
+  "code": "",
+  "explanation": "One interface, many implementations.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "virtual",
+   "inline",
+   "static",
+   "const"
+  ],
+  "correctAnswer": 0,
+  "id": "GOP_046",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 3,
+  "topic": "oop",
+  "type": "conceptual",
+  "question": "Which keyword allows overriding through a base-class pointer in C++?",
+  "code": "",
+  "explanation": "virtual enables runtime dispatch.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "Only if it has no methods",
+   "Yes, always",
+   "No, only of a concrete subclass",
+   "Only inside main"
+  ],
+  "correctAnswer": 2,
+  "id": "GOP_047",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 3,
+  "topic": "oop",
+  "type": "conceptual",
+  "question": "Can you create an instance of an abstract class directly in Java?",
+  "code": "",
+  "explanation": "Abstract classes cannot be instantiated.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "JA_002",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 2,
+  "type": "mcq",
+  "question": "Which keyword prevents inheritance?",
+  "code": "",
+  "options": [
+   "static",
+   "final",
+   "abstract",
+   "private"
+  ],
+  "correctAnswer": 1,
+  "explanation": "A final class cannot be extended.",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "oop"
+ },
+ {
+  "id": "GOOP_001",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: What is the output?",
+  "code": "class A:\n    def __init__(self, x):\n        self.x = x\n    def double(self):\n        return self.x * 2\nprint(A(4).double())",
+  "options": [
+   "2",
+   "8",
+   "6",
+   "9"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The code outputs 8.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GOOP_002",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "class A:\n    def __init__(self):\n        self.v = 5\na = A()\na.v += 1\nprint(a.v)",
+  "options": [
+   "6",
+   "8",
+   "7",
+   "2"
+  ],
+  "correctAnswer": 0,
+  "explanation": "The code outputs 6.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GOOP_003",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "class C:\n    n = 0\n    def __init__(self):\n        C.n += 1\nC(); C()\nprint(C.n)",
+  "options": [
+   "6",
+   "8",
+   "2",
+   "3"
+  ],
+  "correctAnswer": 2,
+  "explanation": "The code outputs 2.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GOOP_004",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "class A:\n    def __init__(self, n):\n        self.n = n\n    def __str__(self):\n        return 'A' + str(self.n)\nprint(A(3))",
+  "options": [
+   "P",
+   "A3",
+   "K",
+   "None"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The code outputs A3.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GOOP_005",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "class P:\n    def hi(self):\n        return 'P'\nclass K(P):\n    pass\nprint(K().hi())",
+  "options": [
+   "A3",
+   "P",
+   "None",
+   "Error"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The code outputs P.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GOOP_006",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "class P:\n    def hi(self):\n        return 'P'\nclass K(P):\n    def hi(self):\n        return 'K'\nprint(K().hi())",
+  "options": [
+   "P",
+   "Error",
+   "A3",
+   "K"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs K.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GOOP_007",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "oop",
+  "type": "output",
+  "question": "DevFest Assiut challenge: What is the output?",
+  "code": "class B:\n    def f(self):\n        return 1\nclass D(B):\n    def f(self):\n        return super().f() + 1\nprint(D().f())",
+  "options": [
+   "2",
+   "42",
+   "1",
+   "3"
+  ],
+  "correctAnswer": 0,
+  "explanation": "The code outputs 2.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GOOP_008",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "oop",
+  "type": "output",
+  "question": "Community code review: What is the output?",
+  "code": "class S:\n    @staticmethod\n    def twice(x):\n        return x * 2\nprint(S.twice(21))",
+  "options": [
+   "43",
+   "41",
+   "42",
+   "2"
+  ],
+  "correctAnswer": 2,
+  "explanation": "The code outputs 42.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GOOP_009",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "oop",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: What is the output?",
+  "code": "class Cnt:\n    def __init__(self):\n        self.c = 0\n    def inc(self):\n        self.c += 1\nx = Cnt(); y = x\ny.inc(); x.inc()\nprint(x.c)",
+  "options": [
+   "1",
+   "3",
+   "42",
+   "2"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs 2.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GOOP_010",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "oop",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "class A:\n    def __init__(self):\n        self.items = []\n    def add(self, x):\n        self.items.append(x)\n        return self\nprint(len(A().add(1).add(2).items))",
+  "options": [
+   "42",
+   "1",
+   "3",
+   "2"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs 2.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GOOP_011",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "oop",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: What is the output?",
+  "code": "class A:\n    x = 1\nclass B(A):\n    pass\nB.x = 5\nprint(A.x, B.x)",
+  "options": [
+   "BA",
+   "B",
+   "1 5",
+   "Error"
+  ],
+  "correctAnswer": 2,
+  "explanation": "The code outputs 1 5.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GOOP_012",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "oop",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "class A:\n    def who(self):\n        return 'A'\nclass B(A):\n    def who(self):\n        return 'B' + super().who()\nprint(B().who())",
+  "options": [
+   "1 5",
+   "BA",
+   "AB",
+   "B"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The code outputs BA.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GOOP_013",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "oop",
+  "type": "conceptual",
+  "question": "What does 'self' refer to in a Python method?",
+  "code": "",
+  "options": [
+   "The current instance",
+   "The parent class",
+   "The class itself",
+   "A global variable"
+  ],
+  "correctAnswer": 0,
+  "explanation": "self is the object the method is called on.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GOOP_014",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "oop",
+  "type": "conceptual",
+  "question": "Which method runs when a Python object is created?",
+  "code": "",
+  "options": [
+   "__create__",
+   "__new_obj__",
+   "__init__",
+   "__start__"
+  ],
+  "correctAnswer": 2,
+  "explanation": "__init__ initializes new instances.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GOOP_015",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 1,
+  "topic": "oop",
+  "type": "conceptual",
+  "question": "Which Java keyword creates an object?",
+  "code": "",
+  "options": [
+   "create",
+   "make",
+   "alloc",
+   "new"
+  ],
+  "correctAnswer": 3,
+  "explanation": "new allocates an object.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GOOP_016",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "conceptual",
+  "question": "What is inheritance?",
+  "code": "",
+  "options": [
+   "Importing a module",
+   "Hiding data",
+   "A class acquiring members of another class",
+   "Making copies of objects"
+  ],
+  "correctAnswer": 2,
+  "explanation": "Subclasses reuse parent behavior.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GOOP_017",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "conceptual",
+  "question": "Polymorphism means...",
+  "code": "",
+  "options": [
+   "Looping over objects",
+   "One class per file",
+   "Only private variables",
+   "Same interface, different behaviors"
+  ],
+  "correctAnswer": 3,
+  "explanation": "Different types respond to the same call differently.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GOOP_018",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "conceptual",
+  "question": "Encapsulation means...",
+  "code": "",
+  "options": [
+   "Bundling data with methods and restricting access",
+   "Running code faster",
+   "Compiling to bytecode",
+   "Inheriting from many classes"
+  ],
+  "correctAnswer": 0,
+  "explanation": "Data and behavior live together; internals are protected.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GOOP_019",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 2,
+  "topic": "oop",
+  "type": "conceptual",
+  "question": "Which Java keyword makes a class inherit from another class?",
+  "code": "",
+  "options": [
+   "inherits",
+   "super",
+   "extends",
+   "implements only"
+  ],
+  "correctAnswer": 2,
+  "explanation": "class B extends A.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GOOP_020",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 3,
+  "topic": "oop",
+  "type": "conceptual",
+  "question": "An abstract class can be instantiated directly.",
+  "code": "",
+  "options": [
+   "Only if it has no methods",
+   "Only in Java 8+",
+   "True",
+   "False"
+  ],
+  "correctAnswer": 3,
+  "explanation": "Abstract classes must be subclassed.",
+  "points": 150,
+  "timeLimit": 20
+ },
+ {
+  "id": "GOOP_021",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "oop",
+  "type": "conceptual",
+  "question": "What does super() do in a subclass method?",
+  "code": "",
+  "options": [
+   "Creates a new instance",
+   "Calls the parent implementation",
+   "Deletes the parent",
+   "Makes the method private"
+  ],
+  "correctAnswer": 1,
+  "explanation": "It gives access to the parent class.",
+  "points": 150,
+  "timeLimit": 20
+ },
+ {
+  "id": "GOOP_022",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 3,
+  "topic": "oop",
+  "type": "conceptual",
+  "question": "Which keyword allows overriding through a base-class pointer?",
+  "code": "",
+  "options": [
+   "virtual",
+   "const",
+   "static",
+   "inline"
+  ],
+  "correctAnswer": 0,
+  "explanation": "virtual enables runtime polymorphism.",
+  "points": 150,
+  "timeLimit": 20
+ }
+]

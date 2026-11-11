@@ -1,0 +1,14 @@
+{
+  "name": "code-man",
+  "version": "1.0.0",
+  "description": "CODE MAN — an educational programming arcade game. Powered by GDG Assiut.",
+  "private": true,
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "assets": "python3 tools/make_assets.py",
+    "data": "python3 tools/make_data.py",
+    "questions": "python3 tools/make_questions.py",
+    "test": "python3 tests/run_tests.py"
+  },
+  "license": "MIT"
+}

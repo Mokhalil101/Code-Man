@@ -1,0 +1,132 @@
+{
+ "worldId": 7,
+ "name": "Cyber Core",
+ "subtitle": "Mixed advanced programming, algorithms, data structures and computer science.",
+ "topic": "advanced",
+ "difficulty": "Advanced",
+ "theme": {
+  "accent": "#00E5FF",
+  "bg": "#07161f",
+  "wall": "wall7",
+  "boss": "boss7",
+  "music": "m_w7"
+ },
+ "difficultyMix": {
+  "1": 0,
+  "2": 0.3,
+  "3": 0.7
+ },
+ "ghostSpeed": 3.8,
+ "cycle": {
+  "scatter": 4,
+  "chase": 21
+ },
+ "parTime": 260,
+ "mechanic": "All hazards combined, faster enemies, and a five-phase final boss.",
+ "boss": {
+  "name": "CORE VIRUS",
+  "description": "The ultimate enemy: five phases, five kinds of challenge.",
+  "hp": 5,
+  "patterns": [
+   "dash",
+   "teleport",
+   "summon",
+   "shield"
+  ],
+  "phases": [
+   {
+    "name": "Phase 1: Syntax Corruption",
+    "topics": [
+     "debug",
+     "python"
+    ],
+    "types": [
+     "bug",
+     "fix",
+     "mcq",
+     "output"
+    ],
+    "mix": [
+     0.4,
+     0.5,
+     0.1
+    ]
+   },
+   {
+    "name": "Phase 2: Logic Infection",
+    "topics": [
+     "loops",
+     "advanced"
+    ],
+    "types": [
+     "output",
+     "logic",
+     "fill",
+     "bug"
+    ],
+    "mix": [
+     0.1,
+     0.6,
+     0.3
+    ]
+   },
+   {
+    "name": "Phase 3: Memory Collapse",
+    "topics": [
+     "data",
+     "oop"
+    ],
+    "types": null,
+    "mix": [
+     0.1,
+     0.5,
+     0.4
+    ]
+   },
+   {
+    "name": "Phase 4: Algorithm Overload",
+    "topics": [
+     "algo"
+    ],
+    "types": [
+     "complexity",
+     "algorithm",
+     "output",
+     "arrange"
+    ],
+    "mix": [
+     0,
+     0.3,
+     0.7
+    ]
+   },
+   {
+    "name": "Final Phase: Core Shutdown",
+    "topics": null,
+    "types": null,
+    "mix": [
+     0,
+     0.2,
+     0.8
+    ]
+   }
+  ]
+ },
+ "mazeLayout": [
+  "###################",
+  "#B...Q..ME..Q....B#",
+  "#.#######.#######.#",
+  "#.K.TO.S....DU..Co#",
+  "#.#.#.#.###.#.#.#.#",
+  "#.o..L..C......o..#",
+  "#.###############Q#",
+  "#......GGXGG......#",
+  "#.#.###.#.#.###.#C#",
+  "#.#.#.Q.#.#...#.#.#",
+  "#C#.#.#o#.#.#.#.#.#",
+  "#.#...#.#.#Q#O..#.#",
+  "#.#######.#######Q#",
+  "#B..T....P..T....B#",
+  "###################"
+ ]
+}

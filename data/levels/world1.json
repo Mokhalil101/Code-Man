@@ -1,0 +1,65 @@
+{
+ "worldId": 1,
+ "name": "Python City",
+ "subtitle": "Variables, data types, operators, strings, lists and basic functions.",
+ "topic": "python",
+ "difficulty": "Easy",
+ "theme": {
+  "accent": "#4285F4",
+  "bg": "#0b1530",
+  "wall": "wall1",
+  "boss": "boss1",
+  "music": "m_w1"
+ },
+ "difficultyMix": {
+  "1": 0.8,
+  "2": 0.2,
+  "3": 0
+ },
+ "ghostSpeed": 2.9,
+ "cycle": {
+  "scatter": 7,
+  "chase": 15
+ },
+ "parTime": 170,
+ "mechanic": "Tutorial hints guide your first run. Gentle enemies.",
+ "boss": {
+  "name": "The Indentation Monster",
+  "description": "Indentation and syntax challenges.",
+  "hp": 3,
+  "patterns": [
+   "dash"
+  ],
+  "phases": [
+   {
+    "name": "The Indentation Monster",
+    "topics": [
+     "python"
+    ],
+    "types": null,
+    "mix": [
+     0.8,
+     0.2,
+     0.1
+    ]
+   }
+  ]
+ },
+ "mazeLayout": [
+  "###################",
+  "#..o.....#........#",
+  "#.##.###.#.###.##.#",
+  "#U.......Q..Q....D#",
+  "#.##.#.#####.#.##.#",
+  "#....#.M.#...#...T#",
+  "####.###.#.###.####",
+  "#.....GG.X.GG.....#",
+  "####.###.#.###.####",
+  "#o...#...#.K.#....#",
+  "#.##.#.#####.#.##.#",
+  "#S..Q.....P.....Q.#",
+  "#.##.###.#.###.##.#",
+  "#B...L...E.....o.B#",
+  "###################"
+ ]
+}

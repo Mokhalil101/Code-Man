@@ -1,0 +1,2089 @@
+[
+ {
+  "options": [
+   "O(n log n)",
+   "O(n)",
+   "O(1)",
+   "O(n^3)"
+  ],
+  "correctAnswer": 1,
+  "id": "GAL_001",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "Code Man arena: What is the time complexity of this code (n = input size)?",
+  "code": "for k in range(n):\n    print(k)",
+  "explanation": "The dominant work grows as O(n).",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "O(1)",
+   "O(n)",
+   "O(n^2)",
+   "O(2^n)"
+  ],
+  "correctAnswer": 0,
+  "id": "GAL_002",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "GDG Assiut bootcamp: What is the time complexity of this code (n = input size)?",
+  "code": "print(teams[0])",
+  "explanation": "The dominant work grows as O(1).",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "O(n log n)",
+   "O(n^2)",
+   "O(n)",
+   "O(1)"
+  ],
+  "correctAnswer": 1,
+  "id": "GAL_003",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "Community code review: What is the time complexity of this code (n = input size)?",
+  "code": "for i in range(n):\n    for j in range(n):\n        print(i, j)",
+  "explanation": "The dominant work grows as O(n^2).",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "O(2^n)",
+   "O(n^2)",
+   "O(log n)",
+   "O(n^3)"
+  ],
+  "correctAnswer": 2,
+  "id": "GAL_004",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "Community code review: What is the time complexity of this code (n = input size)?",
+  "code": "i = 1\nwhile i < n:\n    i *= 2",
+  "explanation": "The dominant work grows as O(log n).",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "O(log n)",
+   "O(n^3)",
+   "O(n)",
+   "O(2^n)"
+  ],
+  "correctAnswer": 2,
+  "id": "GAL_005",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "What is the time complexity of this code (n = input size)?",
+  "code": "for i in range(n):\n    print(i)\nfor j in range(n):\n    print(j)",
+  "explanation": "The dominant work grows as O(n).",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "O(2^n)",
+   "O(1)",
+   "O(n)",
+   "O(log n)"
+  ],
+  "correctAnswer": 2,
+  "id": "GAL_006",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "Code Man arena: What is the time complexity of this code (n = input size)?",
+  "code": "for i in range(n):\n    for j in range(10):\n        print(i, j)",
+  "explanation": "The dominant work grows as O(n).",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "O(n^2)",
+   "O(n)",
+   "O(n^3)",
+   "O(n log n)"
+  ],
+  "correctAnswer": 0,
+  "id": "GAL_007",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "Lightning-talk puzzle: What is the time complexity of this code (n = input size)?",
+  "code": "for i in range(n):\n    for j in range(i):\n        print(j)",
+  "explanation": "The dominant work grows as O(n^2).",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "O(2^n)",
+   "O(n^2)",
+   "O(n^3)",
+   "O(log n)"
+  ],
+  "correctAnswer": 3,
+  "id": "GAL_008",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "Build Night at GDG Assiut: What is the time complexity of this code (n = input size)?",
+  "code": "def search(a, x, lo, hi):\n    if lo > hi: return -1\n    mid = (lo + hi) // 2\n    if a[mid] == x: return mid\n    if a[mid] < x: return search(a, x, mid + 1, hi)\n    return search(a, x, lo, mid - 1)",
+  "explanation": "The dominant work grows as O(log n).",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "O(n)",
+   "O(1)",
+   "O(2^n)",
+   "O(n^2)"
+  ],
+  "correctAnswer": 2,
+  "id": "GAL_009",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "GDG Assiut Study Jam: What is the time complexity of this code (n = input size)?",
+  "code": "def fib(n):\n    return n if n < 2 else fib(n-1) + fib(n-2)",
+  "explanation": "The dominant work grows as O(2^n).",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "O(n log n)",
+   "O(1)",
+   "O(n^3)",
+   "O(log n)"
+  ],
+  "correctAnswer": 2,
+  "id": "GAL_010",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "GDG Assiut Study Jam: What is the time complexity of this code (n = input size)?",
+  "code": "for i in range(n):\n    for j in range(n):\n        for k in range(n):\n            pass",
+  "explanation": "The dominant work grows as O(n^3).",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "O(n log n)",
+   "O(2^n)",
+   "O(1)",
+   "O(n^2)"
+  ],
+  "correctAnswer": 0,
+  "id": "GAL_011",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "What is the time complexity of this code (n = input size)?",
+  "code": "teams.sort()\nfor x in teams:\n    print(x)",
+  "explanation": "The dominant work grows as O(n log n).",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "O(2^n)",
+   "O(n)",
+   "O(n^2)",
+   "O(n log n)"
+  ],
+  "correctAnswer": 3,
+  "id": "GAL_012",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "DevFest Assiut challenge: What is the time complexity of this code (n = input size)?",
+  "code": "for i in range(n):\n    j = 1\n    while j < n:\n        j *= 2",
+  "explanation": "The dominant work grows as O(n log n).",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "O(n)",
+   "O(n log n)",
+   "O(log n)",
+   "O(n^2)"
+  ],
+  "correctAnswer": 0,
+  "id": "GAL_013",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "Lightning-talk puzzle: What is the time complexity of this code (n = input size)?",
+  "code": "for idx in range(n):\n    print(idx)",
+  "explanation": "The dominant work grows as O(n).",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "O(n log n)",
+   "O(1)",
+   "O(n)",
+   "O(2^n)"
+  ],
+  "correctAnswer": 1,
+  "id": "GAL_014",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "Workshop exercise at GDG Assiut: What is the time complexity of this code (n = input size)?",
+  "code": "print(talks[0])",
+  "explanation": "The dominant work grows as O(1).",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "O(n)",
+   "O(log n)",
+   "O(n^3)",
+   "O(n^2)"
+  ],
+  "correctAnswer": 3,
+  "id": "GAL_015",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "Code Man arena: What is the time complexity of this code (n = input size)?",
+  "code": "for i in range(n):\n    for j in range(n):\n        pass",
+  "explanation": "The dominant work grows as O(n^2).",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "O(n)",
+   "O(n log n)",
+   "O(log n)",
+   "O(n^3)"
+  ],
+  "correctAnswer": 2,
+  "id": "GAL_016",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "DevFest Assiut challenge: What is the time complexity of this code (n = input size)?",
+  "code": "i = 1\nwhile i < n:\n    i *= 2\n# talks",
+  "explanation": "The dominant work grows as O(log n).",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "O(n)",
+   "O(2^n)",
+   "O(n^3)",
+   "O(n^2)"
+  ],
+  "correctAnswer": 0,
+  "id": "GAL_017",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "Code Man arena: What is the time complexity of this code (n = input size)?",
+  "code": "for i in range(n):\n    pass\nfor j in range(n):\n    pass",
+  "explanation": "The dominant work grows as O(n).",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "O(n^3)",
+   "O(2^n)",
+   "O(log n)",
+   "O(n)"
+  ],
+  "correctAnswer": 3,
+  "id": "GAL_018",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "What is the time complexity of this code (n = input size)?",
+  "code": "for i in range(n):\n    for j in range(10):\n        pass",
+  "explanation": "The dominant work grows as O(n).",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "O(n^2)",
+   "O(log n)",
+   "O(n^3)",
+   "O(n)"
+  ],
+  "correctAnswer": 0,
+  "id": "GAL_019",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "GDG Assiut Study Jam: What is the time complexity of this code (n = input size)?",
+  "code": "for i in range(n):\n    for j in range(i):\n        pass",
+  "explanation": "The dominant work grows as O(n^2).",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "O(n^2)",
+   "O(n)",
+   "O(1)",
+   "O(log n)"
+  ],
+  "correctAnswer": 3,
+  "id": "GAL_020",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "Workshop exercise at GDG Assiut: What is the time complexity of this code (n = input size)?",
+  "code": "def search(a, x, lo, hi):\n    if lo > hi: return -1\n    mid = (lo + hi) // 2\n    if a[mid] == x: return mid\n    if a[mid] < x: return search(a, x, mid + 1, hi)\n    return search(a, x, lo, mid - 1)\n# talks",
+  "explanation": "The dominant work grows as O(log n).",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "O(2^n)",
+   "O(n)",
+   "O(n^3)",
+   "O(log n)"
+  ],
+  "correctAnswer": 0,
+  "id": "GAL_021",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "Community code review: What is the time complexity of this code (n = input size)?",
+  "code": "def fib(n):\n    return n if n < 2 else fib(n-1) + fib(n-2)\n# talks",
+  "explanation": "The dominant work grows as O(2^n).",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "O(n log n)",
+   "O(n^3)",
+   "O(1)",
+   "O(n^2)"
+  ],
+  "correctAnswer": 1,
+  "id": "GAL_022",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "GDG Assiut Study Jam: What is the time complexity of this code (n = input size)?",
+  "code": "for i in range(n):\n    for j in range(n):\n        for k in range(n):\n            pass\n# talks",
+  "explanation": "The dominant work grows as O(n^3).",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "O(n log n)",
+   "O(2^n)",
+   "O(log n)",
+   "O(1)"
+  ],
+  "correctAnswer": 0,
+  "id": "GAL_023",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "Community code review: What is the time complexity of this code (n = input size)?",
+  "code": "talks.sort()\nfor x in talks:\n    print(x)",
+  "explanation": "The dominant work grows as O(n log n).",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "O(log n)",
+   "O(n log n)",
+   "O(n)",
+   "O(n^2)"
+  ],
+  "correctAnswer": 1,
+  "id": "GAL_024",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "DevFest Assiut challenge: What is the time complexity of this code (n = input size)?",
+  "code": "for i in range(n):\n    j = 1\n    while j < n:\n        j *= 2\n# talks",
+  "explanation": "The dominant work grows as O(n log n).",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "Bubble sort",
+   "Random guessing",
+   "Binary search",
+   "Linear search"
+  ],
+  "correctAnswer": 2,
+  "id": "GAL_025",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "algo",
+  "type": "algorithm",
+  "question": "DevFest Assiut challenge: Find a member in a SORTED list of 1,000,000 names as fast as possible.",
+  "code": "",
+  "explanation": "Binary search halves the range each step.",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "Binary tree",
+   "Queue",
+   "Set",
+   "Stack"
+  ],
+  "correctAnswer": 1,
+  "id": "GAL_026",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "algo",
+  "type": "algorithm",
+  "question": "Workshop exercise at GDG Assiut: Process support tickets in the order they arrive.",
+  "code": "",
+  "explanation": "A queue is first-in, first-out.",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "Stack",
+   "Queue",
+   "Hash set",
+   "Graph"
+  ],
+  "correctAnswer": 0,
+  "id": "GAL_027",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "algo",
+  "type": "algorithm",
+  "question": "Build Night at GDG Assiut: Implement the 'undo' button of an editor.",
+  "code": "",
+  "explanation": "Undo reverses the most recent action first (LIFO).",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "Depth-first search only",
+   "Bubble sort",
+   "Binary search",
+   "Breadth-first search"
+  ],
+  "correctAnswer": 3,
+  "id": "GAL_028",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "algorithm",
+  "question": "Lightning-talk puzzle: Find the shortest path in an unweighted maze, like CODE MAN.",
+  "code": "",
+  "explanation": "BFS reaches every cell in order of distance.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "Linked list scan",
+   "Sorted array scan",
+   "Hash set",
+   "Bubble sort"
+  ],
+  "correctAnswer": 2,
+  "id": "GAL_029",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "algorithm",
+  "question": "GDG Assiut Study Jam: Check quickly (average O(1)) whether a username already exists.",
+  "code": "",
+  "explanation": "Hashing gives average constant-time membership checks.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "Binary search",
+   "Queue",
+   "Stack",
+   "Hash map"
+  ],
+  "correctAnswer": 3,
+  "id": "GAL_030",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "algorithm",
+  "question": "Workshop exercise at GDG Assiut: Count how many times each word appears in a text.",
+  "code": "",
+  "explanation": "Map each word to a counter.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "Min-heap (priority queue)",
+   "Queue",
+   "Stack",
+   "Plain array scan each time"
+  ],
+  "correctAnswer": 0,
+  "id": "GAL_031",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "algorithm",
+  "question": "DevFest Assiut challenge: Repeatedly get the smallest of a changing collection.",
+  "code": "",
+  "explanation": "A heap gives O(log n) insert and extract-min.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "Bogo sort",
+   "Quick sort with random pivot only",
+   "Insertion sort",
+   "Radix sort of strings"
+  ],
+  "correctAnswer": 2,
+  "id": "GAL_032",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "algorithm",
+  "question": "GDG Assiut mentor's puzzle: Sort a small, nearly sorted list with very little code and overhead.",
+  "code": "",
+  "explanation": "Insertion sort is near O(n) on nearly sorted input.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "Small",
+   "Reversed",
+   "Unique",
+   "Sorted"
+  ],
+  "correctAnswer": 3,
+  "id": "GAL_033",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "algo",
+  "type": "conceptual",
+  "question": "Binary search requires the array to be...",
+  "code": "",
+  "explanation": "It discards half using the order.",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "A return type of int",
+   "A loop",
+   "A global variable",
+   "A base case"
+  ],
+  "correctAnswer": 3,
+  "id": "GAL_034",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "algo",
+  "type": "conceptual",
+  "question": "A recursive function must have...",
+  "code": "",
+  "explanation": "Without it recursion never stops.",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "O(n)",
+   "O(log n)",
+   "O(n^2)",
+   "O(n log n)"
+  ],
+  "correctAnswer": 3,
+  "id": "GAL_035",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "DevFest Assiut challenge: Average time complexity of merge sort?",
+  "code": "",
+  "explanation": "log n levels of merging, n work per level.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "O(n)",
+   "O(log n)",
+   "O(n^2)",
+   "O(n log n)"
+  ],
+  "correctAnswer": 2,
+  "id": "GAL_036",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "GDG Assiut Study Jam: Worst-case time of bubble sort?",
+  "code": "",
+  "explanation": "Nested passes over the data.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "O(n^2)",
+   "O(1)",
+   "O(n)",
+   "O(log n)"
+  ],
+  "correctAnswer": 2,
+  "id": "GAL_037",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "Hackathon judge asks: Space complexity of merge sort?",
+  "code": "",
+  "explanation": "It needs an auxiliary array.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "Selection sort",
+   "Quick sort",
+   "Timsort",
+   "Heap sort"
+  ],
+  "correctAnswer": 2,
+  "id": "GAL_038",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "conceptual",
+  "question": "Which algorithm does Python's built-in sorted() use?",
+  "code": "",
+  "explanation": "Timsort is stable and adaptive.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "O(n)",
+   "O(1)",
+   "O(n log n)",
+   "O(log n)"
+  ],
+  "correctAnswer": 0,
+  "id": "GAL_039",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "complexity",
+  "question": "Lightning-talk puzzle: Worst-case search time in a degenerate (list-like) binary search tree?",
+  "code": "",
+  "explanation": "It behaves like a linked list.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "64",
+   "28",
+   "8",
+   "5040"
+  ],
+  "correctAnswer": 2,
+  "id": "GAL_040",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: What is the output?",
+  "code": "def g(a, b):\n    return a if b == 0 else g(b, a % b)\nprint(g(56, 8))",
+  "explanation": "The program prints 8.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "36",
+   "13",
+   "720",
+   "128"
+  ],
+  "correctAnswer": 1,
+  "id": "GAL_041",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "def f(n):\n    return n if n < 2 else f(n - 1) + f(n - 2)\nprint(f(7))",
+  "explanation": "The program prints 13.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "32",
+   "34",
+   "1",
+   "120"
+  ],
+  "correctAnswer": 2,
+  "id": "GAL_042",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "def g(a, b):\n    return a if b == 0 else g(b, a % b)\nprint(g(37, 9))",
+  "explanation": "The program prints 1.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "15",
+   "6",
+   "34",
+   "1"
+  ],
+  "correctAnswer": 3,
+  "id": "GAL_043",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "def g(a, b):\n    return a if b == 0 else g(b, a % b)\nprint(g(12, 5))",
+  "explanation": "The program prints 1.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "128",
+   "720",
+   "6",
+   "28"
+  ],
+  "correctAnswer": 1,
+  "id": "GAL_044",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: What is the output?",
+  "code": "def f(n):\n    return 1 if n <= 1 else n * f(n - 1)\nprint(f(6))",
+  "explanation": "The program prints 720.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "8",
+   "40320",
+   "55",
+   "16"
+  ],
+  "correctAnswer": 2,
+  "id": "GAL_045",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "def f(n):\n    return 0 if n == 0 else n + f(n - 1)\nprint(f(10))",
+  "explanation": "The program prints 55.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "55",
+   "64",
+   "128",
+   "21"
+  ],
+  "correctAnswer": 0,
+  "id": "GAL_046",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "def f(n):\n    return n if n < 2 else f(n - 1) + f(n - 2)\nprint(f(10))",
+  "explanation": "The program prints 55.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "120",
+   "1",
+   "32",
+   "55"
+  ],
+  "correctAnswer": 0,
+  "id": "GAL_047",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "def f(n):\n    return 1 if n <= 1 else n * f(n - 1)\nprint(f(5))",
+  "explanation": "The program prints 120.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "6",
+   "15",
+   "128",
+   "8"
+  ],
+  "correctAnswer": 3,
+  "id": "GAL_048",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "def p(n):\n    return 1 if n == 0 else 2 * p(n - 1)\nprint(p(3))",
+  "explanation": "The program prints 8.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "[8, 13, 16, 14, 24]",
+   "[7, 15, 9, 20, 23]",
+   "[10, 16, 6, 25, 27]",
+   "[6, 1, 4, 10, 17]"
+  ],
+  "correctAnswer": 1,
+  "id": "GAL_049",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "output",
+  "question": "Hackathon judge asks: What is printed after ONE bubble-sort pass?",
+  "code": "a = [7, 20, 15, 9, 23]\nfor i in range(len(a) - 1):\n    if a[i] > a[i + 1]:\n        a[i], a[i + 1] = a[i + 1], a[i]\nprint(a)",
+  "explanation": "The program prints [7, 15, 9, 20, 23].",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "[22, 24, 13, 8, 29]",
+   "[5, 13, 16, 9, 26]",
+   "[3, 18, 12, 25, 27]",
+   "[20, 4, 27, 23, 28]"
+  ],
+  "correctAnswer": 1,
+  "id": "GAL_050",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is printed after ONE bubble-sort pass?",
+  "code": "a = [13, 5, 26, 16, 9]\nfor i in range(len(a) - 1):\n    if a[i] > a[i + 1]:\n        a[i], a[i + 1] = a[i + 1], a[i]\nprint(a)",
+  "explanation": "The program prints [5, 13, 16, 9, 26].",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "[18, 2, 19, 26, 29]",
+   "[3, 18, 12, 25, 27]",
+   "[6, 1, 4, 10, 17]",
+   "[8, 13, 16, 14, 24]"
+  ],
+  "correctAnswer": 3,
+  "id": "GAL_051",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "output",
+  "question": "DevFest Assiut challenge: What is printed after ONE bubble-sort pass?",
+  "code": "a = [8, 13, 16, 24, 14]\nfor i in range(len(a) - 1):\n    if a[i] > a[i + 1]:\n        a[i], a[i + 1] = a[i + 1], a[i]\nprint(a)",
+  "explanation": "The program prints [8, 13, 16, 14, 24].",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "[5, 13, 16, 9, 26]",
+   "[22, 24, 13, 8, 29]",
+   "[20, 4, 27, 23, 28]",
+   "[3, 19, 1, 4, 26]"
+  ],
+  "correctAnswer": 3,
+  "id": "GAL_052",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "output",
+  "question": "Hackathon judge asks: What is printed after ONE bubble-sort pass?",
+  "code": "a = [26, 3, 19, 1, 4]\nfor i in range(len(a) - 1):\n    if a[i] > a[i + 1]:\n        a[i], a[i + 1] = a[i + 1], a[i]\nprint(a)",
+  "explanation": "The program prints [3, 19, 1, 4, 26].",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "5",
+   "1",
+   "2",
+   "4"
+  ],
+  "correctAnswer": 1,
+  "id": "GAL_053",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "DevFest Assiut challenge: How many steps does this binary search take?",
+  "code": "a = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31]\nt = 15\nlo, hi, steps = 0, len(a) - 1, 0\nwhile lo <= hi:\n    mid = (lo + hi) // 2\n    steps += 1\n    if a[mid] == t:\n        break\n    elif a[mid] < t:\n        lo = mid + 1\n    else:\n        hi = mid - 1\nprint(steps)",
+  "explanation": "The program prints 1.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "1",
+   "4",
+   "2",
+   "5"
+  ],
+  "correctAnswer": 1,
+  "id": "GAL_054",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: How many steps does this binary search take?",
+  "code": "a = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31]\nt = 1\nlo, hi, steps = 0, len(a) - 1, 0\nwhile lo <= hi:\n    mid = (lo + hi) // 2\n    steps += 1\n    if a[mid] == t:\n        break\n    elif a[mid] < t:\n        lo = mid + 1\n    else:\n        hi = mid - 1\nprint(steps)",
+  "explanation": "The program prints 4.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "1",
+   "5",
+   "4",
+   "2"
+  ],
+  "correctAnswer": 1,
+  "id": "GAL_055",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "Community code review: How many steps does this binary search take?",
+  "code": "a = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31]\nt = 31\nlo, hi, steps = 0, len(a) - 1, 0\nwhile lo <= hi:\n    mid = (lo + hi) // 2\n    steps += 1\n    if a[mid] == t:\n        break\n    elif a[mid] < t:\n        lo = mid + 1\n    else:\n        hi = mid - 1\nprint(steps)",
+  "explanation": "The program prints 5.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "4",
+   "1",
+   "2",
+   "5"
+  ],
+  "correctAnswer": 0,
+  "id": "GAL_056",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "How many steps does this binary search take?",
+  "code": "a = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31]\nt = 21\nlo, hi, steps = 0, len(a) - 1, 0\nwhile lo <= hi:\n    mid = (lo + hi) // 2\n    steps += 1\n    if a[mid] == t:\n        break\n    elif a[mid] < t:\n        lo = mid + 1\n    else:\n        hi = mid - 1\nprint(steps)",
+  "explanation": "The program prints 4.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "26",
+   "20",
+   "120",
+   "6"
+  ],
+  "correctAnswer": 1,
+  "id": "GAL_057",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: What is the output?",
+  "code": "const a = [17, 7, 3, 11, 5];\na.sort((x, y) => x - y);\nconsole.log(a[0] + a[a.length - 1]);",
+  "explanation": "The program prints 20.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "20",
+   "6",
+   "17",
+   "5040"
+  ],
+  "correctAnswer": 1,
+  "id": "GAL_058",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "Community code review: What is the output?",
+  "code": "function f(n) { return n <= 1 ? 1 : n * f(n - 1); }\nconsole.log(f(3));",
+  "explanation": "The program prints 6.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "6",
+   "26",
+   "24",
+   "19"
+  ],
+  "correctAnswer": 2,
+  "id": "GAL_059",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "function f(n) { return n <= 1 ? 1 : n * f(n - 1); }\nconsole.log(f(4));",
+  "explanation": "The program prints 24.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "5040",
+   "17",
+   "24",
+   "26"
+  ],
+  "correctAnswer": 0,
+  "id": "GAL_060",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "function f(n) { return n <= 1 ? 1 : n * f(n - 1); }\nconsole.log(f(7));",
+  "explanation": "The program prints 5040.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "24",
+   "6",
+   "5040",
+   "720"
+  ],
+  "correctAnswer": 0,
+  "id": "GAL_061",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "Community code review: What is the output?",
+  "code": "vector<int> v = {11, 17, 9, 19, 5};\nsort(v.begin(), v.end());\ncout << v[0] + v[4];",
+  "explanation": "The program prints 24.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "16",
+   "14",
+   "21",
+   "5040"
+  ],
+  "correctAnswer": 3,
+  "id": "GAL_062",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "Community code review: What is the output?",
+  "code": "function<int(int)> f = [&](int n) { return n <= 1 ? 1 : n * f(n - 1); };\ncout << f(7);",
+  "explanation": "The program prints 5040.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "18",
+   "21",
+   "120",
+   "720"
+  ],
+  "correctAnswer": 0,
+  "id": "GAL_063",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "vector<int> v = {1, 7, 17, 12, 3};\nsort(v.begin(), v.end());\ncout << v[0] + v[4];",
+  "explanation": "The program prints 18.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "720",
+   "120",
+   "14",
+   "24"
+  ],
+  "correctAnswer": 2,
+  "id": "GAL_064",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "vector<int> v = {6, 7, 4, 11, 3};\nsort(v.begin(), v.end());\ncout << v[0] + v[4];",
+  "explanation": "The program prints 14.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": null,
+  "correctAnswer": null,
+  "lines": [
+   "def is_even(n):",
+   "    return n % 2 == 0",
+   "print(is_even(10))"
+  ],
+  "id": "GAL_065",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "arrange",
+  "question": "Workshop exercise at GDG Assiut: Arrange this helper function. It must print: True",
+  "code": "",
+  "explanation": "Define, then call.",
+  "points": 125,
+  "timeLimit": 40
+ },
+ {
+  "options": null,
+  "correctAnswer": null,
+  "lines": [
+   "def fact(n):",
+   "    if n <= 1:",
+   "        return 1",
+   "    return n * fact(n - 1)",
+   "print(fact(4))"
+  ],
+  "id": "GAL_066",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "arrange",
+  "question": "Community code review: Arrange the recursive factorial. It must print: 24",
+  "code": "",
+  "explanation": "Base case first, then the recursive step, then the call.",
+  "points": 150,
+  "timeLimit": 45
+ },
+ {
+  "options": null,
+  "correctAnswer": null,
+  "lines": [
+   "a = [1, 3, 5, 7, 9]",
+   "lo, hi = 0, len(a) - 1",
+   "while lo <= hi:",
+   "    mid = (lo + hi) // 2",
+   "    if a[mid] == 7:",
+   "        print(mid)",
+   "        break",
+   "    lo = mid + 1"
+  ],
+  "id": "GAL_067",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "arrange",
+  "question": "GDG Assiut mentor's puzzle: Arrange this binary search for 7. It must print: 3",
+  "code": "",
+  "explanation": "Setup, loop, midpoint, check, and move the lower bound.",
+  "points": 150,
+  "timeLimit": 45
+ },
+ {
+  "options": null,
+  "correctAnswer": null,
+  "lines": [
+   "a = [3, 1, 2]",
+   "a.sort()",
+   "print(a[0])"
+  ],
+  "id": "GAL_068",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "arrange",
+  "question": "Community code review: Arrange the sorting snippet. It must print: 1",
+  "code": "",
+  "explanation": "Create the list, sort it, then read the first item.",
+  "points": 125,
+  "timeLimit": 40
+ },
+ {
+  "options": [
+   "len",
+   "sum",
+   "list",
+   "sorted"
+  ],
+  "correctAnswer": 3,
+  "id": "GAL_069",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "fill",
+  "question": "Community code review: Fill in the blank so the program prints: [2, 5, 9]",
+  "code": "a = [5, 2, 9]\nprint(____(a))",
+  "explanation": "sorted() returns a new sorted list.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "e",
+   "0",
+   "b",
+   "1"
+  ],
+  "correctAnswer": 3,
+  "id": "GAL_070",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "fill",
+  "question": "GDG Assiut bootcamp: Fill in the blank so the program prints: 32",
+  "code": "def power(b, e):\n    if e == 0:\n        return ____\n    return b * power(b, e - 1)\nprint(power(2, 5))",
+  "explanation": "The base case for e == 0 must return 1, the multiplicative identity.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "%",
+   "+",
+   "-",
+   "*"
+  ],
+  "correctAnswer": 1,
+  "id": "GAL_071",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "fill",
+  "question": "Code Man arena: Fill in the blank so the program prints: 4",
+  "code": "lo, hi = 0, 9\nmid = (lo ____ hi) // 2\nprint(mid)",
+  "explanation": "The midpoint is the average of lo and hi.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "id": "DS_001",
+  "category": "Algorithms",
+  "language": "CS",
+  "difficulty": 2,
+  "type": "conceptual",
+  "question": "Time complexity of binary search?",
+  "code": "",
+  "options": [
+   "O(n)",
+   "O(log n)",
+   "O(n log n)",
+   "O(1)"
+  ],
+  "correctAnswer": 1,
+  "explanation": "Halves the range each step.",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "algo"
+ },
+ {
+  "id": "ALG_001",
+  "category": "Algorithms",
+  "language": "CS",
+  "difficulty": 3,
+  "type": "conceptual",
+  "question": "Worst-case time of quicksort?",
+  "code": "",
+  "options": [
+   "O(n log n)",
+   "O(n^2)",
+   "O(n)",
+   "O(log n)"
+  ],
+  "correctAnswer": 1,
+  "explanation": "Bad pivots give O(n^2).",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "algo"
+ },
+ {
+  "id": "DS_003",
+  "category": "Data Structures",
+  "language": "CS",
+  "difficulty": 3,
+  "type": "conceptual",
+  "question": "Which BST traversal gives sorted order?",
+  "code": "",
+  "options": [
+   "Pre-order",
+   "In-order",
+   "Post-order",
+   "Level-order"
+  ],
+  "correctAnswer": 1,
+  "explanation": "Left, node, right.",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "algo"
+ },
+ {
+  "id": "ALG_003",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "type": "logic",
+  "question": "Build Night at GDG Assiut: Space complexity of recursive factorial(n)?",
+  "code": "",
+  "options": [
+   "O(1)",
+   "O(n)",
+   "O(log n)",
+   "O(n^2)"
+  ],
+  "correctAnswer": 1,
+  "explanation": "n stack frames.",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "algo"
+ },
+ {
+  "id": "GALG_001",
+  "category": "Algorithms",
+  "language": "CS",
+  "difficulty": 1,
+  "topic": "algo",
+  "type": "conceptual",
+  "question": "Time complexity of linear search?",
+  "code": "",
+  "options": [
+   "O(n^2)",
+   "O(1)",
+   "O(n)",
+   "O(log n)"
+  ],
+  "correctAnswer": 2,
+  "explanation": "Worst case checks every item.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GALG_002",
+  "category": "Algorithms",
+  "language": "CS",
+  "difficulty": 1,
+  "topic": "algo",
+  "type": "conceptual",
+  "question": "Binary search requires the array to be...",
+  "code": "",
+  "options": [
+   "Small",
+   "Reversed",
+   "Unique",
+   "Sorted"
+  ],
+  "correctAnswer": 3,
+  "explanation": "It halves a sorted range.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GALG_003",
+  "category": "Algorithms",
+  "language": "CS",
+  "difficulty": 1,
+  "topic": "algo",
+  "type": "conceptual",
+  "question": "A recursive function must have...",
+  "code": "",
+  "options": [
+   "A loop",
+   "A global variable",
+   "A base case",
+   "An int return type"
+  ],
+  "correctAnswer": 2,
+  "explanation": "Otherwise it never stops.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GALG_004",
+  "category": "Algorithms",
+  "language": "CS",
+  "difficulty": 1,
+  "topic": "algo",
+  "type": "conceptual",
+  "question": "Time to access an array element by index?",
+  "code": "",
+  "options": [
+   "O(n^2)",
+   "O(n)",
+   "O(log n)",
+   "O(1)"
+  ],
+  "correctAnswer": 3,
+  "explanation": "Direct address calculation.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GALG_005",
+  "category": "Algorithms",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "conceptual",
+  "question": "Average time complexity of merge sort?",
+  "code": "",
+  "options": [
+   "O(log n)",
+   "O(n log n)",
+   "O(n)",
+   "O(n^2)"
+  ],
+  "correctAnswer": 1,
+  "explanation": "Divide in log n levels, merge n items.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GALG_006",
+  "category": "Algorithms",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "conceptual",
+  "question": "Worst-case time of bubble sort?",
+  "code": "",
+  "options": [
+   "O(n log n)",
+   "O(n^2)",
+   "O(n)",
+   "O(log n)"
+  ],
+  "correctAnswer": 1,
+  "explanation": "Nested passes over the array.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GALG_007",
+  "category": "Algorithms",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "conceptual",
+  "question": "Average lookup time in a hash table?",
+  "code": "",
+  "options": [
+   "O(1)",
+   "O(n log n)",
+   "O(n)",
+   "O(log n)"
+  ],
+  "correctAnswer": 0,
+  "explanation": "Hashing jumps to the bucket.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GALG_008",
+  "category": "Algorithms",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "conceptual",
+  "question": "Big O of two nested loops each running n times?",
+  "code": "",
+  "options": [
+   "O(n)",
+   "O(log n)",
+   "O(2n)",
+   "O(n^2)"
+  ],
+  "correctAnswer": 3,
+  "explanation": "n * n iterations.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GALG_009",
+  "category": "Algorithms",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "conceptual",
+  "question": "Which structure does BFS use?",
+  "code": "",
+  "options": [
+   "Set",
+   "Stack",
+   "Heap",
+   "Queue"
+  ],
+  "correctAnswer": 3,
+  "explanation": "BFS explores level by level.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GALG_010",
+  "category": "Algorithms",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "conceptual",
+  "question": "Which structure does iterative DFS use?",
+  "code": "",
+  "options": [
+   "Heap",
+   "Array of sets",
+   "Stack",
+   "Queue"
+  ],
+  "correctAnswer": 2,
+  "explanation": "DFS goes deep first (LIFO).",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GALG_011",
+  "category": "Algorithms",
+  "language": "CS",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "conceptual",
+  "question": "Space complexity of merge sort?",
+  "code": "",
+  "options": [
+   "O(n)",
+   "O(1)",
+   "O(log n)",
+   "O(n^2)"
+  ],
+  "correctAnswer": 0,
+  "explanation": "It needs an auxiliary array.",
+  "points": 150,
+  "timeLimit": 20
+ },
+ {
+  "id": "GALG_012",
+  "category": "Algorithms",
+  "language": "CS",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "conceptual",
+  "question": "Which algorithm does Python's sorted() use?",
+  "code": "",
+  "options": [
+   "Timsort",
+   "Heapsort",
+   "Selection sort",
+   "Quicksort"
+  ],
+  "correctAnswer": 0,
+  "explanation": "Timsort: stable and adaptive.",
+  "points": 150,
+  "timeLimit": 20
+ },
+ {
+  "id": "GALG_013",
+  "category": "Algorithms",
+  "language": "CS",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "conceptual",
+  "question": "Worst-case search time in a degenerate BST?",
+  "code": "",
+  "options": [
+   "O(n log n)",
+   "O(1)",
+   "O(log n)",
+   "O(n)"
+  ],
+  "correctAnswer": 3,
+  "explanation": "It becomes a linked list.",
+  "points": 150,
+  "timeLimit": 20
+ },
+ {
+  "id": "GALG_014",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "output",
+  "question": "Hackathon judge asks: What is printed after ONE bubble-sort pass?",
+  "code": "a=[2, 9, 4, 1]\nfor i in range(len(a)-1):\n    if a[i]>a[i+1]:\n        a[i],a[i+1]=a[i+1],a[i]\nprint(a)",
+  "options": [
+   "[3, 2, 1]",
+   "[2, 4, 1, 9]",
+   "[2, 1, 3]",
+   "[1, 3, 2]"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The code outputs [2, 4, 1, 9].",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GALG_015",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "output",
+  "question": "DevFest Assiut challenge: What is printed after ONE bubble-sort pass?",
+  "code": "a=[6, 5, 4, 3, 2]\nfor i in range(len(a)-1):\n    if a[i]>a[i+1]:\n        a[i],a[i+1]=a[i+1],a[i]\nprint(a)",
+  "options": [
+   "[5, 4, 3, 2, 6]",
+   "[1, 2, 4, 5]",
+   "[1, 2, 3]",
+   "[2, 1, 3]"
+  ],
+  "correctAnswer": 0,
+  "explanation": "The code outputs [5, 4, 3, 2, 6].",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GALG_016",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "output",
+  "question": "Community code review: What is printed after ONE bubble-sort pass?",
+  "code": "a=[3, 2, 1]\nfor i in range(len(a)-1):\n    if a[i]>a[i+1]:\n        a[i],a[i+1]=a[i+1],a[i]\nprint(a)",
+  "options": [
+   "[1, 2, 3]",
+   "[2, 1, 3]",
+   "[3, 2, 1]",
+   "Error"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The code outputs [2, 1, 3].",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GALG_017",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: How many steps does this binary search take?",
+  "code": "a=[1, 3, 5, 7, 9, 11, 13, 15]\nt=9\nlo,hi,steps=0,len(a)-1,0\nwhile lo<=hi:\n    mid=(lo+hi)//2\n    steps+=1\n    if a[mid]==t:\n        break\n    elif a[mid]<t:\n        lo=mid+1\n    else:\n        hi=mid-1\nprint(steps)",
+  "options": [
+   "2",
+   "1",
+   "4",
+   "3"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs 3.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GALG_018",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: How many steps does this binary search take?",
+  "code": "a=[1, 3, 5, 7, 9, 11, 13, 15]\nt=15\nlo,hi,steps=0,len(a)-1,0\nwhile lo<=hi:\n    mid=(lo+hi)//2\n    steps+=1\n    if a[mid]==t:\n        break\n    elif a[mid]<t:\n        lo=mid+1\n    else:\n        hi=mid-1\nprint(steps)",
+  "options": [
+   "4",
+   "3",
+   "1",
+   "2"
+  ],
+  "correctAnswer": 0,
+  "explanation": "The code outputs 4.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GALG_019",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: How many steps does this binary search take?",
+  "code": "a=[1, 3, 5, 7, 9, 11, 13, 15]\nt=7\nlo,hi,steps=0,len(a)-1,0\nwhile lo<=hi:\n    mid=(lo+hi)//2\n    steps+=1\n    if a[mid]==t:\n        break\n    elif a[mid]<t:\n        lo=mid+1\n    else:\n        hi=mid-1\nprint(steps)",
+  "options": [
+   "4",
+   "3",
+   "1",
+   "2"
+  ],
+  "correctAnswer": 2,
+  "explanation": "The code outputs 1.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GALG_020",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "DevFest Assiut challenge: How many steps does this binary search take?",
+  "code": "a=[1, 3, 5, 7, 9, 11, 13, 15]\nt=1\nlo,hi,steps=0,len(a)-1,0\nwhile lo<=hi:\n    mid=(lo+hi)//2\n    steps+=1\n    if a[mid]==t:\n        break\n    elif a[mid]<t:\n        lo=mid+1\n    else:\n        hi=mid-1\nprint(steps)",
+  "options": [
+   "1",
+   "4",
+   "2",
+   "3"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs 3.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GALG_021",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "print(sorted('cab'))",
+  "options": [
+   "['a', 'b', 'c']",
+   "[8, 5, 2]",
+   "[1, 2, 3]",
+   "[3, 2, 1]"
+  ],
+  "correctAnswer": 0,
+  "explanation": "The code outputs ['a', 'b', 'c'].",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GALG_022",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "print([3,1,2][::-1])",
+  "options": [
+   "[2, 1, 3]",
+   "[8, 5, 2]",
+   "[3, 2, 1]",
+   "[1, 2, 3]"
+  ],
+  "correctAnswer": 0,
+  "explanation": "The code outputs [2, 1, 3].",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GALG_023",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: What is the output?",
+  "code": "print(sorted([3,1,2]))",
+  "options": [
+   "[3, 2, 1]",
+   "[8, 5, 2]",
+   "[2, 1, 3]",
+   "[1, 2, 3]"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs [1, 2, 3].",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GALG_024",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "algo",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "print(sorted([3,1,2], reverse=True))",
+  "options": [
+   "[8, 5, 2]",
+   "[3, 2, 1]",
+   "[1, 2, 3]",
+   "['a', 'b', 'c']"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The code outputs [3, 2, 1].",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GALG_025",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "def f(n):\n    return n if n<2 else f(n-1)+f(n-2)\nprint(f(7))",
+  "options": [
+   "21",
+   "13",
+   "6",
+   "64"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The code outputs 13.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GALG_026",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "def f(n):\n    return 1 if n<=1 else n*f(n-1)\nprint(f(5))",
+  "options": [
+   "64",
+   "120",
+   "6",
+   "21"
+  ],
+  "correctAnswer": 1,
+  "explanation": "The code outputs 120.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GALG_027",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "Workshop exercise at GDG Assiut: What is the output?",
+  "code": "def p(n):\n    return 1 if n==0 else 2*p(n-1)\nprint(p(6))",
+  "options": [
+   "13",
+   "21",
+   "120",
+   "64"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs 64.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GALG_028",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "Hackathon judge asks: What is the output?",
+  "code": "def f(n):\n    return 0 if n==0 else n+f(n-1)\nprint(f(6))",
+  "options": [
+   "21",
+   "6",
+   "13",
+   "64"
+  ],
+  "correctAnswer": 0,
+  "explanation": "The code outputs 21.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GALG_029",
+  "category": "Algorithms",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "algo",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "def g(a,b):\n    return a if b==0 else g(b,a%b)\nprint(g(48,18))",
+  "options": [
+   "120",
+   "13",
+   "21",
+   "6"
+  ],
+  "correctAnswer": 3,
+  "explanation": "The code outputs 6.",
+  "points": 150,
+  "timeLimit": 25
+ }
+]

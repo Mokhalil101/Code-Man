@@ -1,0 +1,65 @@
+{
+ "worldId": 3,
+ "name": "Data Dungeon",
+ "subtitle": "Arrays, lists, stacks, queues, linked lists, hash maps, dictionaries and sets.",
+ "topic": "data",
+ "difficulty": "Medium",
+ "theme": {
+  "accent": "#A142F4",
+  "bg": "#1a0f2e",
+  "wall": "wall3",
+  "boss": "boss3",
+  "music": "m_w3"
+ },
+ "difficultyMix": {
+  "1": 0.4,
+  "2": 0.5,
+  "3": 0.1
+ },
+ "ghostSpeed": 3.2,
+ "cycle": {
+  "scatter": 6,
+  "chase": 17
+ },
+ "parTime": 200,
+ "mechanic": "Hidden storage chambers hold extra secret collectibles. Use the Code Scanner.",
+ "boss": {
+  "name": "The Memory Eater",
+  "description": "Data structure and memory challenges.",
+  "hp": 4,
+  "patterns": [
+   "teleport"
+  ],
+  "phases": [
+   {
+    "name": "The Memory Eater",
+    "topics": [
+     "data"
+    ],
+    "types": null,
+    "mix": [
+     0.4,
+     0.5,
+     0.1
+    ]
+   }
+  ]
+ },
+ "mazeLayout": [
+  "###################",
+  "#B....Q..E...o...B#",
+  "#.#.#.#.#.#Q#.#.#.#",
+  "#.#TL.#..o..#...#.#",
+  "#.#######T#######.#",
+  "#.TM#...#.#S..#...#",
+  "#T#.###.#D#.###.#.#",
+  "#......GGXGG......#",
+  "#.#.#Q#######Q#.#.#",
+  "#.................#",
+  "#.#.#.#######.#U#.#",
+  "#.#.............#.#",
+  "#.###.###o###.###.#",
+  "#BK..Q...P.....o.B#",
+  "###################"
+ ]
+}

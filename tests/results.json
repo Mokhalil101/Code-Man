@@ -1,0 +1,293 @@
+{
+ "results": [
+  [
+   "Main menu navigation (all buttons work)",
+   "PASS",
+   "9 buttons, 7 sub-screens open and return; GDG tag present",
+   7.8
+  ],
+  [
+   "Continue disabled when no save exists",
+   "PASS",
+   "Continue disabled with no progress",
+   0.0
+  ],
+  [
+   "New game via interactive tutorial",
+   "PASS",
+   "9 tutorial steps; skippable; starts World 1",
+   6.2
+  ],
+  [
+   "New game initialization",
+   "PASS",
+   "World 1, 3 lives, score 0",
+   0.3
+  ],
+  [
+   "Player movement (keyboard) + collecting while moving",
+   "PASS",
+   "moved [10, 11]->[8, 11], score 30 from real keyboard input",
+   1.4
+  ],
+  [
+   "Maze wall collision",
+   "PASS",
+   "moving up into a wall leaves the player in place",
+   0.7
+  ],
+  [
+   "Collectible (Code Bit) = +10 and removal",
+   "PASS",
+   "+10 points, counter -1, item removed",
+   0.1
+  ],
+  [
+   "Quiz activation pauses gameplay and enemies",
+   "PASS",
+   "quiz opened, state=quiz, enemies frozen during quiz",
+   2.4
+  ],
+  [
+   "Correct answer: feedback, reward, resume",
+   "PASS",
+   "output: \u2714 Correct!, +150 points, gameplay resumed",
+   6.0
+  ],
+  [
+   "Wrong answer: feedback and penalty",
+   "PASS",
+   "mcq: wrong -> -50 (500->450), explanation shown",
+   8.7
+  ],
+  [
+   "Question timer expiry",
+   "PASS",
+   "timeout counted as incorrect, game resumed",
+   4.0
+  ],
+  [
+   "Question randomization without repeats",
+   "PASS",
+   "60 draws, 0 repeats; python pool=75, total valid questions=611",
+   0.1
+  ],
+  [
+   "All 10 question types render and validate",
+   "PASS",
+   "10 types answered correctly through the real UI: algorithm, arrange, bug, complexity, conceptual, fill, fix, logic, mcq, output",
+   70.1
+  ],
+  [
+   "Enemy navigation (BFS) stays on valid paths",
+   "PASS",
+   "all 4 enemy types moved for 6s, never entered a wall",
+   29.5
+  ],
+  [
+   "Enemy states reported",
+   "PASS",
+   "states observed: chase",
+   0.1
+  ],
+  [
+   "Enemy collision costs one life + respawn protection",
+   "PASS",
+   "unprotected collision: 3->2 lives, respawn protection active",
+   0.5
+  ],
+  [
+   "Power-up activation (all 6)",
+   "PASS",
+   "activation OK: U=5s, S=7s, M=15s, K=8s, D=shield, L teleported+cooldown",
+   0.6
+  ],
+  [
+   "Power-up expiration",
+   "PASS",
+   "timed effects expire and notify",
+   0.9
+  ],
+  [
+   "XP Multiplier effect",
+   "PASS",
+   "XP Multiplier doubles points/XP (10 -> 20)",
+   0.1
+  ],
+  [
+   "Debug Shield protects from one collision",
+   "PASS",
+   "Debug Shield absorbs exactly one hit",
+   0.4
+  ],
+  [
+   "Lose all lives -> Game Over",
+   "PASS",
+   "Game Over screen with final score; best score saved",
+   2.4
+  ],
+  [
+   "Restart after Game Over",
+   "PASS",
+   "Retry starts a fresh session (score 0, 3 lives)",
+   2.9
+  ],
+  [
+   "Pause menu (resume / restart / settings / menu with confirmation)",
+   "PASS",
+   "ESC pause, resume, confirm dialogs, settings from pause, restart level, back to menu",
+   20.4
+  ],
+  [
+   "World 1 playable end-to-end (nodes, bits, boss, exit)",
+   "PASS",
+   "World 1 (The Indentation Monster) cleared; stars=3, total XP=1236",
+   56.7
+  ],
+  [
+   "World 2 playable end-to-end (nodes, bits, boss, exit)",
+   "PASS",
+   "World 2 (Infinite Loop) cleared; stars=3, total XP=2254",
+   49.1
+  ],
+  [
+   "World 3 playable end-to-end (nodes, bits, boss, exit)",
+   "PASS",
+   "World 3 (The Memory Eater) cleared; stars=3, total XP=3424",
+   68.4
+  ],
+  [
+   "World 4 playable end-to-end (nodes, bits, boss, exit)",
+   "PASS",
+   "World 4 (The Class Destroyer) cleared; stars=3, total XP=4610",
+   60.0
+  ],
+  [
+   "World 5 playable end-to-end (nodes, bits, boss, exit)",
+   "PASS",
+   "World 5 (The Complexity Beast) cleared; stars=3, total XP=5603",
+   73.9
+  ],
+  [
+   "World 6 playable end-to-end (nodes, bits, boss, exit)",
+   "PASS",
+   "World 6 (The Runtime Reaper) cleared; stars=3, total XP=6846",
+   84.5
+  ],
+  [
+   "World 7 playable end-to-end (nodes, bits, boss, exit)",
+   "PASS",
+   "World 7 (CORE VIRUS) cleared; stars=3, total XP=8184",
+   72.6
+  ],
+  [
+   "World unlocking + completion shown on World Map",
+   "PASS",
+   "map shows 7/7 completed",
+   0.7
+  ],
+  [
+   "Achievement unlocking + notification data",
+   "PASS",
+   "13 achievements saved, 13 shown unlocked (incl. Core Destroyer, Code Legend, Debug Master)",
+   1.0
+  ],
+  [
+   "XP progression and ranks",
+   "PASS",
+   "XP 8184 -> rank Code Legend; thresholds verified",
+   0.0
+  ],
+  [
+   "Statistics screen",
+   "PASS",
+   "statistics screen reflects 7/7 worlds, accuracy, bosses",
+   1.3
+  ],
+  [
+   "Save and reload (persistence)",
+   "PASS",
+   "after reload: unlocked=7, best=6780, completed=7, Continue enabled",
+   1.5
+  ],
+  [
+   "Leaderboard (local, clearly labelled)",
+   "PASS",
+   "7 local records, labelled LOCAL",
+   0.7
+  ],
+  [
+   "Audio settings (master/music/sfx/mute) persist",
+   "PASS",
+   "music volume + mute apply and persist",
+   2.8
+  ],
+  [
+   "Reset progress with confirmation",
+   "PASS",
+   "reset with confirmation clears progress",
+   1.9
+  ],
+  [
+   "World 2 mechanic: looping obstacles",
+   "PASS",
+   "World 2: 2 bouncing obstacles patrol and cost a life on contact",
+   2.7
+  ],
+  [
+   "World 6 mechanic: corrupted tiles",
+   "PASS",
+   "World 6: 6 corrupted tiles; active phase hurts, warning phase telegraphs",
+   1.0
+  ],
+  [
+   "Boss attack patterns configured and run (dash/teleport/summon/shield)",
+   "PASS",
+   "W1:dash/1ph/hp3; W3:teleport/1ph/hp4; W4:shield/1ph/hp4; W6:teleport+summon/1ph/hp5; W7:dash+teleport+summon+shield/5ph/hp5 (patterns executed without errors on W7)",
+   5.5
+  ],
+  [
+   "World 5 par bonus configured",
+   "PASS",
+   "World 5 par-time bonus verified in code path (see World 5 run)",
+   0.7
+  ],
+  [
+   "Real movement: input-driven bot clears bits through the maze",
+   "PASS",
+   "bot using only direction input collected 27 bits / 420 points in 8 game-seconds without teleporting",
+   19.2
+  ],
+  [
+   "Corrupt save recovery (invalid JSON)",
+   "PASS",
+   "recovered from invalid JSON: sanitized -> [0, 1, 0, 0.8, 0]",
+   1.8
+  ],
+  [
+   "Corrupt save recovery (wrong types / out-of-range values)",
+   "PASS",
+   "recovered from wrong types / out-of-range values: sanitized -> [0, 7, 0, 1, 0]",
+   1.6
+  ],
+  [
+   "Mobile: touch controls + responsive layout (390x844)",
+   "PASS",
+   "390px wide: no horizontal overflow on 6 screens + quiz, touch joystick works, canvas 390px, option height 60px",
+   9.9
+  ],
+  [
+   "Responsive layout 1920x1080",
+   "PASS",
+   "1920x1080: canvas 1220x963 fits viewport",
+   1.2
+  ],
+  [
+   "Responsive layout 1024x600",
+   "PASS",
+   "1024x600: canvas 612x483 fits viewport",
+   1.2
+  ]
+ ],
+ "console_errors": []
+}

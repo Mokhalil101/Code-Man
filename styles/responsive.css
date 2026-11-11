@@ -1,0 +1,4 @@
+@media (max-width:760px){.screen{padding:16px 12px 40px}.title{font-size:15px}.hud-item{min-width:48px;padding:2px 6px}.hud-item b{font-size:9px}.hud-item.wide{display:none}.qtext{font-size:16px}.box{padding:12px}.opt{font-size:15px}
+  .map{aspect-ratio:100/95}.node small{font-size:8px}.s-menu{gap:14px}.stage{height:140px}.hero{top:48px!important}.foe{top:50px!important}.logo{letter-spacing:0}.result h1{font-size:17px}th:nth-child(n+5),td:nth-child(n+5){display:none}}
+@media (max-height:520px) and (orientation:landscape){#hud .hud-row:nth-child(2){display:none}.hud-item span{display:none}#joy{bottom:4px}.pad{width:100px;height:100px}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important}}

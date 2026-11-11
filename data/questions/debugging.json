@@ -1,0 +1,1628 @@
+[
+ {
+  "options": [
+   "ValueError",
+   "IndexError",
+   "KeyError",
+   "ZeroDivisionError"
+  ],
+  "correctAnswer": 2,
+  "id": "GDB_001",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Hackathon bug hunt: Which error does this code raise?",
+  "code": "d = {'event': 'DevFest'}\nprint(d['Android'])",
+  "explanation": "This raises KeyError.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "AttributeError",
+   "KeyError",
+   "IndexError",
+   "ValueError"
+  ],
+  "correctAnswer": 0,
+  "id": "GDB_002",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Bug Bash at GDG Assiut: Which error does this code raise?",
+  "code": "a = [3]\na.nope",
+  "explanation": "This raises AttributeError.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "IndexError",
+   "AttributeError",
+   "NameError",
+   "TypeError"
+  ],
+  "correctAnswer": 1,
+  "id": "GDB_003",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Bug Bash at GDG Assiut: Which error does this code raise?",
+  "code": "'abc'.foo()",
+  "explanation": "This raises AttributeError.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "AttributeError",
+   "TypeError",
+   "KeyError",
+   "NameError"
+  ],
+  "correctAnswer": 2,
+  "id": "GDB_004",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Community code review: Which error does this code raise?",
+  "code": "{}.pop('k')",
+  "explanation": "This raises KeyError.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "AttributeError",
+   "ZeroDivisionError",
+   "TypeError",
+   "KeyError"
+  ],
+  "correctAnswer": 2,
+  "id": "GDB_005",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Which error does this code raise?",
+  "code": "len(5)",
+  "explanation": "This raises TypeError.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "AttributeError",
+   "ZeroDivisionError",
+   "NameError",
+   "KeyError"
+  ],
+  "correctAnswer": 0,
+  "id": "GDB_006",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "GDG Assiut debugging booth: Which error does this code raise?",
+  "code": "a = [9]\na.nope",
+  "explanation": "This raises AttributeError.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "KeyError",
+   "ValueError",
+   "AttributeError",
+   "IndexError"
+  ],
+  "correctAnswer": 3,
+  "id": "GDB_007",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Which error does this code raise?",
+  "code": "attendees = [1, 2, 3]\nprint(attendees[9])",
+  "explanation": "This raises IndexError.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "ValueError",
+   "NameError",
+   "ZeroDivisionError",
+   "IndexError"
+  ],
+  "correctAnswer": 0,
+  "id": "GDB_008",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Which error does this code raise?",
+  "code": "float('x')",
+  "explanation": "This raises ValueError.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "ValueError",
+   "IndexError",
+   "AttributeError",
+   "ZeroDivisionError"
+  ],
+  "correctAnswer": 3,
+  "id": "GDB_009",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Hackathon bug hunt: Which error does this code raise?",
+  "code": "print(3 / 0)",
+  "explanation": "This raises ZeroDivisionError.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "ZeroDivisionError",
+   "TypeError",
+   "KeyError",
+   "NameError"
+  ],
+  "correctAnswer": 1,
+  "id": "GDB_010",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Hackathon bug hunt: Which error does this code raise?",
+  "code": "print('Android' + 9)",
+  "explanation": "This raises TypeError.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "KeyError",
+   "ValueError",
+   "TypeError",
+   "IndexError"
+  ],
+  "correctAnswer": 2,
+  "id": "GDB_011",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Which error does this code raise?",
+  "code": "print('Cloud Run' + 3)",
+  "explanation": "This raises TypeError.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "NameError",
+   "IndexError",
+   "TypeError",
+   "AttributeError"
+  ],
+  "correctAnswer": 2,
+  "id": "GDB_012",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Community code review: Which error does this code raise?",
+  "code": "t = (1, 2)\nt[0] = 5",
+  "explanation": "This raises TypeError.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "RangeError",
+   "SyntaxError",
+   "TypeError",
+   "ReferenceError"
+  ],
+  "correctAnswer": 1,
+  "id": "GDB_013",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Which error type is thrown?",
+  "code": "JSON.parse('{bad');",
+  "explanation": "JavaScript throws SyntaxError here.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "RangeError",
+   "ReferenceError",
+   "TypeError",
+   "SyntaxError"
+  ],
+  "correctAnswer": 1,
+  "id": "GDB_014",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Bug Bash at GDG Assiut: Which error type is thrown?",
+  "code": "console.log(missing);",
+  "explanation": "JavaScript throws ReferenceError here.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "ReferenceError",
+   "TypeError",
+   "SyntaxError",
+   "RangeError"
+  ],
+  "correctAnswer": 1,
+  "id": "GDB_015",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "GDG Assiut debugging booth: Which error type is thrown?",
+  "code": "null.x;",
+  "explanation": "JavaScript throws TypeError here.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "SyntaxError",
+   "TypeError",
+   "ReferenceError",
+   "RangeError"
+  ],
+  "correctAnswer": 3,
+  "id": "GDB_016",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Hackathon bug hunt: Which error type is thrown?",
+  "code": "(123).toFixed(101);",
+  "explanation": "JavaScript throws RangeError here.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "ReferenceError",
+   "TypeError",
+   "RangeError",
+   "SyntaxError"
+  ],
+  "correctAnswer": 1,
+  "id": "GDB_017",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Bug Bash at GDG Assiut: Which error type is thrown?",
+  "code": "const attendees = 5;\nattendees = 6;",
+  "explanation": "JavaScript throws TypeError here.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "RangeError",
+   "SyntaxError",
+   "ReferenceError",
+   "TypeError"
+  ],
+  "correctAnswer": 3,
+  "id": "GDB_018",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "GDG Assiut debugging booth: Which error type is thrown?",
+  "code": "let a = 1;\na();",
+  "explanation": "JavaScript throws TypeError here.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "Missing colon after range(3)",
+   "range is invalid",
+   "i is undefined",
+   "print needs a semicolon"
+  ],
+  "correctAnswer": 0,
+  "id": "GDB_019",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "debug",
+  "type": "bug",
+  "question": "GDG Assiut debugging booth: Find the bug.",
+  "code": "for i in range(3)\n    print(i)",
+  "explanation": "for statements need a colon.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "A required argument is missing",
+   "add is undefined",
+   "Wrong return",
+   "Needs a semicolon"
+  ],
+  "correctAnswer": 0,
+  "id": "GDB_020",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Hackathon bug hunt: Find the bug.",
+  "code": "def add(a, b):\n    return a + b\nprint(add(1))",
+  "explanation": "add needs two arguments.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "Missing colon",
+   "Wrong type",
+   "Missing import",
+   "Index out of range"
+  ],
+  "correctAnswer": 3,
+  "id": "GDB_021",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "debug",
+  "type": "bug",
+  "question": "GDG Assiut debugging booth: What goes wrong?",
+  "code": "numbers = [1, 2, 3]\nprint(numbers[3])",
+  "explanation": "Valid indexes are 0..2.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "5 is invalid",
+   "x must be const",
+   "x is declared twice with let",
+   "Missing semicolon"
+  ],
+  "correctAnswer": 2,
+  "id": "GDB_022",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Community code review: Find the bug.",
+  "code": "let x = 5;\nlet x = 6;",
+  "explanation": "let cannot be redeclared in the same scope.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "Wrong brace",
+   "Assignment used instead of comparison",
+   "Missing else",
+   "x is const"
+  ],
+  "correctAnswer": 1,
+  "id": "GDB_023",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Community code review: Find the bug.",
+  "code": "if (x = 3) {\n  run();\n}",
+  "explanation": "Use === to compare.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "Missing let",
+   "Semicolon",
+   "a is undefined",
+   "Reassigning a const"
+  ],
+  "correctAnswer": 3,
+  "id": "GDB_024",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Hackathon bug hunt: Find the bug.",
+  "code": "const a = 1;\na = 2;",
+  "explanation": "const bindings cannot be reassigned.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "Missing semicolon",
+   "Wrong type",
+   "cout undefined",
+   "Out-of-bounds access"
+  ],
+  "correctAnswer": 3,
+  "id": "GDB_025",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Hackathon bug hunt: Find the bug.",
+  "code": "int a[3] = {1, 2, 3};\ncout << a[3];",
+  "explanation": "Valid indexes are 0..2.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "Syntax error",
+   "ArrayIndexOutOfBoundsException",
+   "NullPointerException",
+   "ClassCastException"
+  ],
+  "correctAnswer": 2,
+  "id": "GDB_026",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "GDG Assiut debugging booth: What goes wrong?",
+  "code": "String s = null;\nSystem.out.println(s.length());",
+  "explanation": "Calling a method on null.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "Nothing happens",
+   "ArrayIndexOutOfBoundsException",
+   "Compile error",
+   "NullPointerException"
+  ],
+  "correctAnswer": 1,
+  "id": "GDB_027",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "GDG Assiut debugging booth: What goes wrong?",
+  "code": "int[] a = new int[3];\na[3] = 1;",
+  "explanation": "Array size 3 has max index 2.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "a is undefined",
+   "The loop runs one step too far",
+   "len is misused",
+   "print is wrong"
+  ],
+  "correctAnswer": 1,
+  "id": "GDB_028",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Hackathon bug hunt: Find the bug.",
+  "code": "a = [1, 2, 3]\nfor i in range(len(a) + 1):\n    print(a[i])",
+  "explanation": "Off-by-one error.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "There is no bug",
+   "Missing parameter",
+   "Wrong operator %",
+   "It returns True for odd numbers"
+  ],
+  "correctAnswer": 3,
+  "id": "GDB_029",
+  "category": "Problem Solving",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Hackathon bug hunt: Find the logic bug.",
+  "code": "def is_even(n):\n    return n % 2 == 1",
+  "explanation": "Even numbers leave remainder 0.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "Missing loop",
+   "It divides by zero",
+   "Wrong sum",
+   "It adds an extra 1"
+  ],
+  "correctAnswer": 3,
+  "id": "GDB_030",
+  "category": "Problem Solving",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Hackathon bug hunt: Find the logic bug.",
+  "code": "def average(a):\n    return sum(a) / len(a) + 1",
+  "explanation": "The average should not add 1.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "Mutable default argument is shared between calls",
+   "team is undefined",
+   "append is invalid",
+   "Missing return"
+  ],
+  "correctAnswer": 0,
+  "id": "GDB_031",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Bug Bash at GDG Assiut: Find the bug.",
+  "code": "def add_member(m, team=[]):\n    team.append(m)\n    return team\nprint(add_member('A'), add_member('B'))",
+  "explanation": "The default list is created once.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "+= is invalid",
+   "add is undefined",
+   "total is treated as local without 'global'",
+   "Needs a return"
+  ],
+  "correctAnswer": 2,
+  "id": "GDB_032",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Community code review: Find the bug.",
+  "code": "total = 0\ndef add():\n    total += 1\nadd()",
+  "explanation": "Assigning inside a function makes the name local.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "Missing include",
+   "cout is wrong",
+   "x must be const",
+   "x is uninitialized"
+  ],
+  "correctAnswer": 3,
+  "id": "GDB_033",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 3,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Find the bug.",
+  "code": "int x;\ncout << x;",
+  "explanation": "Reading an uninitialized variable is undefined behavior.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "console.log is async",
+   "var is function-scoped, so all callbacks share one i",
+   "setTimeout is broken",
+   "The loop runs 3 times too many"
+  ],
+  "correctAnswer": 1,
+  "id": "GDB_034",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 3,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Hackathon bug hunt: Why does this log 3 three times?",
+  "code": "for (var i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 0);\n}",
+  "explanation": "Use let to get a fresh binding per iteration.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "for i in range(3):\n    print(i)",
+   "for i in range[3]:\n    print(i)",
+   "for i in range(3);\n    print(i)",
+   "for i in (3):\n    print(i)"
+  ],
+  "correctAnswer": 0,
+  "id": "GDB_035",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "debug",
+  "type": "fix",
+  "question": "Hackathon bug hunt: Which version fixes the code so it prints: 0\n1\n2",
+  "code": "for i in range(3)\n    print(i)",
+  "explanation": "for needs a colon.",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "attendees = [4, 5, 6]\nprint(attendees[-4])",
+   "attendees = [4, 5, 6]\nprint(attendees[4])",
+   "attendees = [4, 5, 6]\nprint(attendees[2])",
+   "attendees = [4, 5, 6]\nprint(attendees(2))"
+  ],
+  "correctAnswer": 2,
+  "id": "GDB_036",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "debug",
+  "type": "fix",
+  "question": "GDG Assiut debugging booth: Which version fixes the code so it prints: 6",
+  "code": "attendees = [4, 5, 6]\nprint(attendees[3])",
+  "explanation": "The last index of a 3-item list is 2 (or -1).",
+  "points": 100,
+  "timeLimit": 23
+ },
+ {
+  "options": [
+   "x = 5\nif x => 5:\n    print('five')",
+   "x = 5\nif (x := 5) = 5:\n    print('five')",
+   "x = 5\nif x == 5:\n    print('five')",
+   "x = 5\nif x === 5:\n    print('five')"
+  ],
+  "correctAnswer": 2,
+  "id": "GDB_037",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "fix",
+  "question": "Which version fixes the code so it prints: five",
+  "code": "x = 5\nif x = 5:\n    print('five')",
+  "explanation": "Comparison uses ==.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "name = 'GDG'\nprint('Hello ' + name + int(3))",
+   "name = 'GDG'\nprint('Hello ' - name + '3')",
+   "name = 'GDG'\nprint('Hello ', name, 3 +)",
+   "name = 'GDG'\nprint('Hello ' + name + str(3))"
+  ],
+  "correctAnswer": 3,
+  "id": "GDB_038",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "fix",
+  "question": "GDG Assiut debugging booth: Which version fixes the code so it prints: Hello GDG3",
+  "code": "name = 'GDG'\nprint('Hello ' + name + 3)",
+  "explanation": "Convert the number to a string before concatenating.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "total = 0\nfor i in range(1, 4):\n    total =+ i\nprint(total)",
+   "total = 0\nfor i in range(1, 4)\n    total += i\nprint(total)",
+   "total = 0\nfor i in range(1, 4):\n    total += i\nprint(total)",
+   "total = 0\nfor i in range(1, 4):\n    total += i\n    print(total)"
+  ],
+  "correctAnswer": 2,
+  "id": "GDB_039",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "fix",
+  "question": "Community code review: Which version fixes the code so it prints: 6",
+  "code": "total = 0\nfor i in range(1, 4):\ntotal += i\nprint(total)",
+  "explanation": "The loop body must be indented.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "def avg(a):\n    return sum(a) * len(a)\nprint(avg([2, 4, 6]))",
+   "def avg(a):\n    return sum(a) / len(a)\nprint(avg([2, 4, 6]))",
+   "def avg(a):\n    return sum(a) / (len(a) + 1)\nprint(avg([2, 4, 6]))",
+   "def avg(a):\n    return sum(a) // len(a)\nprint(avg([2, 4, 6]))"
+  ],
+  "correctAnswer": 1,
+  "id": "GDB_040",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "debug",
+  "type": "fix",
+  "question": "GDG Assiut debugging booth: Which version fixes the code so it prints: 4.0",
+  "code": "def avg(a):\n    return sum(a) / len(a) + 1\nprint(avg([2, 4, 6]))",
+  "explanation": "Remove the extra +1.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "def add_member(m, team=[]):\n    team.append(m)\n    return team\nprint(add_member('A'))\nprint(add_member('B'))",
+   "def add_member(m, team=[]):\n    team += [m]\n    return team\nprint(add_member('A'))\nprint(add_member('B'))",
+   "def add_member(m, team=()):\n    team.append(m)\n    return team\nprint(add_member('A'))\nprint(add_member('B'))",
+   "def add_member(m, team=None):\n    team = team or []\n    team.append(m)\n    return team\nprint(add_member('A'))\nprint(add_member('B'))"
+  ],
+  "correctAnswer": 3,
+  "id": "GDB_041",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "debug",
+  "type": "fix",
+  "question": "Hackathon bug hunt: Which version fixes the code so it prints: ['A']\n['B']",
+  "code": "def add_member(m, team=[]):\n    team.append(m)\n    return team\nprint(add_member('A'))\nprint(add_member('B'))",
+  "explanation": "Use None as the default and build a new list each call.",
+  "points": 150,
+  "timeLimit": 33
+ },
+ {
+  "options": [
+   "count = 0\nwhile count > 3:\n    print(count)\n    count += 1",
+   "count = 0\nwhile count < 3:\n    print(count)\n    count -= 1",
+   "count = 0\nwhile count < 3:\n    print(count)\n    count += 1",
+   "count = 0\nwhile count < 3:\n    count += 1\n    print(count)"
+  ],
+  "correctAnswer": 2,
+  "id": "GDB_042",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "fix",
+  "question": "GDG Assiut debugging booth: Which version fixes the code so it prints: 0\n1\n2",
+  "code": "count = 0\nwhile count < 3:\n    print(count)",
+  "explanation": "The loop never changed count, so it never ended.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "IndexError",
+   "ValueError",
+   "KeyError",
+   "TypeError"
+  ],
+  "correctAnswer": 1,
+  "id": "GDB_043",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "fill",
+  "question": "Code Man arena: Fill in the blank so the program prints: invalid",
+  "code": "try:\n    value = int('GDG')\nexcept ____:\n    print('invalid')",
+  "explanation": "ValueError is the exception raised, so the matching except block runs.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "IndexError",
+   "KeyError",
+   "TypeError",
+   "ValueError"
+  ],
+  "correctAnswer": 1,
+  "id": "GDB_044",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "fill",
+  "question": "Lightning-talk puzzle: Fill in the blank so the program prints: missing key",
+  "code": "try:\n    print({}['x'])\nexcept ____:\n    print('missing key')",
+  "explanation": "KeyError is the exception raised, so the matching except block runs.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "IndexError",
+   "KeyError",
+   "ValueError",
+   "TypeError"
+  ],
+  "correctAnswer": 0,
+  "id": "GDB_045",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "fill",
+  "question": "Fill in the blank so the program prints: out of range",
+  "code": "attendees = [1, 2]\ntry:\n    print(attendees[5])\nexcept ____:\n    print('out of range')",
+  "explanation": "IndexError is the exception raised, so the matching except block runs.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": [
+   "KeyError",
+   "TypeError",
+   "ZeroDivisionError",
+   "ValueError"
+  ],
+  "correctAnswer": 2,
+  "id": "GDB_046",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "fill",
+  "question": "Fill in the blank so the program prints: math error",
+  "code": "try:\n    print(10 / 0)\nexcept ____:\n    print('math error')",
+  "explanation": "ZeroDivisionError is the exception raised, so the matching except block runs.",
+  "points": 125,
+  "timeLimit": 28
+ },
+ {
+  "options": null,
+  "correctAnswer": null,
+  "lines": [
+   "try:",
+   "    value = int('42')",
+   "except ValueError:",
+   "    print('invalid')",
+   "else:",
+   "    print(value)"
+  ],
+  "id": "GDB_047",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "arrange",
+  "question": "GDG Assiut bootcamp: Arrange the try/except/else block. It must print: 42",
+  "code": "",
+  "explanation": "try first, then except, then else.",
+  "points": 125,
+  "timeLimit": 40
+ },
+ {
+  "options": null,
+  "correctAnswer": null,
+  "lines": [
+   "def safe_div(a, b):",
+   "    try:",
+   "        return a / b",
+   "    except ZeroDivisionError:",
+   "        return 0",
+   "print(safe_div(4, 0))"
+  ],
+  "id": "GDB_048",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "debug",
+  "type": "arrange",
+  "question": "GDG Assiut bootcamp: Arrange the safe division function. It must print: 0",
+  "code": "",
+  "explanation": "Wrap the risky division in try, handle ZeroDivisionError, then call.",
+  "points": 150,
+  "timeLimit": 45
+ },
+ {
+  "id": "PY_008",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "type": "bug",
+  "question": "Bug Bash at GDG Assiut: Find the bug.",
+  "code": "if x = 5:\n    print('five')",
+  "options": [
+   "Missing colon",
+   "= should be ==",
+   "x undefined",
+   "Bad indent"
+  ],
+  "correctAnswer": 1,
+  "explanation": "Comparison needs ==.",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "debug"
+ },
+ {
+  "id": "ALG_002",
+  "category": "Problem Solving",
+  "language": "Python",
+  "difficulty": 2,
+  "type": "bug",
+  "question": "Hackathon bug hunt: What is wrong?",
+  "code": "i = 0\nwhile i < 10:\n    print(i)",
+  "options": [
+   "Syntax error",
+   "Infinite loop",
+   "Prints 10 times",
+   "Prints nothing"
+  ],
+  "correctAnswer": 1,
+  "explanation": "i is never incremented.",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "debug"
+ },
+ {
+  "id": "GDEB_001",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "debug",
+  "type": "bug",
+  "question": "GDG Assiut debugging booth: Which error does this code raise?",
+  "code": "int('abc')",
+  "options": [
+   "ValueError",
+   "KeyError",
+   "NameError",
+   "TypeError"
+  ],
+  "correctAnswer": 0,
+  "explanation": "This raises ValueError.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GDEB_002",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Hackathon bug hunt: Which error does this code raise?",
+  "code": "print('a'+1)",
+  "options": [
+   "Error",
+   "IndexError",
+   "ValueError",
+   "TypeError"
+  ],
+  "correctAnswer": 3,
+  "explanation": "This raises TypeError.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GDEB_003",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "debug",
+  "type": "bug",
+  "question": "GDG Assiut debugging booth: Which error does this code raise?",
+  "code": "d={'a':1}\nprint(d['b'])",
+  "options": [
+   "ValueError",
+   "TypeError",
+   "ZeroDivisionError",
+   "KeyError"
+  ],
+  "correctAnswer": 3,
+  "explanation": "This raises KeyError.",
+  "points": 100,
+  "timeLimit": 17
+ },
+ {
+  "id": "GDEB_004",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Community code review: Which error does this code raise?",
+  "code": "print(x)",
+  "options": [
+   "NameError",
+   "ValueError",
+   "AttributeError",
+   "IndexError"
+  ],
+  "correctAnswer": 0,
+  "explanation": "This raises NameError.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GDEB_005",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Which error does this code raise?",
+  "code": "print(10/0)",
+  "options": [
+   "ValueError",
+   "AttributeError",
+   "IndexError",
+   "ZeroDivisionError"
+  ],
+  "correctAnswer": 3,
+  "explanation": "This raises ZeroDivisionError.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GDEB_006",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Bug Bash at GDG Assiut: Which error does this code raise?",
+  "code": "a=[1,2,3]\nprint(a[5])",
+  "options": [
+   "Error",
+   "IndexError",
+   "ZeroDivisionError",
+   "NameError"
+  ],
+  "correctAnswer": 1,
+  "explanation": "This raises IndexError.",
+  "points": 100,
+  "timeLimit": 17
+ },
+ {
+  "id": "GDEB_007",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Which error does this code raise?",
+  "code": "print([1,2][2])",
+  "options": [
+   "ValueError",
+   "TypeError",
+   "NameError",
+   "IndexError"
+  ],
+  "correctAnswer": 3,
+  "explanation": "This raises IndexError.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GDEB_008",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Bug Bash at GDG Assiut: Which error does this code raise?",
+  "code": "float('x')",
+  "options": [
+   "KeyError",
+   "Error",
+   "ValueError",
+   "AttributeError"
+  ],
+  "correctAnswer": 2,
+  "explanation": "This raises ValueError.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GDEB_009",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Community code review: Which error does this code raise?",
+  "code": "print(int('3.5'))",
+  "options": [
+   "ValueError",
+   "KeyError",
+   "AttributeError",
+   "TypeError"
+  ],
+  "correctAnswer": 0,
+  "explanation": "This raises ValueError.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GDEB_010",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Bug Bash at GDG Assiut: Which error does this code raise?",
+  "code": "t=(1,2)\nt[0]=5",
+  "options": [
+   "Error",
+   "TypeError",
+   "NameError",
+   "AttributeError"
+  ],
+  "correctAnswer": 1,
+  "explanation": "This raises TypeError.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GDEB_011",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Which error does this code raise?",
+  "code": "len(5)",
+  "options": [
+   "AttributeError",
+   "IndexError",
+   "ZeroDivisionError",
+   "TypeError"
+  ],
+  "correctAnswer": 3,
+  "explanation": "This raises TypeError.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GDEB_012",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Hackathon bug hunt: Which error does this code raise?",
+  "code": "{}.pop('k')",
+  "options": [
+   "KeyError",
+   "ZeroDivisionError",
+   "IndexError",
+   "AttributeError"
+  ],
+  "correctAnswer": 0,
+  "explanation": "This raises KeyError.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GDEB_013",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Hackathon bug hunt: Which error does this code raise?",
+  "code": "x=None\nx.foo()",
+  "options": [
+   "TypeError",
+   "Error",
+   "ValueError",
+   "AttributeError"
+  ],
+  "correctAnswer": 3,
+  "explanation": "This raises AttributeError.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GDEB_014",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Community code review: Which error does this code raise?",
+  "code": "a=[1]\na.nope",
+  "options": [
+   "AttributeError",
+   "Error",
+   "KeyError",
+   "ValueError"
+  ],
+  "correctAnswer": 0,
+  "explanation": "This raises AttributeError.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GDEB_015",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "GDG Assiut debugging booth: Which error does this code raise?",
+  "code": "[].pop()",
+  "options": [
+   "NameError",
+   "IndexError",
+   "ZeroDivisionError",
+   "KeyError"
+  ],
+  "correctAnswer": 1,
+  "explanation": "This raises IndexError.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GDEB_016",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Bug Bash at GDG Assiut: Which error does this code raise?",
+  "code": "print(undefined_var + 1)",
+  "options": [
+   "NameError",
+   "KeyError",
+   "TypeError",
+   "Error"
+  ],
+  "correctAnswer": 0,
+  "explanation": "This raises NameError.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GDEB_017",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Bug Bash at GDG Assiut: Find the bug.",
+  "code": "for i in range(3)\n    print(i)",
+  "options": [
+   "Missing colon after range(3)",
+   "print needs semicolon",
+   "range is invalid",
+   "i is undefined"
+  ],
+  "correctAnswer": 0,
+  "explanation": "for needs a colon.",
+  "points": 100,
+  "timeLimit": 17
+ },
+ {
+  "id": "GDEB_018",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "debug",
+  "type": "bug",
+  "question": "GDG Assiut debugging booth: Find the bug.",
+  "code": "def add(a, b):\n    return a + b\nprint(add(1))",
+  "options": [
+   "add undefined",
+   "Wrong return",
+   "Missing argument",
+   "Needs a semicolon"
+  ],
+  "correctAnswer": 2,
+  "explanation": "add needs two arguments.",
+  "points": 100,
+  "timeLimit": 17
+ },
+ {
+  "id": "GDEB_019",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 1,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Bug Bash at GDG Assiut: Find the bug.",
+  "code": "numbers = [1, 2, 3]\nprint(numbers[3])",
+  "options": [
+   "Missing import",
+   "Missing colon",
+   "Index out of range",
+   "Wrong type"
+  ],
+  "correctAnswer": 2,
+  "explanation": "Valid indexes are 0..2.",
+  "points": 100,
+  "timeLimit": 17
+ },
+ {
+  "id": "GDEB_020",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Bug Bash at GDG Assiut: Find the bug.",
+  "code": "let x = 5;\nlet x = 6;",
+  "options": [
+   "5 is invalid",
+   "x declared twice with let",
+   "x must be const",
+   "Missing semicolon"
+  ],
+  "correctAnswer": 1,
+  "explanation": "let cannot be redeclared.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GDEB_021",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Hackathon bug hunt: Find the bug.",
+  "code": "if (x = 3) {\n  run();\n}",
+  "options": [
+   "Assignment instead of comparison",
+   "x is const",
+   "Missing else",
+   "Wrong brace"
+  ],
+  "correctAnswer": 0,
+  "explanation": "Use === to compare.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GDEB_022",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "GDG Assiut debugging booth: Find the bug.",
+  "code": "const a = 1;\na = 2;",
+  "options": [
+   "Missing let",
+   "Reassigning a const",
+   "Missing semicolon",
+   "a is undefined"
+  ],
+  "correctAnswer": 1,
+  "explanation": "const cannot be reassigned.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GDEB_023",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "GDG Assiut debugging booth: Find the bug.",
+  "code": "int a[3] = {1,2,3};\ncout << a[3];",
+  "options": [
+   "Wrong type",
+   "Out-of-bounds access",
+   "cout undefined",
+   "Missing semicolon"
+  ],
+  "correctAnswer": 1,
+  "explanation": "Valid indexes are 0..2.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GDEB_024",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Community code review: What goes wrong?",
+  "code": "String s = null;\nSystem.out.println(s.length());",
+  "options": [
+   "Syntax error",
+   "NullPointerException",
+   "ClassCastException",
+   "ArrayIndexOutOfBounds"
+  ],
+  "correctAnswer": 1,
+  "explanation": "Calling a method on null.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GDEB_025",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "What goes wrong?",
+  "code": "int[] a = new int[3];\na[3] = 1;",
+  "options": [
+   "Nothing",
+   "Compile error",
+   "NullPointerException",
+   "ArrayIndexOutOfBoundsException"
+  ],
+  "correctAnswer": 3,
+  "explanation": "Array size 3 -> max index 2.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GDEB_026",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Hackathon bug hunt: Find the bug.",
+  "code": "a = [1, 2, 3]\nfor i in range(len(a) + 1):\n    print(a[i])",
+  "options": [
+   "len is misused",
+   "Loop runs one step too far",
+   "print is wrong",
+   "a is undefined"
+  ],
+  "correctAnswer": 1,
+  "explanation": "Off-by-one error.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GDEB_027",
+  "category": "Problem Solving",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Find the logic bug.",
+  "code": "def is_even(n):\n    return n % 2 == 1",
+  "options": [
+   "Wrong operator %",
+   "There is no bug",
+   "Missing parameter",
+   "Returns True for odd numbers"
+  ],
+  "correctAnswer": 3,
+  "explanation": "Even numbers give remainder 0.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GDEB_028",
+  "category": "Problem Solving",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "debug",
+  "type": "bug",
+  "question": "GDG Assiut debugging booth: Find the logic bug.",
+  "code": "def avg(a):\n    return sum(a) / len(a) + 1",
+  "options": [
+   "Wrong sum",
+   "Missing loop",
+   "Adds an extra 1",
+   "Divides by zero always"
+  ],
+  "correctAnswer": 2,
+  "explanation": "The average should not add 1.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GDEB_029",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Hackathon bug hunt: Find the bug.",
+  "code": "def f(x=[]):\n    x.append(1)\n    return x\nprint(f(), f())",
+  "options": [
+   "Mutable default argument is shared",
+   "Missing return",
+   "x undefined",
+   "append is invalid"
+  ],
+  "correctAnswer": 0,
+  "explanation": "The default list is created once.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GDEB_030",
+  "category": "Python",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Bug Bash at GDG Assiut: Find the bug.",
+  "code": "total = 0\ndef add():\n    total += 1\nadd()",
+  "options": [
+   "Needs a return",
+   "+= is invalid",
+   "total is local without 'global'",
+   "add is undefined"
+  ],
+  "correctAnswer": 2,
+  "explanation": "Assigning makes total local.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GDEB_031",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 3,
+  "topic": "debug",
+  "type": "bug",
+  "question": "Hackathon bug hunt: Find the bug.",
+  "code": "int x;\ncout << x;",
+  "options": [
+   "cout is wrong",
+   "x is uninitialized",
+   "Missing include",
+   "x must be const"
+  ],
+  "correctAnswer": 1,
+  "explanation": "Reading garbage value.",
+  "points": 150,
+  "timeLimit": 25
+ }
+]

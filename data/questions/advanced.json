@@ -1,0 +1,2782 @@
+[
+ {
+  "options": [
+   "Global Developer Guild",
+   "General Developer Gathering",
+   "Google Design Group",
+   "Google Developer Groups"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_001",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 1,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "What does GDG stand for?",
+  "code": "",
+  "explanation": "GDGs are community-run developer groups.",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "Cordova",
+   "Xamarin",
+   "Flutter",
+   "React Native"
+  ],
+  "correctAnswer": 2,
+  "id": "GAD_002",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 1,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which Google framework builds apps for mobile, web and desktop from one codebase?",
+  "code": "",
+  "explanation": "Flutter is Google's UI toolkit.",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "Swift",
+   "Perl",
+   "Dart",
+   "Ruby"
+  ],
+  "correctAnswer": 2,
+  "id": "GAD_003",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 1,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which programming language is used to write Flutter apps?",
+  "code": "",
+  "explanation": "Flutter apps are written in Dart.",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "Blogger",
+   "Google Maps Static",
+   "Firebase",
+   "Chrome DevTools"
+  ],
+  "correctAnswer": 2,
+  "id": "GAD_004",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 1,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which Google platform offers Authentication, Firestore and Hosting for apps?",
+  "code": "",
+  "explanation": "Firebase is a backend-as-a-service platform.",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "Database design",
+   "Photo editing only",
+   "Web hosting",
+   "Machine learning"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_005",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 1,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "TensorFlow is mainly used for...",
+  "code": "",
+  "explanation": "TensorFlow is an open-source ML library.",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "Pascal",
+   "COBOL",
+   "Kotlin",
+   "Fortran"
+  ],
+  "correctAnswer": 2,
+  "id": "GAD_006",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 1,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which language does Google recommend for modern Android development?",
+  "code": "",
+  "explanation": "Android development is Kotlin-first.",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "A Python web framework",
+   "A CSS framework",
+   "A declarative UI toolkit for native Android",
+   "A cloud database"
+  ],
+  "correctAnswer": 2,
+  "id": "GAD_007",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "What is Jetpack Compose?",
+  "code": "",
+  "explanation": "You describe the UI as composable functions.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "SpiderMonkey",
+   "V8",
+   "Chakra",
+   "Rhino"
+  ],
+  "correctAnswer": 1,
+  "id": "GAD_008",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which JavaScript engine, developed by Google, powers Chrome and Node.js?",
+  "code": "",
+  "explanation": "V8 compiles JavaScript to machine code.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "Collections of documents",
+   "Folders of images",
+   "Tables of rows only",
+   "Linked lists"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_009",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "In Cloud Firestore, data is organized into...",
+  "code": "",
+  "explanation": "Firestore is a document database.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "Crashlytics",
+   "Hosting",
+   "Remote Config",
+   "Cloud Messaging (FCM)"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_010",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which Firebase product sends push notifications to devices?",
+  "code": "",
+  "explanation": "FCM delivers messages to apps.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "On-device machine learning APIs for mobile apps",
+   "A CSS preprocessor",
+   "A SQL engine",
+   "An IDE"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_011",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "What is ML Kit?",
+  "code": "",
+  "explanation": "ML Kit brings ready-made ML features to mobile.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "A family of AI models from Google",
+   "A JavaScript framework",
+   "A database",
+   "A Linux distribution"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_012",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Gemini is...",
+  "code": "",
+  "explanation": "Gemini is Google's AI model family.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "Tables",
+   "Widgets",
+   "Cursors",
+   "Servlets"
+  ],
+  "correctAnswer": 1,
+  "id": "GAD_013",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "In Flutter, everything on screen is built from...",
+  "code": "",
+  "explanation": "Flutter UIs are widget trees.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "Deletes the project",
+   "Uploads to GitHub",
+   "Builds and launches your app on a device or emulator",
+   "Formats the code"
+  ],
+  "correctAnswer": 2,
+  "id": "GAD_014",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "What does `flutter run` do?",
+  "code": "",
+  "explanation": "It compiles and starts the app.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "A database backup",
+   "A type of virus",
+   "A programming language",
+   "A time-boxed event where teams build projects"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_015",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "What is a hackathon?",
+  "code": "",
+  "explanation": "Hackathons are build-fast community events.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "Google Forms",
+   "Google Calendar",
+   "Google Docs",
+   "Google Colab"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_016",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which tool runs Python notebooks in the browser and is popular for learning ML?",
+  "code": "",
+  "explanation": "Colab provides hosted notebooks.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "Electric wiring",
+   "Your battery",
+   "Only spelling",
+   "Performance, accessibility, SEO and best practices"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_017",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "What does Lighthouse in Chrome DevTools audit?",
+  "code": "",
+  "explanation": "Lighthouse scores web page quality.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "val",
+   "mut",
+   "var",
+   "let"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_018",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "In Kotlin, which keyword declares a read-only variable?",
+  "code": "",
+  "explanation": "val cannot be reassigned; var can.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "flutter deploy",
+   "firebase push",
+   "npm publish",
+   "firebase deploy"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_019",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which command deploys a site to Firebase Hosting?",
+  "code": "",
+  "explanation": "firebase deploy uploads your configured project.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "Dial-up hosting",
+   "A local USB drive",
+   "Bare-metal colocation",
+   "Serverless (e.g., Cloud Functions or Cloud Run)"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_020",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which Cloud model lets you run code without managing servers?",
+  "code": "",
+  "explanation": "The provider manages the servers.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "It is a relational SQL database",
+   "It stores only images",
+   "It stores data as JSON and syncs it in real time",
+   "It works only offline"
+  ],
+  "correctAnswer": 2,
+  "id": "GAD_021",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which statement about Firebase Realtime Database is correct?",
+  "code": "",
+  "explanation": "It syncs JSON data to connected clients.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "A CSS selector",
+   "A multi-dimensional array",
+   "A network cable",
+   "A loop statement"
+  ],
+  "correctAnswer": 1,
+  "id": "GAD_022",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "In TensorFlow, a tensor is...",
+  "code": "",
+  "explanation": "Tensors generalise vectors and matrices.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "A Python library",
+   "A type of compiler",
+   "A community-organized developer conference run by GDG chapters",
+   "A cloud database"
+  ],
+  "correctAnswer": 2,
+  "id": "GAD_023",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "What is DevFest?",
+  "code": "",
+  "explanation": "DevFests are community events for developers.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "final",
+   "static",
+   "async",
+   "dynamic"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_024",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which Dart keyword marks a variable that can be assigned only once?",
+  "code": "",
+  "explanation": "final variables are set once.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "Safe Browsing",
+   "Workspace",
+   "Search Console",
+   "DevTools"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_025",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which Chrome tool lets you inspect HTML/CSS and debug JavaScript in the browser?",
+  "code": "",
+  "explanation": "Open DevTools with F12.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "Scaffold",
+   "Text",
+   "StatefulWidget",
+   "StatelessWidget"
+  ],
+  "correctAnswer": 2,
+  "id": "GAD_026",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "In Flutter, which widget type is used when the UI must change over time (it holds mutable state)?",
+  "code": "",
+  "explanation": "StatefulWidgets own state objects that can change.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "setState()",
+   "rebuild()",
+   "update()",
+   "refresh()"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_027",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which Flutter method tells the framework that state changed so the UI should rebuild?",
+  "code": "",
+  "explanation": "setState() schedules a rebuild.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "pubspec.yaml",
+   "Cargo.toml",
+   "Gemfile",
+   "requirements.txt"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_028",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which file declares the dependencies of a Flutter project?",
+  "code": "",
+  "explanation": "Flutter/Dart projects list packages in pubspec.yaml.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "Firebase Authentication",
+   "Test Lab",
+   "Cloud Storage",
+   "Remote Config"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_029",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which Firebase service signs users in with email/password or Google accounts?",
+  "code": "",
+  "explanation": "Firebase Authentication manages sign-in.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "Remote Config",
+   "Cloud Storage for Firebase",
+   "Hosting rewrites",
+   "Analytics"
+  ],
+  "correctAnswer": 1,
+  "id": "GAD_030",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which Firebase service stores user-uploaded files such as images?",
+  "code": "",
+  "explanation": "Cloud Storage holds files and media.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "Dart has no null value at all",
+   "Variables cannot be null unless declared nullable (for example String?)",
+   "Null is always converted to zero",
+   "Only strings can be null"
+  ],
+  "correctAnswer": 1,
+  "id": "GAD_031",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "What does Dart's sound null safety mean?",
+  "code": "",
+  "explanation": "Non-nullable by default catches null errors at compile time.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "Activity",
+   "Service",
+   "ContentProvider",
+   "BroadcastReceiver"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_032",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which Android component represents a single screen with a user interface?",
+  "code": "",
+  "explanation": "An Activity hosts a screen.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "Declares a lambda",
+   "Returns the right side when the left side is null",
+   "Casts an object",
+   "Compares two strings"
+  ],
+  "correctAnswer": 1,
+  "id": "GAD_033",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "In Kotlin, what does the Elvis operator ?: do?",
+  "code": "",
+  "explanation": "name ?: \"guest\" falls back when name is null.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "Running and testing apps on virtual devices",
+   "Hosting websites",
+   "Editing images",
+   "Compressing videos"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_034",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "What is the Android Emulator used for?",
+  "code": "",
+  "explanation": "It simulates Android devices on your computer.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "Pandas",
+   "Jinja",
+   "Flask",
+   "Keras"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_035",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which TensorFlow API is the high-level API for building and training models?",
+  "code": "",
+  "explanation": "tf.keras is the high-level model-building API.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "Memorizes the training data and generalizes poorly",
+   "Has too few parameters to learn anything",
+   "Trains too quickly",
+   "Cannot use GPUs"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_036",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "In machine learning, overfitting means the model...",
+  "code": "",
+  "explanation": "It performs well on training data but poorly on new data.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "Designing logos",
+   "Streaming music",
+   "Editing spreadsheets",
+   "Running containerized apps without managing servers"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_037",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "What is Cloud Run used for?",
+  "code": "",
+  "explanation": "Cloud Run is a serverless container platform.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "Protected Web Archive",
+   "Packaged Windows App",
+   "Primary Web API",
+   "Progressive Web App"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_038",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "What does PWA stand for?",
+  "code": "",
+  "explanation": "PWAs are installable, offline-capable web apps.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "The order of CSS rules",
+   "Which origins may request resources from another origin",
+   "Image compression",
+   "CPU overclocking"
+  ],
+  "correctAnswer": 1,
+  "id": "GAD_039",
+  "category": "Google Developer Tech",
+  "language": "General",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "What does CORS control in browsers?",
+  "code": "",
+  "explanation": "Cross-Origin Resource Sharing is a browser security mechanism.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "git commit",
+   "git fetch",
+   "git init",
+   "git clone"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_040",
+  "category": "Computer Science Fundamentals",
+  "language": "General",
+  "difficulty": 1,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which Git command records a snapshot of staged changes?",
+  "code": "",
+  "explanation": "commit saves staged changes to history.",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "Copies a remote repository to your machine",
+   "Creates a README",
+   "Merges two files",
+   "Deletes a branch"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_041",
+  "category": "Computer Science Fundamentals",
+  "language": "General",
+  "difficulty": 1,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "What does `git clone` do?",
+  "code": "",
+  "explanation": "clone downloads a full repository.",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "A commit message format",
+   "A way to delete a repo",
+   "A request to merge your branch's changes into another branch",
+   "A command that downloads files"
+  ],
+  "correctAnswer": 2,
+  "id": "GAD_042",
+  "category": "Computer Science Fundamentals",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "What is a pull request?",
+  "code": "",
+  "explanation": "Pull requests enable review before merging.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "404",
+   "200",
+   "500",
+   "301"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_043",
+  "category": "Computer Science Fundamentals",
+  "language": "General",
+  "difficulty": 1,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which HTTP status code means 'Not Found'?",
+  "code": "",
+  "explanation": "404 = resource not found.",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "DELETE",
+   "GET",
+   "HEAD",
+   "POST"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_044",
+  "category": "Computer Science Fundamentals",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which HTTP method is normally used to create a resource in a REST API?",
+  "code": "",
+  "explanation": "POST submits data to create something.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "Java Standard Object Network",
+   "JavaScript Object Notation",
+   "JavaScript Online Network",
+   "Joint Script Operation Node"
+  ],
+  "correctAnswer": 1,
+  "id": "GAD_045",
+  "category": "Computer Science Fundamentals",
+  "language": "General",
+  "difficulty": 1,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "What does JSON stand for?",
+  "code": "",
+  "explanation": "A lightweight data format.",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "HTML",
+   "SQL",
+   "Bash",
+   "CSS"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_046",
+  "category": "Computer Science Fundamentals",
+  "language": "General",
+  "difficulty": 1,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which language structures the content of a web page?",
+  "code": "",
+  "explanation": "HTML defines elements and content.",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "Python",
+   "C",
+   "HTML",
+   "CSS"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_047",
+  "category": "Computer Science Fundamentals",
+  "language": "General",
+  "difficulty": 1,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which language styles a web page?",
+  "code": "",
+  "explanation": "CSS controls presentation.",
+  "points": 100,
+  "timeLimit": 15
+ },
+ {
+  "options": [
+   "Advanced Python Interpreter",
+   "Automatic Page Index",
+   "Applied Program Integration",
+   "Application Programming Interface"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_048",
+  "category": "Computer Science Fundamentals",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "What does API stand for?",
+  "code": "",
+  "explanation": "An API defines how software talks to software.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "Free static website hosting from a repository",
+   "A mobile emulator",
+   "A paid database",
+   "A C++ compiler"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_049",
+  "category": "Computer Science Fundamentals",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "What does GitHub Pages provide?",
+  "code": "",
+  "explanation": "It publishes static sites straight from a repo.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "It re-applies commits on a new base, giving a linear history",
+   "It deletes remote branches",
+   "It squashes the whole repo",
+   "It encrypts commits"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_050",
+  "category": "Computer Science Fundamentals",
+  "language": "General",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "How does `git rebase` differ from `git merge`?",
+  "code": "",
+  "explanation": "Rebase rewrites commits onto another base.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "README.md",
+   "package.json",
+   "LICENSE",
+   ".gitignore"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_051",
+  "category": "Computer Science Fundamentals",
+  "language": "General",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which file tells Git which files to ignore?",
+  "code": "",
+  "explanation": ".gitignore lists patterns Git skips.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "Free hosting",
+   "Encryption with TLS",
+   "Faster CPUs",
+   "Larger images"
+  ],
+  "correctAnswer": 1,
+  "id": "GAD_052",
+  "category": "Computer Science Fundamentals",
+  "language": "General",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "What does HTTPS add on top of HTTP?",
+  "code": "",
+  "explanation": "TLS encrypts traffic between browser and server.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "59",
+   "120",
+   "60",
+   "61"
+  ],
+  "correctAnswer": 2,
+  "id": "GAD_053",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "Community code review: What is 60 | 12 in Python (bitwise)?",
+  "code": "",
+  "explanation": "The answer is 60.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "24",
+   "23",
+   "25",
+   "48"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_054",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "Workshop exercise at GDG Assiut: What is 6 << 2?",
+  "code": "",
+  "explanation": "The answer is 24.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "74",
+   "36",
+   "37",
+   "38"
+  ],
+  "correctAnswer": 2,
+  "id": "GAD_055",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "Build Night at GDG Assiut: What is 32 | 5 in Python (bitwise)?",
+  "code": "",
+  "explanation": "The answer is 37.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "7",
+   "16",
+   "9",
+   "8"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_056",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "GDG Assiut mentor's puzzle: What is 11 ^ 3 in Python (bitwise)?",
+  "code": "",
+  "explanation": "The answer is 8.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "48",
+   "94",
+   "46",
+   "47"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_057",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "Build Night at GDG Assiut: What is 36 | 11 in Python (bitwise)?",
+  "code": "",
+  "explanation": "The answer is 47.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "26",
+   "28",
+   "54",
+   "27"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_058",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "GDG Assiut mentor's puzzle: What is hex 0x1B in decimal?",
+  "code": "",
+  "explanation": "The answer is 27.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "19",
+   "38",
+   "18",
+   "20"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_059",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "Code Man arena: What is hex 0x13 in decimal?",
+  "code": "",
+  "explanation": "The answer is 19.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "14",
+   "7",
+   "6",
+   "8"
+  ],
+  "correctAnswer": 1,
+  "id": "GAD_060",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "What is 57 >> 3?",
+  "code": "",
+  "explanation": "The answer is 7.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "10111",
+   "11000",
+   "10110",
+   "10109"
+  ],
+  "correctAnswer": 2,
+  "id": "GAD_061",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "Build Night at GDG Assiut: What is decimal 22 in binary?",
+  "code": "",
+  "explanation": "The answer is 10110.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "1099",
+   "1110",
+   "1100",
+   "1101"
+  ],
+  "correctAnswer": 2,
+  "id": "GAD_062",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "Hackathon judge asks: What is decimal 12 in binary?",
+  "code": "",
+  "explanation": "The answer is 1100.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "11",
+   "24",
+   "12",
+   "13"
+  ],
+  "correctAnswer": 2,
+  "id": "GAD_063",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "DevFest Assiut challenge: What is 48 >> 2?",
+  "code": "",
+  "explanation": "The answer is 12.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "16",
+   "32",
+   "15",
+   "17"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_064",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "Code Man arena: What is hex 0x10 in decimal?",
+  "code": "",
+  "explanation": "The answer is 16.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "10100",
+   "10009",
+   "10011",
+   "10010"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_065",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "Code Man arena: What is decimal 18 in binary?",
+  "code": "",
+  "explanation": "The answer is 10010.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "112",
+   "56",
+   "57",
+   "55"
+  ],
+  "correctAnswer": 1,
+  "id": "GAD_066",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "GDG Assiut Study Jam: What is 7 << 3?",
+  "code": "",
+  "explanation": "The answer is 56.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "4",
+   "2",
+   "6",
+   "3"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_067",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "What is 12 >> 2?",
+  "code": "",
+  "explanation": "The answer is 3.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "19",
+   "20",
+   "40",
+   "21"
+  ],
+  "correctAnswer": 1,
+  "id": "GAD_068",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "What is 10 << 1?",
+  "code": "",
+  "explanation": "The answer is 20.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "110110",
+   "110099",
+   "110101",
+   "110100"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_069",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "Build Night at GDG Assiut: What is decimal 52 in binary?",
+  "code": "",
+  "explanation": "The answer is 110100.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "52",
+   "27",
+   "25",
+   "26"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_070",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "GDG Assiut Study Jam: What is 26 | 10 in Python (bitwise)?",
+  "code": "",
+  "explanation": "The answer is 26.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "35",
+   "34",
+   "70",
+   "36"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_071",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "What is 43 ^ 8 in Python (bitwise)?",
+  "code": "",
+  "explanation": "The answer is 35.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "8",
+   "9",
+   "16",
+   "7"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_072",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "GDG Assiut Study Jam: What is 42 & 12 in Python (bitwise)?",
+  "code": "",
+  "explanation": "The answer is 8.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "2",
+   "3",
+   "0",
+   "1"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_073",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "What is 12 ^ 13 in Python (bitwise)?",
+  "code": "",
+  "explanation": "The answer is 1.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "448",
+   "225",
+   "223",
+   "224"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_074",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "Code Man arena: What is 14 << 4?",
+  "code": "",
+  "explanation": "The answer is 224.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "-1",
+   "1",
+   "2",
+   "0"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_075",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "Community code review: What is 32 & 3 in Python (bitwise)?",
+  "code": "",
+  "explanation": "The answer is 0.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "48",
+   "50",
+   "98",
+   "49"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_076",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "What is the decimal value of binary 110001?",
+  "code": "",
+  "explanation": "The answer is 49.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "31",
+   "62",
+   "30",
+   "32"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_077",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "GDG Assiut mentor's puzzle: What is 27 | 12 in Python (bitwise)?",
+  "code": "",
+  "explanation": "The answer is 31.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "129",
+   "128",
+   "127",
+   "256"
+  ],
+  "correctAnswer": 1,
+  "id": "GAD_078",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "What is 8 << 4?",
+  "code": "",
+  "explanation": "The answer is 128.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "6",
+   "4",
+   "10",
+   "5"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_079",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "What is 10 ^ 15 in Python (bitwise)?",
+  "code": "",
+  "explanation": "The answer is 5.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "12",
+   "22",
+   "11",
+   "10"
+  ],
+  "correctAnswer": 2,
+  "id": "GAD_080",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "Lightning-talk puzzle: What is 44 >> 2?",
+  "code": "",
+  "explanation": "The answer is 11.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "3",
+   "0",
+   "1",
+   "2"
+  ],
+  "correctAnswer": 2,
+  "id": "GAD_081",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "DevFest Assiut challenge: What is 5 >> 2?",
+  "code": "",
+  "explanation": "The answer is 1.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "11100",
+   "11101",
+   "11110",
+   "11099"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_082",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "Lightning-talk puzzle: What is decimal 28 in binary?",
+  "code": "",
+  "explanation": "The answer is 11100.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "41",
+   "43",
+   "84",
+   "42"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_083",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "Community code review: What is 40 | 10 in Python (bitwise)?",
+  "code": "",
+  "explanation": "The answer is 42.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "30",
+   "62",
+   "32",
+   "31"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_084",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "What is 29 | 2 in Python (bitwise)?",
+  "code": "",
+  "explanation": "The answer is 31.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "24",
+   "23",
+   "25",
+   "48"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_085",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "GDG Assiut bootcamp: What is 19 ^ 11 in Python (bitwise)?",
+  "code": "",
+  "explanation": "The answer is 24.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "31",
+   "64",
+   "33",
+   "32"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_086",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "Lightning-talk puzzle: What is hex 0x20 in decimal?",
+  "code": "",
+  "explanation": "The answer is 32.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "15",
+   "14",
+   "28",
+   "13"
+  ],
+  "correctAnswer": 1,
+  "id": "GAD_087",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "DevFest Assiut challenge: What is 11 ^ 5 in Python (bitwise)?",
+  "code": "",
+  "explanation": "The answer is 14.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "8",
+   "16",
+   "9",
+   "7"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_088",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "Code Man arena: What is hex 0x8 in decimal?",
+  "code": "",
+  "explanation": "The answer is 8.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "102",
+   "52",
+   "50",
+   "51"
+  ],
+  "correctAnswer": 3,
+  "id": "GAD_089",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "Code Man arena: What is 50 | 3 in Python (bitwise)?",
+  "code": "",
+  "explanation": "The answer is 51.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "options": [
+   "35",
+   "36",
+   "72",
+   "37"
+  ],
+  "correctAnswer": 1,
+  "id": "GAD_090",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "Workshop exercise at GDG Assiut: What is hex 0x24 in decimal?",
+  "code": "",
+  "explanation": "The answer is 36.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "options": [
+   "7",
+   "14",
+   "6",
+   "8"
+  ],
+  "correctAnswer": 0,
+  "id": "GAD_091",
+  "category": "Computer Science Fundamentals",
+  "language": "Python",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "logic",
+  "question": "GDG Assiut Study Jam: What is 15 >> 1?",
+  "code": "",
+  "explanation": "The answer is 7.",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "CS_001",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 1,
+  "type": "mcq",
+  "question": "Binary 1010 in decimal?",
+  "code": "",
+  "options": [
+   "8",
+   "10",
+   "12",
+   "14"
+  ],
+  "correctAnswer": 1,
+  "explanation": "8 + 2 = 10.",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "advanced"
+ },
+ {
+  "id": "JS_001",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "type": "output",
+  "question": "Hackathon judge asks: What does typeof null return?",
+  "code": "console.log(typeof null)",
+  "options": [
+   "null",
+   "undefined",
+   "object",
+   "number"
+  ],
+  "correctAnswer": 2,
+  "explanation": "A historic JS quirk.",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "advanced"
+ },
+ {
+  "id": "JS_002",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "console.log(0.1 + 0.2 === 0.3)",
+  "options": [
+   "true",
+   "false",
+   "NaN",
+   "undefined"
+  ],
+  "correctAnswer": 1,
+  "explanation": "Floating point rounding.",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "advanced"
+ },
+ {
+  "id": "CPP_002",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 2,
+  "type": "output",
+  "question": "Community code review: What is the output?",
+  "code": "cout << 7 / 2;",
+  "options": [
+   "3",
+   "3.5",
+   "4",
+   "Error"
+  ],
+  "correctAnswer": 0,
+  "explanation": "Integer division.",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "advanced"
+ },
+ {
+  "id": "JS_003",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 3,
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the result?",
+  "code": "console.log([] + [])",
+  "options": [
+   "[]",
+   "0",
+   "'' (empty string)",
+   "undefined"
+  ],
+  "correctAnswer": 2,
+  "explanation": "Both arrays become ''.",
+  "points": 100,
+  "timeLimit": 12,
+  "topic": "advanced"
+ },
+ {
+  "id": "GMIX_001",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "output",
+  "question": "DevFest Assiut challenge: What is the output?",
+  "code": "console.log(1 + '2')",
+  "options": [
+   "'3'",
+   "NaN",
+   "3",
+   "12"
+  ],
+  "correctAnswer": 3,
+  "explanation": "+ with a string concatenates.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GMIX_002",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "output",
+  "question": "Lightning-talk puzzle: What is the output?",
+  "code": "console.log('5' - 2)",
+  "options": [
+   "3",
+   "52",
+   "'3'",
+   "NaN"
+  ],
+  "correctAnswer": 0,
+  "explanation": "- converts to numbers.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GMIX_003",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "output",
+  "question": "Community code review: What is the output?",
+  "code": "console.log(typeof NaN)",
+  "options": [
+   "number",
+   "object",
+   "NaN",
+   "undefined"
+  ],
+  "correctAnswer": 0,
+  "explanation": "NaN is a number type.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GMIX_004",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: What is the output?",
+  "code": "console.log([1,2,3].map(x => x * 2))",
+  "options": [
+   "[2, 4]",
+   "[2, 4, 6]",
+   "6",
+   "[1, 2, 3]"
+  ],
+  "correctAnswer": 1,
+  "explanation": "map transforms each item.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GMIX_005",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "output",
+  "question": "Community code review: What is the output?",
+  "code": "console.log(Boolean(''))",
+  "options": [
+   "null",
+   "undefined",
+   "false",
+   "true"
+  ],
+  "correctAnswer": 2,
+  "explanation": "Empty string is falsy.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GMIX_006",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "output",
+  "question": "Community code review: What is the output?",
+  "code": "console.log(parseInt('10px'))",
+  "options": [
+   "10px",
+   "10",
+   "0",
+   "NaN"
+  ],
+  "correctAnswer": 1,
+  "explanation": "Parsing stops at 'p'.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GMIX_007",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "console.log(0 == '0')",
+  "options": [
+   "NaN",
+   "false",
+   "true",
+   "undefined"
+  ],
+  "correctAnswer": 2,
+  "explanation": "Loose equality converts types.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GMIX_008",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "console.log([10,9,1].sort())",
+  "options": [
+   "[1, 9, 10]",
+   "[9, 10, 1]",
+   "[1, 10, 9]",
+   "[10, 9, 1]"
+  ],
+  "correctAnswer": 2,
+  "explanation": "Default sort compares strings.",
+  "points": 150,
+  "timeLimit": 20
+ },
+ {
+  "id": "GMIX_009",
+  "category": "JavaScript",
+  "language": "JavaScript",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "console.log(null ?? 'a')",
+  "options": [
+   "(empty string)",
+   "null",
+   "undefined",
+   "a"
+  ],
+  "correctAnswer": 3,
+  "explanation": "?? falls back on null/undefined.",
+  "points": 150,
+  "timeLimit": 20
+ },
+ {
+  "id": "GMIX_010",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 1,
+  "topic": "advanced",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: What is the output?",
+  "code": "int x = 5 / 2;\nSystem.out.println(x);",
+  "options": [
+   "2.5",
+   "3",
+   "2.0",
+   "2"
+  ],
+  "correctAnswer": 3,
+  "explanation": "Integer division.",
+  "points": 100,
+  "timeLimit": 17
+ },
+ {
+  "id": "GMIX_011",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 1,
+  "topic": "advanced",
+  "type": "output",
+  "question": "Code Man arena: What is the output?",
+  "code": "String s = \"hi\";\nSystem.out.println(s.length());",
+  "options": [
+   "3",
+   "1",
+   "2",
+   "hi"
+  ],
+  "correctAnswer": 2,
+  "explanation": "Two characters.",
+  "points": 100,
+  "timeLimit": 17
+ },
+ {
+  "id": "GMIX_012",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 1,
+  "topic": "advanced",
+  "type": "output",
+  "question": "DevFest Assiut challenge: What is the output?",
+  "code": "System.out.println(10 % 3);",
+  "options": [
+   "10",
+   "3",
+   "1",
+   "0"
+  ],
+  "correctAnswer": 2,
+  "explanation": "Remainder of 10/3.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GMIX_013",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "System.out.println('a' + 1);",
+  "options": [
+   "97",
+   "b",
+   "98",
+   "a1"
+  ],
+  "correctAnswer": 2,
+  "explanation": "char + int = int.",
+  "points": 150,
+  "timeLimit": 20
+ },
+ {
+  "id": "GMIX_014",
+  "category": "Java",
+  "language": "Java",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "int i = 3;\nSystem.out.println(i++ + ++i);",
+  "options": [
+   "9",
+   "8",
+   "7",
+   "6"
+  ],
+  "correctAnswer": 1,
+  "explanation": "3 + 5 = 8.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GMIX_015",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 1,
+  "topic": "advanced",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: What is the output?",
+  "code": "cout << 10 % 4;",
+  "options": [
+   "0",
+   "4",
+   "2.5",
+   "2"
+  ],
+  "correctAnswer": 3,
+  "explanation": "Remainder of 10/4.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GMIX_016",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 1,
+  "topic": "advanced",
+  "type": "output",
+  "question": "Build Night at GDG Assiut: What is the output?",
+  "code": "int a[] = {1,2,3};\ncout << a[1] + a[2];",
+  "options": [
+   "5",
+   "3",
+   "4",
+   "6"
+  ],
+  "correctAnswer": 0,
+  "explanation": "2 + 3.",
+  "points": 100,
+  "timeLimit": 17
+ },
+ {
+  "id": "GMIX_017",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "output",
+  "question": "Community code review: What is the output?",
+  "code": "cout << (5 > 3);",
+  "options": [
+   "0",
+   "true",
+   "5",
+   "1"
+  ],
+  "correctAnswer": 3,
+  "explanation": "true prints as 1.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GMIX_018",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "output",
+  "question": "What is the output?",
+  "code": "int x = 3;\nx *= 2 + 1;\ncout << x;",
+  "options": [
+   "6",
+   "8",
+   "9",
+   "7"
+  ],
+  "correctAnswer": 2,
+  "explanation": "x = x * (2+1).",
+  "points": 125,
+  "timeLimit": 20
+ },
+ {
+  "id": "GMIX_019",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "output",
+  "question": "GDG Assiut mentor's puzzle: What is the output?",
+  "code": "cout << 5 / 2.0;",
+  "options": [
+   "2",
+   "2.50",
+   "2.5",
+   "3"
+  ],
+  "correctAnswer": 2,
+  "explanation": "Floating-point division.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GMIX_020",
+  "category": "C++",
+  "language": "C++",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "output",
+  "question": "GDG Assiut Study Jam: What is the output?",
+  "code": "int x = 7;\ncout << (x & 1);",
+  "options": [
+   "7",
+   "1",
+   "3",
+   "0"
+  ],
+  "correctAnswer": 1,
+  "explanation": "Bitwise AND with 1 tests oddness.",
+  "points": 150,
+  "timeLimit": 25
+ },
+ {
+  "id": "GMIX_021",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 1,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "How many bits are in a byte?",
+  "code": "",
+  "options": [
+   "16",
+   "10",
+   "8",
+   "4"
+  ],
+  "correctAnswer": 2,
+  "explanation": "1 byte = 8 bits.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GMIX_022",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 1,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which memory is volatile?",
+  "code": "",
+  "options": [
+   "RAM",
+   "SSD",
+   "HDD",
+   "ROM"
+  ],
+  "correctAnswer": 0,
+  "explanation": "RAM loses data without power.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GMIX_023",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 1,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Which protocol loads web pages securely?",
+  "code": "",
+  "options": [
+   "HTTPS",
+   "SSH",
+   "SMTP",
+   "FTP"
+  ],
+  "correctAnswer": 0,
+  "explanation": "HTTP over TLS.",
+  "points": 100,
+  "timeLimit": 12
+ },
+ {
+  "id": "GMIX_024",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Max value of an unsigned 8-bit integer?",
+  "code": "",
+  "options": [
+   "256",
+   "127",
+   "128",
+   "255"
+  ],
+  "correctAnswer": 3,
+  "explanation": "2^8 - 1.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GMIX_025",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "What is 1 XOR 1?",
+  "code": "",
+  "options": [
+   "0",
+   "1",
+   "2",
+   "Undefined"
+  ],
+  "correctAnswer": 0,
+  "explanation": "XOR is true only if inputs differ.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GMIX_026",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "NOT (A AND B) with A=1, B=1?",
+  "code": "",
+  "options": [
+   "2",
+   "Undefined",
+   "1",
+   "0"
+  ],
+  "correctAnswer": 3,
+  "explanation": "A AND B = 1, NOT gives 0.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GMIX_027",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Binary 1101 in decimal?",
+  "code": "",
+  "options": [
+   "14",
+   "13",
+   "11",
+   "17"
+  ],
+  "correctAnswer": 1,
+  "explanation": "Sum the powers of two = 13.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GMIX_028",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Binary 10110 in decimal?",
+  "code": "",
+  "options": [
+   "23",
+   "26",
+   "20",
+   "22"
+  ],
+  "correctAnswer": 3,
+  "explanation": "Sum the powers of two = 22.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GMIX_029",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Binary 100101 in decimal?",
+  "code": "",
+  "options": [
+   "37",
+   "38",
+   "35",
+   "41"
+  ],
+  "correctAnswer": 0,
+  "explanation": "Sum the powers of two = 37.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GMIX_030",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Binary 110010 in decimal?",
+  "code": "",
+  "options": [
+   "50",
+   "48",
+   "51",
+   "54"
+  ],
+  "correctAnswer": 0,
+  "explanation": "Sum the powers of two = 50.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GMIX_031",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Binary 1001 in decimal?",
+  "code": "",
+  "options": [
+   "7",
+   "10",
+   "9",
+   "13"
+  ],
+  "correctAnswer": 2,
+  "explanation": "Sum the powers of two = 9.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GMIX_032",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Binary 101001 in decimal?",
+  "code": "",
+  "options": [
+   "41",
+   "45",
+   "42",
+   "39"
+  ],
+  "correctAnswer": 0,
+  "explanation": "Sum the powers of two = 41.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GMIX_033",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Binary 1100100 in decimal?",
+  "code": "",
+  "options": [
+   "98",
+   "104",
+   "101",
+   "100"
+  ],
+  "correctAnswer": 3,
+  "explanation": "Sum the powers of two = 100.",
+  "points": 150,
+  "timeLimit": 20
+ },
+ {
+  "id": "GMIX_034",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Binary 1001101 in decimal?",
+  "code": "",
+  "options": [
+   "77",
+   "78",
+   "75",
+   "81"
+  ],
+  "correctAnswer": 0,
+  "explanation": "Sum the powers of two = 77.",
+  "points": 150,
+  "timeLimit": 20
+ },
+ {
+  "id": "GMIX_035",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Decimal 10 in binary?",
+  "code": "",
+  "options": [
+   "1001",
+   "1100",
+   "1010",
+   "1011"
+  ],
+  "correctAnswer": 2,
+  "explanation": "10 = 1010 in binary.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GMIX_036",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Decimal 25 in binary?",
+  "code": "",
+  "options": [
+   "11000",
+   "11001",
+   "11011",
+   "11010"
+  ],
+  "correctAnswer": 1,
+  "explanation": "25 = 11001 in binary.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GMIX_037",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Decimal 45 in binary?",
+  "code": "",
+  "options": [
+   "101111",
+   "101100",
+   "101110",
+   "101101"
+  ],
+  "correctAnswer": 3,
+  "explanation": "45 = 101101 in binary.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GMIX_038",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Decimal 60 in binary?",
+  "code": "",
+  "options": [
+   "111101",
+   "111011",
+   "111100",
+   "111110"
+  ],
+  "correctAnswer": 2,
+  "explanation": "60 = 111100 in binary.",
+  "points": 150,
+  "timeLimit": 20
+ },
+ {
+  "id": "GMIX_039",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 3,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Decimal 85 in binary?",
+  "code": "",
+  "options": [
+   "1010110",
+   "1010100",
+   "1010111",
+   "1010101"
+  ],
+  "correctAnswer": 3,
+  "explanation": "85 = 1010101 in binary.",
+  "points": 150,
+  "timeLimit": 20
+ },
+ {
+  "id": "GMIX_040",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Hex 0x1F in decimal?",
+  "code": "",
+  "options": [
+   "30",
+   "32",
+   "31",
+   "62"
+  ],
+  "correctAnswer": 2,
+  "explanation": "0x1F = 31.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GMIX_041",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Hex 0xFF in decimal?",
+  "code": "",
+  "options": [
+   "254",
+   "510",
+   "255",
+   "256"
+  ],
+  "correctAnswer": 2,
+  "explanation": "0xFF = 255.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GMIX_042",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Hex 0x2A in decimal?",
+  "code": "",
+  "options": [
+   "43",
+   "84",
+   "42",
+   "41"
+  ],
+  "correctAnswer": 2,
+  "explanation": "0x2A = 42.",
+  "points": 125,
+  "timeLimit": 15
+ },
+ {
+  "id": "GMIX_043",
+  "category": "Computer Science Fundamentals",
+  "language": "CS",
+  "difficulty": 2,
+  "topic": "advanced",
+  "type": "conceptual",
+  "question": "Hex 0x10 in decimal?",
+  "code": "",
+  "options": [
+   "15",
+   "17",
+   "32",
+   "16"
+  ],
+  "correctAnswer": 3,
+  "explanation": "0x10 = 16.",
+  "points": 125,
+  "timeLimit": 15
+ }
+]
