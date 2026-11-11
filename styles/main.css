@@ -48,3 +48,16 @@ table{width:100%;border-collapse:collapse}th,td{padding:8px 10px;text-align:left
 #loader{position:fixed;inset:0;z-index:50;background:#101827;display:grid;place-items:center;transition:opacity .6s}#loader.out{opacity:0;pointer-events:none}
 .ld-inner{text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px;padding:20px}.ld-inner .logo{animation:glow 2s ease-in-out infinite alternate}@keyframes glow{to{text-shadow:0 0 40px rgba(251,188,4,.7)}}
 #ld-bar{width:min(320px,80vw);height:12px;border-radius:12px;background:rgba(255,255,255,.1);overflow:hidden}#ld-bar i{display:block;width:0;height:100%;background:linear-gradient(90deg,#4285F4,#EA4335,#FBBC04,#34A853)}#ld-pct,#ld-msg{color:var(--muted);font-size:13px}
+
+
+/* Gamepad keyboard/controller focus */
+#screens button:focus-visible,
+#modal button:focus-visible,
+#quiz button:focus-visible,
+#loader button:focus-visible {
+  outline: 3px solid #FBBC04 !important;
+  outline-offset: 4px;
+  transform: translateY(-2px);
+  filter: brightness(1.2);
+  box-shadow: 0 0 18px rgba(251, 188, 4, 0.45);
+}
