@@ -29,4 +29,201 @@ document.addEventListener('keydown',e=>{
   if (s&&s.state==='playing') { if (KEYDIR[k]) { Input.x=KEYDIR[k][0]; Input.y=KEYDIR[k][1]; e.preventDefault(); } else if (k===' ') { Input.dash=true; e.preventDefault(); } }
   if (k==='Escape'||k==='p'||k==='P') { if (s&&s.state==='playing') App.pause(); else if (s&&s.state==='paused'&&$('#modal .dialog h2')&&$('#modal .dialog h2').textContent==='Paused') App.resume(); }
 });
+
+// ==========================================
+// GAMEPAD UI NAVIGATION
+// Controller support for menus, quiz and UI
+// ==========================================
+
+(function GamepadUI() {
+  const DEADZONE = 0.55;
+
+  let previous = {
+    up: false,
+    down: false,
+    left: false,
+    right: false,
+    confirm: false,
+    back: false,
+    start: false
+  };
+
+  function visible(el) {
+    return el &&
+      !el.closest('[hidden]') &&
+      el.getClientRects().length > 0;
+  }
+
+  function getButtons() {
+    const roots = [
+      '#screens',
+      '#modal',
+      '#quiz',
+      '#loader'
+    ];
+
+    return roots
+      .map(selector => document.querySelector(selector))
+      .filter(root => root && visible(root))
+      .flatMap(root =>
+        [...root.querySelectorAll('button:not(:disabled)')]
+      )
+      .filter(visible);
+  }
+
+  function moveSelection(direction) {
+    const buttons = getButtons();
+
+    if (!buttons.length) return;
+
+    let index = buttons.indexOf(document.activeElement);
+
+    if (index === -1) {
+      index = direction > 0 ? -1 : 0;
+    }
+
+    index = (index + direction + buttons.length)
+      % buttons.length;
+
+    buttons[index].focus({ preventScroll: true });
+
+    buttons[index].scrollIntoView({
+      block: 'nearest',
+      behavior: 'smooth'
+    });
+  }
+
+  function confirmSelection() {
+    const buttons = getButtons();
+
+    if (!buttons.length) return;
+
+    const current = document.activeElement;
+
+    if (buttons.includes(current)) {
+      current.click();
+    } else {
+      buttons[0].focus();
+      buttons[0].click();
+    }
+  }
+
+  function backAction() {
+    const buttons = getButtons();
+
+    // Find a Back or Cancel button
+    const backButton = buttons.find(button =>
+      /\b(back|cancel)\b/i.test(button.textContent)
+    );
+
+    if (backButton) {
+      backButton.click();
+      return;
+    }
+
+    // Resume from pause menu
+    const title = document.querySelector(
+      '#modal .dialog h2'
+    );
+
+    if (
+      visible(document.querySelector('#modal')) &&
+      title?.textContent === 'Paused'
+    ) {
+      App.resume();
+    }
+  }
+
+  function update() {
+    const pads = navigator.getGamepads
+      ? navigator.getGamepads()
+      : [];
+
+    const pad = [...pads].find(p => p && p.connected);
+
+    if (pad) {
+      const x = pad.axes[0] || 0;
+      const y = pad.axes[1] || 0;
+
+      const state = {
+        up: y < -DEADZONE || !!pad.buttons[12]?.pressed,
+        down: y > DEADZONE || !!pad.buttons[13]?.pressed,
+        left: x < -DEADZONE || !!pad.buttons[14]?.pressed,
+        right: x > DEADZONE || !!pad.buttons[15]?.pressed,
+
+        confirm: !!pad.buttons[0]?.pressed,
+        back: !!pad.buttons[1]?.pressed,
+        start: !!pad.buttons[9]?.pressed
+      };
+
+      const buttons = getButtons();
+      const uiActive = buttons.length > 0;
+
+      if (uiActive) {
+        // Navigate menus and questions
+        if (state.up && !previous.up) {
+          moveSelection(-1);
+        }
+
+        if (state.down && !previous.down) {
+          moveSelection(1);
+        }
+
+        if (state.left && !previous.left) {
+          moveSelection(-1);
+        }
+
+        if (state.right && !previous.right) {
+          moveSelection(1);
+        }
+
+        // Confirm selection
+        if (state.confirm && !previous.confirm) {
+          confirmSelection();
+        }
+
+        // Back / Cancel
+        if (state.back && !previous.back) {
+          backAction();
+        }
+      } else {
+        // Start / Pause while playing
+        if (state.start && !previous.start) {
+          const scene = App.scene();
+
+          if (scene && scene.state === 'playing') {
+            App.pause();
+          } else if (scene && scene.state === 'paused') {
+            App.resume();
+          }
+        }
+      }
+
+      previous = state;
+    } else {
+      previous = {
+        up: false,
+        down: false,
+        left: false,
+        right: false,
+        confirm: false,
+        back: false,
+        start: false
+      };
+    }
+
+    requestAnimationFrame(update);
+  }
+
+  window.addEventListener('gamepadconnected', e => {
+    console.log('Controller connected:', e.gamepad.id);
+  });
+
+  window.addEventListener('gamepaddisconnected', e => {
+    console.log('Controller disconnected:', e.gamepad.id);
+  });
+
+  requestAnimationFrame(update);
+})();
+
 window.addEventListener('DOMContentLoaded',()=>App.boot());
