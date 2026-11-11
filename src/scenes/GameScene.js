@@ -129,11 +129,77 @@ class GameScene extends Phaser.Scene {
     this.checkNode(); if(this.state!=='playing') return;
     this.checkExit(); this.hints(); if ((this.hudT-=dt)<=0) { this.hudT=.1; this.pushHud(); }
   }
-  readInput(){
-    const c=this.cur,w=this.wasd;
-    if (c.left.isDown||w.A.isDown) { Input.x=-1; Input.y=0; } else if (c.right.isDown||w.D.isDown) { Input.x=1; Input.y=0; } else if (c.up.isDown||w.W.isDown) { Input.x=0; Input.y=-1; } else if (c.down.isDown||w.S.isDown) { Input.x=0; Input.y=1; }
-    if ((Phaser.Input.Keyboard.JustDown(this.kSpace)||Input.dash)&&this.dashCd<=0) { this.dash=1; this.dashCd=8; this.burst(this.ps.x,this.ps.y,0x4285F4,6); } Input.dash=false;
+  
+readInput() {
+  const c = this.cur;
+  const w = this.wasd;
+
+  // Keyboard movement
+  if (c.left.isDown || w.A.isDown) {
+    Input.x = -1; Input.y = 0;
+  } else if (c.right.isDown || w.D.isDown) {
+    Input.x = 1; Input.y = 0;
+  } else if (c.up.isDown || w.W.isDown) {
+    Input.x = 0; Input.y = -1;
+  } else if (c.down.isDown || w.S.isDown) {
+    Input.x = 0; Input.y = 1;
   }
+
+  // Gamepad support
+  const pads = navigator.getGamepads
+    ? navigator.getGamepads()
+    : [];
+
+  const pad = [...pads].find(p => p && p.connected);
+
+  let padDash = false;
+
+  if (pad) {
+    const DEADZONE = 0.35;
+
+    const axisX = pad.axes[0] || 0;
+    const axisY = pad.axes[1] || 0;
+
+    // Analog stick
+    if (Math.abs(axisX) > DEADZONE) {
+      Input.x = Math.sign(axisX);
+      Input.y = 0;
+    } else if (Math.abs(axisY) > DEADZONE) {
+      Input.x = 0;
+      Input.y = Math.sign(axisY);
+    }
+
+    // D-Pad
+    if (pad.buttons[14]?.pressed) {
+      Input.x = -1; Input.y = 0;
+    } else if (pad.buttons[15]?.pressed) {
+      Input.x = 1; Input.y = 0;
+    } else if (pad.buttons[12]?.pressed) {
+      Input.x = 0; Input.y = -1;
+    } else if (pad.buttons[13]?.pressed) {
+      Input.x = 0; Input.y = 1;
+    }
+
+    // A / Cross = Dash
+    padDash = !!pad.buttons[0]?.pressed;
+  }
+
+  // Dash (keyboard or controller)
+  const dashPressed =
+    Phaser.Input.Keyboard.JustDown(this.kSpace) ||
+    (padDash && !this._padDashPrev) ||
+    Input.dash;
+
+  if (dashPressed && this.dashCd <= 0) {
+    this.dash = 1;
+    this.dashCd = 8;
+    this.burst(this.ps.x, this.ps.y, 0x4285F4, 6);
+  }
+
+  this._padDashPrev = padDash;
+  Input.dash = false;
+}
+
   playerDecide(m){ if ((Input.x||Input.y)&&this.free(m.gx+Input.x,m.gy+Input.y)) return {x:Input.x,y:Input.y}; return (m.dir.x||m.dir.y)?m.dir:null; }
   pickups(){
     const k=this.tile().join(','), it=this.items.get(k); if(!it) return; const px=this.ps.x,py=this.ps.y,s=SAVE.stats;
