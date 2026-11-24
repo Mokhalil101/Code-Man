@@ -96,14 +96,14 @@ class GameScene extends Phaser.Scene {
     this.loseLife(src);
   }
   loseLife(){
-    this.lives--; this.lostLife=true; SAVE.stats.deaths++; SAVE.stats.streak=0; Audio.sfx('hit'); this.cameras.main.shake(260,.012); this.cameras.main.flash(180,234,67,53);
+    this.lives--; this.lostLife=true; SAVE.stats.deaths++; SAVE.stats.streak=0; Audio.sfx('hit'); Pad.rumble(320,.9,.6); this.cameras.main.shake(260,.012); this.cameras.main.flash(180,234,67,53);
     if (this.lives<=0) { this.gameOver(); return true; }
     this.p.reset(); this.ghosts.forEach((x,i)=>{ x.m.reset(); x.ret=false; x.stun=0; x.delay=i*1.5; }); if(this.boss&&!this.boss.down){ this.boss.m.reset(); this.boss.delay=3.5; }
     this.hazards.forEach(h=>{ h.m.reset(); h.m.dir={x:1,y:0}; }); Input.x=0; Input.y=0; this.inv=2.5; this.placeAll(); return false;
   }
   hitGhost(g){
     if (g.ret||g.delay>0||g.stun>0||Math.hypot(g.m.fx-this.p.fx,g.m.fy-this.p.fy)>.6) return;
-    if (this.freeze>0) { this.gain(200,15); SAVE.stats.enemies++; this.enemiesKilled++; g.ret=true; this.pop('+200 BUG FIXED',this.ps.x,this.ps.y,'#EA4335'); this.burst(g.s.x,g.s.y,0xEA4335,10); Audio.sfx('squash'); Progress.check(); return; }
+    if (this.freeze>0) { this.gain(200,15); SAVE.stats.enemies++; this.enemiesKilled++; g.ret=true; this.pop('+200 BUG FIXED',this.ps.x,this.ps.y,'#EA4335'); this.burst(g.s.x,g.s.y,0xEA4335,10); Audio.sfx('squash'); Pad.rumble(120,.3,.7); Progress.check(); return; }
     this.damage('bug',g);
   }
   // ----- main loop -----
@@ -145,50 +145,10 @@ readInput() {
     Input.x = 0; Input.y = 1;
   }
 
-  // Gamepad support
-  const pads = navigator.getGamepads
-    ? navigator.getGamepads()
-    : [];
-
-  const pad = [...pads].find(p => p && p.connected);
-
-  let padDash = false;
-
-  if (pad) {
-    const DEADZONE = 0.35;
-
-    const axisX = pad.axes[0] || 0;
-    const axisY = pad.axes[1] || 0;
-
-    // Analog stick
-    if (Math.abs(axisX) > DEADZONE) {
-      Input.x = Math.sign(axisX);
-      Input.y = 0;
-    } else if (Math.abs(axisY) > DEADZONE) {
-      Input.x = 0;
-      Input.y = Math.sign(axisY);
-    }
-
-    // D-Pad
-    if (pad.buttons[14]?.pressed) {
-      Input.x = -1; Input.y = 0;
-    } else if (pad.buttons[15]?.pressed) {
-      Input.x = 1; Input.y = 0;
-    } else if (pad.buttons[12]?.pressed) {
-      Input.x = 0; Input.y = -1;
-    } else if (pad.buttons[13]?.pressed) {
-      Input.x = 0; Input.y = 1;
-    }
-
-    // A / Cross = Dash
-    padDash = !!pad.buttons[0]?.pressed;
-  }
-
   // Dash (keyboard or controller)
   const dashPressed =
     Phaser.Input.Keyboard.JustDown(this.kSpace) ||
-    (padDash && !this._padDashPrev) ||
-    Input.dash;
+    Input.dash;                       // Input.dash is also raised by the controller (Gamepad.js), touch DASH button
 
   if (dashPressed && this.dashCd <= 0) {
     this.dash = 1;
@@ -196,7 +156,6 @@ readInput() {
     this.burst(this.ps.x, this.ps.y, 0x4285F4, 6);
   }
 
-  this._padDashPrev = padDash;
   Input.dash = false;
 }
 
@@ -215,7 +174,7 @@ readInput() {
     Progress.check();
   }
   power(c,px,py){
-    Audio.sfx('power'); this.pop(POWER[c].name.toUpperCase()+'!',px,py,'#4285F4');
+    Audio.sfx('power'); Pad.rumble(90,.2,.5); this.pop(POWER[c].name.toUpperCase()+'!',px,py,'#4285F4');
     if (c==='U') { this.freeze=5; this.pulse(px,py); } else if (c==='S') this.spd=7; else if (c==='D') this.shield=true; else if (c==='M') this.xpm=15;
     else if (c==='K') { this.scan=8; for(const [,i] of this.items) if(i.t==='T') this.tweens.add({targets:i.o[0],alpha:1,duration:300}); this.pulse(px,py); }
     else if (c==='L') this.teleport();
@@ -243,7 +202,7 @@ readInput() {
     if (b.shield) { if(!b.shTold){ b.shTold=true; UI.toast('The boss is shielded — wait!','#66ccff'); } return; }
     const phases=this.W.boss.phases, ph=phases[Math.min(b.max-b.hp,phases.length-1)], mx=ph.mix;
     this.openQuiz(this.qm.next({mix:{1:mx[0],2:mx[1],3:mx[2]},topics:ph.topics,types:ph.types}),r=>{
-      if (r.ok) { b.hp--; Audio.sfx('bosshit'); this.gain(300,40); this.cameras.main.shake(200,.01); this.burst(b.s.x,b.s.y,0xEA4335,14);
+      if (r.ok) { b.hp--; Audio.sfx('bosshit'); Pad.rumble(160,.5,.8); this.gain(300,40); this.cameras.main.shake(200,.01); this.burst(b.s.x,b.s.y,0xEA4335,14);
         if (b.hp<=0) { b.down=true; SAVE.stats.bosses++; this.gain(1000,250); this.pop(this.W.boss.name.toUpperCase()+' DEFEATED!',304,200,'#34A853'); Audio.sfx('win'); this.cameras.main.flash(500,255,255,255);
           this.tweens.add({targets:b.s,scale:0,angle:360,duration:700,onComplete:()=>b.s.destroy()}); if(this.wid===7) Progress.event('coreDown'); UI.banner('BOSS DEFEATED!',this.W.boss.name,'#34A853'); }
         else UI.toast(this.W.boss.phases.length>1?'Next: '+phases[Math.min(b.max-b.hp,phases.length-1)].name:'Boss hit! '+b.hp+' left','#EA4335'); }

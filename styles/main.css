@@ -50,14 +50,11 @@ table{width:100%;border-collapse:collapse}th,td{padding:8px 10px;text-align:left
 #ld-bar{width:min(320px,80vw);height:12px;border-radius:12px;background:rgba(255,255,255,.1);overflow:hidden}#ld-bar i{display:block;width:0;height:100%;background:linear-gradient(90deg,#4285F4,#EA4335,#FBBC04,#34A853)}#ld-pct,#ld-msg{color:var(--muted);font-size:13px}
 
 
-/* Gamepad keyboard/controller focus */
-#screens button:focus-visible,
-#modal button:focus-visible,
-#quiz button:focus-visible,
-#loader button:focus-visible {
-  outline: 3px solid #FBBC04 !important;
-  outline-offset: 4px;
-  transform: translateY(-2px);
-  filter: brightness(1.2);
-  box-shadow: 0 0 18px rgba(251, 188, 4, 0.45);
-}
+
+/* Keyboard / controller focus ring (body.pad-nav is set while a gamepad drives the menus) */
+#screens :is(button,input,select):focus-visible,#modal :is(button,input,select):focus-visible,#quiz :is(button,input,select):focus-visible,#loader button:focus-visible,
+body.pad-nav :is(#screens,#modal,#quiz,#loader) :is(button,input,select):focus{
+  outline:3px solid #FBBC04!important;outline-offset:4px;transform:translateY(-2px);filter:brightness(1.2);box-shadow:0 0 18px rgba(251,188,4,.45)}
+body.pad-nav .node:focus{transform:translate(-50%,-50%) scale(1.15)}
+#fs-btn{position:fixed;top:calc(8px + env(safe-area-inset-top));right:calc(8px + env(safe-area-inset-right));z-index:20;width:40px;height:40px;padding:0;font-size:18px;line-height:1}
+body.playing #fs-btn{display:none}

@@ -3,7 +3,7 @@ const SAVE_KEY = 'codeman_gdg_v2';
 const Save = {
   def(){ return {v:2, best:0, xp:0, unlocked:1, completed:{}, stars:{}, ach:{}, events:{}, history:[],
     stats:{bits:0,enemies:0,correct:0,wrong:0,fast:0,streak:0,bestStreak:0,bosses:0,levels:0,secrets:0,powerups:0,teleports:0,deaths:0,time:0,questions:0,score:0},
-    settings:{master:.8,music:.6,sfx:.8,mute:false,diff:1,tutorial:false}}; },
+    settings:{master:.8,music:.6,sfx:.8,mute:false,diff:1,tutorial:false,rumble:true}}; },
   num(v,lo=0,hi=1e12){ v=Number(v); return Number.isFinite(v)?Math.min(hi,Math.max(lo,v)):lo; },
   sanitize(r){
     const d=this.def(); if(!r||typeof r!=='object') return d;
@@ -13,7 +13,7 @@ const Save = {
     for(const k of Object.keys(r.ach||{})) if(/^[a-z_]{1,32}$/.test(k)) d.ach[k]=this.num(r.ach[k]);
     for(const k of Object.keys(r.events||{})) if(/^[a-zA-Z]{1,32}$/.test(k)&&r.events[k]===true) d.events[k]=true;
     if(Array.isArray(r.history)) d.history=r.history.slice(-30).map(x=>({score:this.num(x&&x.score),world:Math.round(this.num(x&&x.world,1,7))||1,xp:this.num(x&&x.xp),acc:this.num(x&&x.acc,0,100),date:this.num(x&&x.date),result:String(x&&x.result||'').slice(0,12)}));
-    const s=r.settings||{}; d.settings={master:this.num(s.master,0,1)||(s.master===0?0:.8),music:this.num(s.music,0,1),sfx:this.num(s.sfx,0,1),mute:s.mute===true,diff:Math.round(this.num(s.diff,0,2)),tutorial:s.tutorial===true};
+    const s=r.settings||{}; d.settings={master:this.num(s.master,0,1)||(s.master===0?0:.8),music:this.num(s.music,0,1),sfx:this.num(s.sfx,0,1),mute:s.mute===true,diff:Math.round(this.num(s.diff,0,2)),tutorial:s.tutorial===true,rumble:s.rumble!==false};
     if(s.music===undefined) d.settings.music=.6; if(s.sfx===undefined) d.settings.sfx=.8; if(s.diff===undefined) d.settings.diff=1;
     return d;
   },

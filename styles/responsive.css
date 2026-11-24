@@ -1,4 +1,69 @@
-@media (max-width:760px){.screen{padding:16px 12px 40px}.title{font-size:15px}.hud-item{min-width:48px;padding:2px 6px}.hud-item b{font-size:9px}.hud-item.wide{display:none}.qtext{font-size:16px}.box{padding:12px}.opt{font-size:15px}
-  .map{aspect-ratio:100/95}.node small{font-size:8px}.s-menu{gap:14px}.stage{height:140px}.hero{top:48px!important}.foe{top:50px!important}.logo{letter-spacing:0}.result h1{font-size:17px}th:nth-child(n+5),td:nth-child(n+5){display:none}}
-@media (max-height:520px) and (orientation:landscape){#hud .hud-row:nth-child(2){display:none}.hud-item span{display:none}#joy{bottom:4px}.pad{width:100px;height:100px}}
+/* ---------- Responsive layout: phones (portrait + landscape), tablets, laptops, 2K/4K and ultra-wide ---------- */
+:root{--sat:env(safe-area-inset-top,0px);--sar:env(safe-area-inset-right,0px);--sab:env(safe-area-inset-bottom,0px);--sal:env(safe-area-inset-left,0px)}
+html,body{width:100%}
+#app{width:100%;height:100vh;height:100dvh;padding:var(--sat) var(--sar) var(--sab) var(--sal)}
+#game{min-width:0;position:relative}
+#game canvas{max-width:100%;max-height:100%}
+#hud{padding-left:calc(10px + var(--sal));padding-right:calc(10px + var(--sar))}
+.hud-row .btn.small[data-fs]{min-width:38px}
+
+/* --- Wide screens (laptops, desktops, TVs, phones in landscape): HUD becomes a side panel so the maze gets the full height --- */
+@media (min-aspect-ratio:3/2){
+  #app{flex-direction:row}
+  #hud:not([hidden]){display:flex;flex-direction:column;gap:8px;flex:none;width:clamp(132px,15vw,300px);height:100%;overflow-y:auto;overflow-x:hidden;padding:10px 8px;border-bottom:0;border-right:1px solid rgba(255,255,255,.1);scrollbar-width:none}
+  #hud::-webkit-scrollbar{display:none}
+  .hud-row{display:grid;grid-template-columns:1fr 1fr;gap:6px;justify-content:stretch}
+  .hud-item,.hud-item.wide{min-width:0;padding:4px 6px}
+  .hud-item.wide{grid-column:1/-1;display:block!important}
+  .hud-item b{font-size:11px;word-break:break-word}.hud-item span{font-size:7px}
+  .hud-row .btn.small{padding:7px 6px}
+  .hud-row:first-child>.btn.small{grid-column:span 1}
+  #h-powers{flex-direction:column;align-items:stretch;margin-top:0}
+  .pw{border-radius:10px;font-size:12px}
+  #h-boss{margin:0;max-width:none}.boss-name{font-size:9px;line-height:1.5}
+  #joy{left:var(--sal);right:var(--sar)}
+}
+/* touch device in landscape: the on-screen pad lives at the bottom of the left panel, DASH at the right edge */
+@media (min-aspect-ratio:3/2) and (pointer:coarse){
+  body.playing #hud{padding-bottom:128px}
+  #joy{padding:0 14px}.pad{width:104px;height:104px}.knob{width:44px;height:44px}#j-dash{width:76px;height:76px}
+}
+@media (min-aspect-ratio:3/2) and (max-height:430px){
+  #hud:not([hidden]){gap:5px;padding:6px 6px}.hud-row{gap:4px}.hud-item{padding:2px 4px}.hud-item span{display:block}.hud-item b{font-size:9px}
+  .hud-item.wide{display:none!important}
+  .pw{padding:1px 6px 1px 2px}.pw img{width:14px}
+  .dialog{padding:14px;gap:8px}.dialog h2{font-size:14px}.btn{padding:9px 14px}
+  #fs-btn{width:34px;height:34px}
+}
+
+/* --- Portrait phones & tablets: compact HUD on top, maze fills the width, controls sit in the free space underneath --- */
+@media (max-aspect-ratio:3/2){
+  #hud{padding-top:6px}
+  #game{align-items:flex-start}#game canvas{margin-top:8px}
+  #joy{left:var(--sal);right:var(--sar);bottom:calc(14px + var(--sab))}
+}
+@media (max-width:760px){
+  .hud-item{min-width:46px}
+  .screen{padding-left:max(12px,var(--sal));padding-right:max(12px,var(--sar))}
+  .menu-left,.menu-right{flex-basis:100%;max-width:none}
+  .box{padding:12px}.qcode{font-size:12px}
+  .arr-line{font-size:12px}
+}
+@media (max-width:420px){.dialog{padding:16px}.dialog h2{font-size:15px}.logo{font-size:26px}.btn{font-size:14px}}
+@media (max-height:520px){.screen{padding-top:12px;padding-bottom:20px}.tut{margin-top:2vh}.result{margin-top:2vh}.ending{margin:0 auto}.stage{height:110px}.hero,.foe{top:34px!important}.logo{font-size:26px}}
+
+/* --- Large screens: scale the DOM UI (menus, quiz, dialogs) up so it never looks tiny on 2K / 4K / TV --- */
+:root{--z:1}
+@media (min-width:1000px) and (min-height:900px){:root{--z:1.25}}
+@media (min-width:1000px) and (min-height:1200px){:root{--z:1.7}}
+@media (min-width:1000px) and (min-height:1800px){:root{--z:2.4}}
+@media (min-aspect-ratio:3/2){#hud:not([hidden]){zoom:var(--z);width:calc(clamp(132px,15vw,300px) / var(--z));height:calc(100dvh / var(--z))}}
+#screens .screen,#modal .dialog,#quiz .box,#toasts,#fs-btn{zoom:var(--z)}
+#quiz .box{max-height:calc(96dvh / var(--z))}
+#modal .dialog{max-width:calc(94vw / var(--z))}
+#screens .screen{min-height:calc(100% / var(--z))}
+@media (min-width:1700px){.screen{max-width:1300px}.node{width:clamp(54px,6vw,110px);height:clamp(54px,6vw,110px)}}
+
+/* fullscreen: hide the floating fullscreen button's clutter on notch devices is handled by safe-area padding */
+body.is-full #app{padding-top:max(var(--sat),0px)}
 @media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important}}

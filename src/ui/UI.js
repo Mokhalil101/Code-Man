@@ -68,12 +68,12 @@ const UI = {
   tutorial(startAfter){
     const S=(k)=>h('img',{src:'assets/sprites/'+k+'.png',alt:''});
     const steps=[
-      ['Move','Use the Arrow Keys or WASD (or the on-screen joystick / swipe). Your direction is buffered, so you can press early and turn at the next corner.',[S('pac0'),h('span',{class:'keys'},'↑ ← ↓ →  /  W A S D')]],
+      ['Move','Use the Arrow Keys or WASD, a PlayStation / Xbox controller (left stick or D-pad), or the on-screen joystick / swipe. Your direction is buffered, so you can press early and turn at the next corner.',[S('pac0'),h('span',{class:'keys'},'↑ ← ↓ →  /  W A S D  /  🎮')]],
       ['Collect Code Bits','Yellow Code Bits give +10 points. Bonus Chips give +250, green XP Orbs give XP and hidden stars are secrets.',[S('bit'),S('bit'),S('chip'),S('orb'),S('secret')]],
       ['Avoid the Bugs','Syntax chases you, Logic predicts you, Runtime blocks your escape and Memory remembers where you were. You have 3 lives.',[S('bug0'),S('bug1'),S('bug2'),S('bug3')]],
-      ['Power-ups','U Power Compiler freezes bugs (touch them to squash). S Speed. D Shield. M XP x2. K Scanner reveals secrets. L Teleport Chip. Space = Dash.',['U','S','D','M','K','L'].map(k=>S('pu_'+k))],
+      ['Power-ups','U Power Compiler freezes bugs (touch them to squash). S Speed. D Shield. M XP x2. K Scanner reveals secrets. L Teleport Chip. Dash: Space / ✕ or □ on the controller.',['U','S','D','M','K','L'].map(k=>S('pu_'+k))],
       ['Quiz Nodes','Touch a purple ? node to pause the game and answer a programming question. Correct = points + XP. Wrong or timeout = penalty.',[S('quiz')]],
-      ['Answering','Pick an answer (or press 1-4), then Submit. Some questions ask you to arrange code lines in order. Read the explanation afterwards!',[h('span',{class:'keys'},'1 2 3 4  ·  Enter')]],
+      ['Answering','Pick an answer (or press 1-4, or use the controller D-pad + ✕), then Submit (Enter / △). Some questions ask you to arrange code lines in order. Read the explanation afterwards!',[h('span',{class:'keys'},'1 2 3 4  ·  Enter  ·  ✕ △')]],
       ['The Exit Gate','Collect every Code Bit, finish all quiz nodes and defeat the world boss. Then the gate turns green — step in!',[S('exit0'),h('span',{class:'arrow'},'→'),S('exit1')]],
       ['Bosses','Touch the boss to face a challenge. Every correct answer damages it; a wrong answer costs a life. Bosses dash, teleport, summon and shield — watch for warnings.',[S('boss1'),S('boss4'),S('boss7')]],
       ['Score & XP','Points: bit 10 · answer 100 (+50 fast) · chip 250 · bug 200 · world 500 (+300 flawless). XP raises your rank from Beginner Coder to Code Legend.',[h('span',{class:'keys'},'🎖️ Beginner → Legend')]]];
@@ -111,9 +111,10 @@ const UI = {
   settings(fromPause){
     const S=SAVE.settings, slider=(label,key)=>h('label',{class:'slider'},h('span',{},label),h('input',{type:'range',min:0,max:100,value:Math.round(S[key]*100),oninput:e=>{ S[key]=e.target.value/100; Audio.refresh(); Save.save(); },onchange:()=>Audio.sfx('click')}));
     const mute=h('input',{type:'checkbox',onchange:e=>{ S.mute=e.target.checked; Audio.refresh(); Save.save(); }}); mute.checked=S.mute;
+    const rumble=h('input',{type:'checkbox',onchange:e=>{ S.rumble=e.target.checked; Save.save(); if(S.rumble) Pad.rumble(200,.6,.6); }}); rumble.checked=S.rumble!==false;
     const diff=h('select',{onchange:e=>{ S.diff=+e.target.value; Save.save(); }},['Easy','Normal','Hard'].map((n,i)=>h('option',{value:i},n))); diff.value=S.diff;
     const kids=[h('h2',{class:'title'},'Settings'), h('div',{class:'card glass settings'}, slider('Master volume','master'),slider('Music volume','music'),slider('Sound effects','sfx'),
-      h('label',{class:'slider'},h('span',{},'Mute all'),mute), h('label',{class:'slider'},h('span',{},'Enemy speed (applies to next world run)'),diff),
+      h('label',{class:'slider'},h('span',{},'Mute all'),mute), h('label',{class:'slider'},h('span',{},'Controller vibration'),rumble), Full.supported()?h('div',{class:'row'},this.btn('⛶ Toggle fullscreen (F)',()=>Full.toggle(),'ghost')):'', h('label',{class:'slider'},h('span',{},'Enemy speed (applies to next world run)'),diff),
       h('div',{class:'row'}, this.btn('Replay tutorial',()=>this.tutorial(false),'ghost'), this.btn('Reset progress',()=>this.confirm('Reset ALL progress, XP, achievements and settings? This cannot be undone.',()=>{ Save.reset(); Audio.refresh(); App.menu(); this.toast('Progress reset','#EA4335'); }),'danger')))];
     if (fromPause) { this.modal(...kids.slice(0), this.btn('◀ Back to pause',()=>this.pauseMenu(),'ghost')); $('#modal').classList.add('wide'); } else this.screen('settings',...kids,this.back());
   },
@@ -128,7 +129,7 @@ const UI = {
   // ---------- in-game overlays ----------
   pauseMenu(){
     this.modal(h('h2',{},'Paused'), h('div',{class:'col'}, this.btn('▶ Resume',()=>App.resume(),'primary'), this.btn('↻ Restart level',()=>this.confirm('Restart this world? Current run progress is lost.',()=>App.startWorld(App.world),()=>this.pauseMenu()),''),
-      this.btn('⚙ Settings',()=>this.settings(true),''), this.btn('⌂ Main menu',()=>this.confirm('Leave the current run? Unfinished progress is lost.',()=>App.menu(),()=>this.pauseMenu()),'ghost')));
+      this.btn('⚙ Settings',()=>this.settings(true),''), Full.supported()?this.btn('⛶ Fullscreen',()=>Full.toggle(),''):'', this.btn('⌂ Main menu',()=>this.confirm('Leave the current run? Unfinished progress is lost.',()=>App.menu(),()=>this.pauseMenu()),'ghost')));
   },
   statsBlock(r){ return h('div',{class:'grid res-grid'}, [['Score',r.score],['XP earned',r.xp],['Questions',r.q],['Accuracy',r.acc+'%'],['Enemies',r.enemies],['Time',fmtTime(r.time)]].map(([k,v])=>h('div',{class:'card glass stat'},h('small',{},k),h('b',{},v)))); },
   levelComplete(r){

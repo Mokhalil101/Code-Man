@@ -26,12 +26,23 @@ Phaser is bundled in `lib/`, the font and all art/audio are in `assets/` → the
 3. Open `https://<user>.github.io/<repo>/`.
 
 ## Controls
-| Action | Keyboard | Touch |
-|---|---|---|
-| Move | Arrow keys / WASD | Virtual joystick or swipe on the maze |
-| Dash (8 s cooldown) | Space | DASH button |
-| Pause | Esc / P | ❚❚ button |
-| Answer quiz | click, or keys 1–4 then Enter | tap, then Submit |
+| Action | Keyboard | Touch | PlayStation controller (DualShock 4 / DualSense) |
+|---|---|---|---|
+| Move | Arrow keys / WASD | Virtual joystick or swipe on the maze | Left stick or D-pad |
+| Dash (8 s cooldown) | Space | DASH button | ✕ / □ / L1 / R1 / L2 / R2 |
+| Pause / resume | Esc / P | ❚❚ button | OPTIONS |
+| Menus | mouse / Tab | tap | D-pad or stick to move, ✕ select, ○ back / resume |
+| Answer quiz | click, or keys 1–4 then Enter | tap, then Submit | D-pad to choose, ✕ select, △ submit / continue |
+| Fullscreen | F | ⛶ button | SHARE or touchpad click |
+
+**Controller notes** — plug in (USB) or pair (Bluetooth) the pad, then press any button: a toast confirms it. Xbox / other "standard" pads work with the same layout (A = ✕, B = ○).
+Rumble works on DualSense / DualShock 4 in Chrome and Edge (toggle in Settings). If the pad is unplugged mid-run the game pauses automatically.
+Code: `src/systems/Gamepad.js`.
+
+## Screens & fullscreen
+* The maze always uses the full height on laptops, desktops, 2K/4K and phones in landscape — the HUD becomes a side panel; in portrait the HUD sits on top and the touch controls underneath.
+* Menus, quiz and dialogs scale up on large screens; safe-area insets (notches) are respected.
+* Fullscreen: **F**, the ⛶ button, or SHARE on the controller. iPhone Safari has no fullscreen API for web pages — use *Share → Add to Home Screen* (the game ships a web-app manifest) to play fullscreen.
 
 ## What is inside
 * **7 worlds**, each with its own maze, colours, music, enemies speed, mechanic and **boss**
@@ -66,7 +77,7 @@ Phaser is bundled in `lib/`, the font and all art/audio are in `assets/` → the
 index.html            DOM shell (HUD, screens, quiz overlay, loader)
 styles/               main.css · game.css · quiz.css · responsive.css
 src/config.js         constants, palette, ranks, power-up table
-src/systems/          Save · AudioManager · Pathfinding (BFS) · QuestionManager · Progress (XP, ranks, achievements, leaderboard)
+src/systems/          Save · Fullscreen · Gamepad · AudioManager · Pathfinding (BFS) · QuestionManager · Progress (XP, ranks, achievements, leaderboard)
 src/entities/Mover.js grid mover used by player, bugs, bosses, hazards
 src/ui/               Quiz (10 question UIs + highlighter) · UI (HUD, menus, world map, tutorial, results, ending)
 src/scenes/           PreloadScene · GameScene (maze, AI, bosses, power-ups, scoring)
