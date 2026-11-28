@@ -1,6 +1,8 @@
 // Global constants — CODE MAN, powered by GDG Assiut
 const T = 32, COLS = 19, ROWS = 15;
 const DIRS = [{x:0,y:-1},{x:-1,y:0},{x:0,y:1},{x:1,y:0}];
+// Rendering only: the canvas is drawn at 2x (camera zoom) with a margin around the maze for the sticker frame; sprites are 64px shown at half size.
+const VIEW = {z:2, mx:14, mt:14, mb:22}, SP = 0.5, FONT = '"Baloo 2", system-ui, sans-serif';
 const Input = {x:0, y:0, dash:false};          // desired direction (keyboard / swipe / joystick); persists = movement buffering
 const PAL = {blue:'#4285F4', red:'#EA4335', yellow:'#FBBC04', green:'#34A853', navy:'#101827', surface:'#172337', text:'#F8FAFC', muted:'#94A3B8'};
 const RANKS = [{n:'Beginner Coder',xp:0},{n:'Code Explorer',xp:300},{n:'Bug Hunter',xp:800},{n:'Logic Master',xp:1600},{n:'Algorithm Engineer',xp:3000},{n:'Senior Developer',xp:5000},{n:'Code Legend',xp:8000}];

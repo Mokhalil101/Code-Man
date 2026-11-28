@@ -14,7 +14,8 @@ const Full = {
   },
   sync(){
     const on = this.active(); document.body.classList.toggle('is-full', on);
-    document.querySelectorAll('[data-fs]').forEach(b => { b.textContent = on ? '⤢' : '⛶'; b.title = on ? 'Exit fullscreen (F)' : 'Fullscreen (F)'; b.setAttribute('aria-label', b.title); });
+    const ico = on ? 'M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5' : 'M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5';
+    document.querySelectorAll('[data-fs]').forEach(b => { b.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="' + ico + '"/></svg>'; b.title = on ? 'Exit fullscreen (F)' : 'Fullscreen (F)'; b.setAttribute('aria-label', b.title); });
     setTimeout(() => { try { App.game.scale.refresh(); } catch (_) {} }, 60);
   },
   init(){

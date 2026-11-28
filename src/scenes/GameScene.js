@@ -4,43 +4,75 @@ class GameScene extends Phaser.Scene {
   init(d){ this.wid=d.world; }
   create(){
     const W=this.W=DATA.worlds[this.wid-1]; this.map=W.mazeLayout; this.qm=new QuestionManager(DATA.questions);
-    this.cameras.main.setBackgroundColor(W.theme.bg); this.cameras.main.fadeIn(300);
+    const cam=this.cameras.main; cam.setZoom(VIEW.z); cam.centerOn(COLS*T/2,(ROWS*T+VIEW.mb-VIEW.mt)/2); cam.fadeIn(300);   // 2x camera: sprites are 64px, shown at half size, so they stay crisp
     Object.assign(this,{state:'playing',t:0,score:0,lives:3,runXP:0,lostLife:false,unlocked:false,left:0,total:0,freeze:0,spd:0,xpm:0,scan:0,inv:2.5,shield:false,dash:0,dashCd:0,tpCd:0,
       modeT:0,forceChase:0,qOK:0,qBad:0,answered:0,hudT:0,trailT:0,hint:0,scatter:true,bossMusic:false,enemiesKilled:0,fields:new Map(),trail:[],lastKey:'',secretsRun:0});
     this.gspeed=W.ghostSpeed*([0.85,1,1.15][SAVE.settings.diff]||1); this.pG=(x,y)=>this.freeG(x,y);
     const acc=parseInt(W.theme.accent.slice(1),16); this.acc=acc;
     this.items=new Map(); this.nodes=new Map(); this.ghosts=[]; this.hazards=[]; this.corrupt=[]; this.boss=null; this.junctions=[];
     const keys=['bug0','bug1','bug2','bug3'], names=['Syntax','Logic','Runtime','Memory'], corners=[[17,1],[1,1],[17,13],[1,13]]; let gi=0, P={x:9,y:13}, E={x:9,y:1}, B=null;
-    this.drift=[...Array(14)].map(()=>this.add.text(Math.random()*COLS*T,Math.random()*ROWS*T,'{}<>;01/=()[]'[Math.floor(Math.random()*13)],{fontFamily:'"Press Start 2P"',fontSize:'14px',color:W.theme.accent}).setAlpha(.12).setDepth(-1));
+    this.drift=[...Array(14)].map(()=>this.add.text(Math.random()*COLS*T,Math.random()*ROWS*T,'{}<>;01/=()[]'[Math.floor(Math.random()*13)],{fontFamily:FONT,fontStyle:'800',fontSize:'18px',color:W.theme.accent,resolution:VIEW.z}).setAlpha(.16).setDepth(-1));
     const walls=[];
     this.map.forEach((row,y)=>[...row].forEach((c,x)=>{
       const px=x*T+T/2, py=y*T+T/2, key=x+','+y;
       if (c==='#') { walls.push([x*T,y*T]); return; }
-      if (c==='.') { this.items.set(key,{t:c,o:[this.add.image(px,py,'bit')]}); this.total++; this.left++; }
-      else if (c==='B') this.items.set(key,{t:c,o:[this.add.image(px,py,'chip')]});
-      else if (c==='o') this.items.set(key,{t:c,o:[this.add.image(px,py,'orb')]});
-      else if (c==='T') this.items.set(key,{t:c,o:[this.add.image(px,py,'secret').setAlpha(.1)]});
-      else if ('USDMKL'.includes(c)) { const im=this.add.image(px,py,'pu_'+c); this.tweens.add({targets:im,scale:{from:1,to:1.18},yoyo:true,repeat:-1,duration:520}); this.items.set(key,{t:c,o:[im]}); }
-      else if (c==='Q') { const im=this.add.image(px,py,'quiz'); this.tweens.add({targets:im,angle:{from:-6,to:6},yoyo:true,repeat:-1,duration:600}); this.nodes.set(key,[im]); }
-      else if (c==='C') this.corrupt.push({x,y,img:this.add.image(px,py,'corrupt').setAlpha(.25).setDepth(1)});
-      else if (c==='O') { const m=new Mover(x,y,2.3); m.dir={x:1,y:0}; this.hazards.push({m,s:this.add.image(0,0,'hazard').setDepth(3)}); }
+      if (c==='.') { this.items.set(key,{t:c,o:[this.add.image(px,py,'bit').setScale(SP)]}); this.total++; this.left++; }
+      else if (c==='B') this.items.set(key,{t:c,o:[this.add.image(px,py,'chip').setScale(SP)]});
+      else if (c==='o') this.items.set(key,{t:c,o:[this.add.image(px,py,'orb').setScale(SP)]});
+      else if (c==='T') this.items.set(key,{t:c,o:[this.add.image(px,py,'secret').setScale(SP).setAlpha(.1)]});
+      else if ('USDMKL'.includes(c)) { const im=this.add.image(px,py,'pu_'+c).setScale(SP); this.tweens.add({targets:im,scale:{from:SP,to:SP*1.18},yoyo:true,repeat:-1,duration:520}); this.items.set(key,{t:c,o:[im]}); }
+      else if (c==='Q') { const im=this.add.image(px,py,'quiz').setScale(SP); this.tweens.add({targets:im,angle:{from:-6,to:6},yoyo:true,repeat:-1,duration:600}); this.tweens.add({targets:im,y:py-3,yoyo:true,repeat:-1,duration:700,ease:'Sine.easeInOut',delay:(x*90+y*40)%700}); this.nodes.set(key,[im]); }
+      else if (c==='C') this.corrupt.push({x,y,img:this.add.image(px,py,'corrupt').setScale(SP).setAlpha(.25).setDepth(1)});
+      else if (c==='O') { const m=new Mover(x,y,2.3); m.dir={x:1,y:0}; this.hazards.push({m,s:this.add.image(0,0,'hazard').setScale(SP).setDepth(3)}); }
       else if (c==='P') P={x,y}; else if (c==='E') E={x,y}; else if (c==='X') B={x,y};
-      else if (c==='G'&&gi<4) { const m=new Mover(x,y,this.gspeed); this.ghosts.push({m,s:this.add.image(0,0,keys[gi]).setDepth(3),key:keys[gi],type:names[gi],corner:corners[gi],delay:gi*2,ret:false,stun:0,state:'waiting',home:null}); gi++; }
+      else if (c==='G'&&gi<4) { const m=new Mover(x,y,this.gspeed); this.ghosts.push({m,s:this.add.image(0,0,keys[gi]).setScale(SP).setDepth(3),key:keys[gi],type:names[gi],corner:corners[gi],delay:gi*2,ret:false,stun:0,state:'waiting',home:null}); gi++; }
     }));
-    const rt=this.add.renderTexture(0,0,COLS*T,ROWS*T).setOrigin(0,0).setDepth(0); rt.beginDraw(); walls.forEach(([wx,wy])=>rt.batchDraw(W.theme.wall,wx,wy)); rt.endDraw();   // bake all wall tiles into ONE texture (performance)
+    this.drawMaze(W.theme.accent);   // bake the whole maze (frame, bed and joined candy walls) into two textures (performance)
     this.map.forEach((row,y)=>[...row].forEach((c,x)=>{ if (this.freeG(x,y)&&DIRS.filter(v=>this.freeG(x+v.x,y+v.y)).length>=3) this.junctions.push([x,y]); }));
     this.ghosts.forEach(g=>g.home=Path.field(this.map,g.m.sx,g.m.sy,this.pG));
     this.nodeTotal=this.nodes.size; this.exitPos=E;
-    this.exit=this.add.image(E.x*T+T/2,E.y*T+T/2,'exit0').setDepth(2); this.exitLbl=this.add.text(E.x*T+T/2,E.y*T+T/2-20,'EXIT',{fontFamily:'"Press Start 2P"',fontSize:'8px',color:'#34A853'}).setOrigin(.5).setVisible(false).setDepth(5);
-    if (B) { const m=new Mover(B.x,B.y,this.gspeed*.85); this.boss={m,s:this.add.image(0,0,W.theme.boss).setDepth(4),hp:W.boss.hp,max:W.boss.hp,delay:3.5,shield:false,sc:7,mult:1,dashT:0,warn:false,cd:{dash:6,tele:8,sum:10},shTold:false,down:false};
+    this.exit=this.add.image(E.x*T+T/2,E.y*T+T/2,'exit0').setScale(SP).setDepth(2); this.exitLbl=this.add.text(E.x*T+T/2,E.y*T+T/2+20,'EXIT',{fontFamily:FONT,fontStyle:'800',fontSize:'11px',color:'#FFF6E0',stroke:'#1B1340',strokeThickness:4,resolution:VIEW.z}).setOrigin(.5).setVisible(false).setDepth(5);
+    if (B) { const m=new Mover(B.x,B.y,this.gspeed*.85); this.boss={m,s:this.add.image(0,0,W.theme.boss).setScale(SP).setDepth(4),hp:W.boss.hp,max:W.boss.hp,delay:3.5,shield:false,sc:7,mult:1,dashT:0,warn:false,cd:{dash:6,tele:8,sum:10},shTold:false,down:false};
       this.arena=this.add.circle(B.x*T+T/2,B.y*T+T/2,76,acc,.06).setStrokeStyle(2,acc,.4); this.tweens.add({targets:this.arena,alpha:{from:.5,to:1},yoyo:true,repeat:-1,duration:900}); }
-    this.p=new Mover(P.x,P.y,4.2); this.ps=this.add.image(0,0,'pac0').setDepth(6); this.shieldG=this.add.circle(0,0,19,0x66ccff,.25).setStrokeStyle(2,0x66ccff).setDepth(7).setVisible(false);
+    this.p=new Mover(P.x,P.y,4.2); this.ps=this.add.image(0,0,'pac0').setScale(SP).setDepth(6); this.shieldG=this.add.circle(0,0,19,0x66ccff,.25).setStrokeStyle(2,0x66ccff).setDepth(7).setVisible(false);
     this.cur=this.input.keyboard.createCursorKeys(); this.wasd=this.input.keyboard.addKeys('W,A,S,D'); this.kSpace=this.input.keyboard.addKey('SPACE'); this.kEsc=this.input.keyboard.addKey('ESC'); this.kP=this.input.keyboard.addKey('P');
-    this._swipe=p=>{ const dx=p.upX-p.downX, dy=p.upY-p.downY; if (Math.max(Math.abs(dx),Math.abs(dy))>20) { if (Math.abs(dx)>Math.abs(dy)) { Input.x=Math.sign(dx); Input.y=0; } else { Input.y=Math.sign(dy); Input.x=0; } } };
+    this._swipe=p=>{ const dx=(p.upX-p.downX)/VIEW.z, dy=(p.upY-p.downY)/VIEW.z;   /* game pixels are 2x because of the camera zoom */ if (Math.max(Math.abs(dx),Math.abs(dy))>20) { if (Math.abs(dx)>Math.abs(dy)) { Input.x=Math.sign(dx); Input.y=0; } else { Input.y=Math.sign(dy); Input.x=0; } } };
     this.input.on('pointerup',this._swipe); this.events.once('shutdown',()=>{ this.input.off('pointerup',this._swipe); this.tweens.killAll(); });
     Input.x=0; Input.y=0; Input.dash=false; Audio.music('w'+this.wid); this.placeAll();
     UI.banner('WORLD '+this.wid+' — '+W.name.toUpperCase(),W.mechanic,W.theme.accent); setTimeout(()=>{ if(this.state==='playing'&&this.t<8) UI.banner('BOSS: '+W.boss.name.toUpperCase(),W.boss.description,'#EA4335'); },2900);
     $('#joy').hidden=false; this.updateExit(); this.pushHud();
+  }
+  // ----- maze art (cosmetic only): rounded frame + dotted bed, then walls joined into chunky candy shapes -----
+  // A wall cell gets an ink edge only where it touches a corridor and rounded corners only on the outside,
+  // so connected cells read as one sticker-like block. Drawn once per world at 2x into two canvas textures.
+  drawMaze(color){
+    const Z=VIEW.z, MX=VIEW.mx, MT=VIEW.mt, MB=VIEW.mb, gw=COLS*T, gh=ROWS*T, cw=(gw+2*MX)*Z, ch=(gh+MT+MB)*Z, c=T*Z;
+    const mk=key=>{ if(this.textures.exists(key)) this.textures.remove(key); return this.textures.createCanvas(key,cw,ch); };
+    const rr=(g,x,y,w,hh,r)=>{ const R=Array.isArray(r)?r:[r,r,r,r]; g.beginPath(); g.moveTo(x+R[0],y); g.lineTo(x+w-R[1],y); g.arcTo(x+w,y,x+w,y+R[1],R[1]); g.lineTo(x+w,y+hh-R[2]); g.arcTo(x+w,y+hh,x+w-R[2],y+hh,R[2]);
+      g.lineTo(x+R[3],y+hh); g.arcTo(x,y+hh,x,y+hh-R[3],R[3]); g.lineTo(x,y+R[0]); g.arcTo(x,y,x+R[0],y,R[0]); g.closePath(); };
+    const bed=mk('mz-bed'), b=bed.getContext(), fx=2*Z, fy=2*Z, fw=cw-4*Z, fh=ch-11*Z;
+    b.fillStyle='#0C0726'; rr(b,fx,fy+7*Z,fw,fh,22*Z); b.fill();
+    b.fillStyle='#1B1340'; rr(b,fx,fy,fw,fh,22*Z); b.fill();
+    const grd=b.createRadialGradient(cw/2,ch*.42,10,cw/2,ch*.42,cw*.62); grd.addColorStop(0,'#1d1450'); grd.addColorStop(1,'#110a30');
+    b.fillStyle=grd; rr(b,fx+4*Z,fy+4*Z,fw-8*Z,fh-8*Z,18*Z); b.fill(); b.save(); b.clip(); b.fillStyle='#2A1F63';
+    for (let y=fy+10*Z; y<fy+fh; y+=14.5*Z) for (let x=fx+10*Z; x<fx+fw; x+=14.5*Z) { b.beginPath(); b.arc(x,y,1.15*Z,0,Math.PI*2); b.fill(); }
+    b.restore(); bed.refresh();
+    const wt=mk('mz-walls'), g=wt.getContext(), wall=(x,y)=>!!(this.map[y]&&this.map[y][x]==='#'), ink='#1B1340', bw=3*Z, R=10*Z;
+    this.map.forEach((row,y)=>[...row].forEach((cc,x)=>{ if(cc!=='#') return;
+      const X=(x*T+MX)*Z, Y=(y*T+MT)*Z, n=wall(x,y-1), s=wall(x,y+1), w=wall(x-1,y), e=wall(x+1,y);
+      const rad=[!n&&!w,!n&&!e,!s&&!e,!s&&!w].map(v=>v?R:0);
+      g.fillStyle=ink; rr(g,X,Y,c,c,rad); g.fill();
+      const ix=X+(w?0:bw), iy=Y+(n?0:bw), iw=c-(w?0:bw)-(e?0:bw), ih=c-(n?0:bw)-(s?0:bw), irad=rad.map(v=>v?R-bw:0);
+      g.save(); g.fillStyle=color; rr(g,ix,iy,iw,ih,irad); g.fill(); g.clip();
+      if (!n) { g.fillStyle='rgba(255,255,255,.38)'; g.fillRect(ix,iy,iw,3.5*Z); }
+      if (!s) { g.fillStyle='rgba(0,0,0,.2)'; g.fillRect(ix,iy+ih-4.5*Z,iw,4.5*Z); }
+      g.restore(); g.fillStyle=ink;                               // inner (concave) corners keep a continuous ink edge
+      if (n&&w&&!wall(x-1,y-1)) g.fillRect(X,Y,bw,bw); if (n&&e&&!wall(x+1,y-1)) g.fillRect(X+c-bw,Y,bw,bw);
+      if (s&&w&&!wall(x-1,y+1)) g.fillRect(X,Y+c-bw,bw,bw); if (s&&e&&!wall(x+1,y+1)) g.fillRect(X+c-bw,Y+c-bw,bw,bw);
+    }));
+    wt.refresh();
+    this.add.image(-MX,-MT,'mz-bed').setOrigin(0,0).setScale(1/Z).setDepth(-2);
+    this.add.image(-MX,-MT,'mz-walls').setOrigin(0,0).setScale(1/Z).setDepth(0);
   }
   // ----- helpers -----
   free(x,y){ const c=this.map[y]&&this.map[y][x]; if(!c||c==='#') return false; if(c==='E'&&!this.unlocked) return false; return true; }
@@ -48,7 +80,7 @@ class GameScene extends Phaser.Scene {
   place(o,m){ o.setPosition(m.fx*T+T/2,m.fy*T+T/2); }
   placeAll(){ this.place(this.ps,this.p); this.ghosts.forEach(g=>this.place(g.s,g.m)); this.hazards.forEach(h=>this.place(h.s,h.m)); if(this.boss&&!this.boss.down) this.place(this.boss.s,this.boss.m); }
   field(tx,ty){ const k=tx+','+ty; let f=this.fields.get(k); if(!f){ if(this.fields.size>80) this.fields.clear(); f=Path.field(this.map,tx,ty,this.pG); this.fields.set(k,f); } return f; }
-  pop(s,x,y,color='#FBBC04'){ const t=this.add.text(x,y,s,{fontFamily:'"Press Start 2P"',fontSize:'9px',color,stroke:'#000',strokeThickness:3}).setOrigin(.5).setDepth(20); this.tweens.add({targets:t,y:y-28,alpha:0,duration:1300,onComplete:()=>t.destroy()}); }
+  pop(s,x,y,color='#FBBC04'){ const t=this.add.text(x,y,s,{fontFamily:FONT,fontStyle:'800',fontSize:'14px',color,stroke:'#1B1340',strokeThickness:5,resolution:VIEW.z}).setOrigin(.5).setDepth(20); this.tweens.add({targets:t,y:y-28,alpha:0,duration:1300,onComplete:()=>t.destroy()}); }
   burst(x,y,col,n=7){ for(let i=0;i<n;i++){ const c=this.add.circle(x,y,2+Math.random()*2,col).setDepth(9),a=Math.random()*6.28,r=12+Math.random()*18; this.tweens.add({targets:c,x:x+Math.cos(a)*r,y:y+Math.sin(a)*r,alpha:0,duration:380,onComplete:()=>c.destroy()}); } }
   pulse(x,y){ [0x4285F4,0xEA4335,0xFBBC04,0x34A853].forEach((c,i)=>{ const r=this.add.circle(x,y,10).setStrokeStyle(3,c).setDepth(9); this.tweens.add({targets:r,scale:{from:1,to:14},alpha:{from:.9,to:0},duration:700,delay:i*90,onComplete:()=>r.destroy()}); }); }
   mult(){ return this.xpm>0?2:1; }
@@ -118,7 +150,7 @@ class GameScene extends Phaser.Scene {
     p.update(dt,m=>this.playerDecide(m),(x,y)=>this.free(x,y)); this.place(this.ps,p);
     const moving=p.moving; this.ps.setTexture(moving&&Math.floor(this.t*9)%2?'pac1':'pac0').setFlipX(p.dir.x<0).setAngle(p.dir.y<0?-90:p.dir.y>0?90:0).setAlpha(this.inv>0?.5+.4*Math.sin(this.t*25):1);
     this.shieldG.setVisible(this.shield).setPosition(this.ps.x,this.ps.y).setScale(1+.05*Math.sin(this.t*8));
-    if (this.spd>0&&moving&&(this.trailT-=dt)<=0) { this.trailT=.06; const a=this.add.image(this.ps.x,this.ps.y,this.ps.texture.key).setTint(0x4285F4).setAlpha(.5).setFlipX(this.ps.flipX).setAngle(this.ps.angle).setDepth(5); this.tweens.add({targets:a,alpha:0,duration:260,onComplete:()=>a.destroy()}); }
+    if (this.spd>0&&moving&&(this.trailT-=dt)<=0) { this.trailT=.06; const a=this.add.image(this.ps.x,this.ps.y,this.ps.texture.key).setScale(SP).setTint(0x4285F4).setAlpha(.5).setFlipX(this.ps.flipX).setAngle(this.ps.angle).setDepth(5); this.tweens.add({targets:a,alpha:0,duration:260,onComplete:()=>a.destroy()}); }
     const [tx,ty]=this.tile(); const tk=tx+','+ty; if(tk!==this.lastKey){ this.lastKey=tk; this.trail.push([tx,ty]); if(this.trail.length>14) this.trail.shift(); }
     this.pickups(); if(this.state!=='playing') return;
     for (const g of this.ghosts) { this.enemyTick(g,dt); this.hitGhost(g); if(this.state!=='playing') return; }
@@ -214,7 +246,7 @@ readInput() {
   // ----- exit / completion -----
   updateExit(){
     const was=this.unlocked; this.unlocked=(this.left===0&&this.nodes.size===0&&(!this.boss||this.boss.down)); this.exit.setTexture(this.unlocked?'exit1':'exit0'); this.exitLbl.setVisible(this.unlocked);
-    if (this.unlocked&&!was) { UI.toast('🚪 EXIT GATE UNLOCKED!','#34A853'); Audio.sfx('win',.7); this.tweens.add({targets:this.exit,scale:{from:1,to:1.3},yoyo:true,repeat:-1,duration:500}); this.pulse(this.exit.x,this.exit.y); }
+    if (this.unlocked&&!was) { UI.toast('🚪 EXIT GATE UNLOCKED!','#34A853'); Audio.sfx('win',.7); this.tweens.add({targets:this.exit,scale:{from:SP,to:SP*1.3},yoyo:true,repeat:-1,duration:500}); this.pulse(this.exit.x,this.exit.y); }
     if (!this.bossMusic&&this.left===0&&this.nodes.size===0&&this.boss&&!this.boss.down) { this.bossMusic=true; Audio.music('boss'); UI.banner('BOSS BATTLE!',this.W.boss.name,'#EA4335'); }
   }
   checkExit(){ const [x,y]=this.tile(); if(this.unlocked&&x===this.exitPos.x&&y===this.exitPos.y) this.complete(); }
@@ -222,8 +254,8 @@ readInput() {
     if (this.hint<H.length&&this.t>H[this.hint][0]) UI.toast('💡 '+H[this.hint++][1],'#FBBC04'); }
   summary(){ const q=this.qOK+this.qBad; return {world:this.wid,score:this.score,xp:this.runXP,q,acc:q?Math.round(100*this.qOK/q):100,enemies:this.enemiesKilled,time:this.t}; }
   finishRun(result){
-    const s=SAVE.stats; s.time+=this.t; s.score+=this.score; SAVE.best=Math.max(SAVE.best,this.score);
-    const sm=this.summary(); Leaderboard.submit({score:this.score,world:this.wid,xp:this.runXP,acc:sm.acc,date:Date.now(),result}); return sm;
+    const s=SAVE.stats; s.time+=this.t; s.score+=this.score; const best0=SAVE.best; SAVE.best=Math.max(SAVE.best,this.score);
+    const sm=Object.assign(this.summary(),{newBest:this.score>0&&this.score>best0}); Leaderboard.submit({score:this.score,world:this.wid,xp:this.runXP,acc:sm.acc,date:Date.now(),result}); return sm;
   }
   complete(){
     this.state='done'; Audio.sfx('win'); const W=this.W, sm0=this.summary(), bonuses=[['World complete',500]]; let bonus=500;
@@ -243,6 +275,6 @@ readInput() {
     const pw=[]; for(const [k,c] of [['freeze','U'],['spd','S'],['xpm','M'],['scan','K']]) if(this[k]>0) pw.push({icon:POWER[c].icon,name:POWER[c].name,left:Math.ceil(this[k])+'s'});
     if(this.shield) pw.push({icon:'pu_D',name:'Debug Shield',left:'ON'}); if(this.dashCd>0) pw.push({icon:'pu_S',name:'Dash cooldown',left:Math.ceil(this.dashCd)+'s',cd:1}); if(this.tpCd>0) pw.push({icon:'pu_L',name:'Teleport cooldown',left:Math.ceil(this.tpCd)+'s',cd:1});
     const b=this.boss, phases=this.W.boss.phases;
-    HUD.set({score:this.score,lives:this.lives,xp:this.runXP,world:this.W.name,bits:this.left,time:this.t,powers:pw,boss:b&&!b.down&&this.left+this.nodes.size<=this.total?{name:this.W.boss.name,hp:b.hp,max:b.max,phase:phases[Math.min(b.max-b.hp,phases.length-1)].name}:(b&&!b.down?{name:this.W.boss.name,hp:b.hp,max:b.max,phase:'Boss'}:null)});
+    HUD.set({score:this.score,lives:this.lives,xp:this.runXP,world:this.W.name,bits:this.left,bitsTotal:this.total,bossIcon:this.W.theme.boss,time:this.t,powers:pw,boss:b&&!b.down&&this.left+this.nodes.size<=this.total?{name:this.W.boss.name,hp:b.hp,max:b.max,phase:phases[Math.min(b.max-b.hp,phases.length-1)].name}:(b&&!b.down?{name:this.W.boss.name,hp:b.hp,max:b.max,phase:'Boss'}:null)});
   }
 }

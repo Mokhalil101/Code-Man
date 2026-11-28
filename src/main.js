@@ -9,8 +9,9 @@ const App = {
       DATA.ach=await j('data/achievements.json');
       DATA.questions=(await Promise.all(['python','loops','data-structures','oop','algorithms','debugging','advanced'].map(f=>j('data/questions/'+f+'.json')))).flat();
     } catch(e){ $('#ld-msg').textContent='Could not load game data — run via a web server (see README).'; return; }
-    (document.fonts?document.fonts.load('12px "Press Start 2P"').catch(()=>{}):Promise.resolve()).then(()=>{
-      this.game=new Phaser.Game({type:Phaser.AUTO,parent:'game',width:COLS*T,height:ROWS*T,backgroundColor:'#101827',scale:{mode:Phaser.Scale.FIT,autoCenter:Phaser.Scale.NO_CENTER},render:{pixelArt:true,antialias:false,roundPixels:true},scene:[PreloadScene,GameScene]});
+    const fonts=document.fonts?Promise.all(['800 16px "Baloo 2"','600 16px "JetBrains Mono"'].map(f=>document.fonts.load(f))).catch(()=>{}):Promise.resolve();
+    Promise.race([fonts,new Promise(r=>setTimeout(r,2500))]).then(()=>{   // Google Fonts are optional: offline we fall back to system fonts
+      this.game=new Phaser.Game({type:Phaser.AUTO,parent:'game',width:(COLS*T+2*VIEW.mx)*VIEW.z,height:(ROWS*T+VIEW.mt+VIEW.mb)*VIEW.z,transparent:true,scale:{mode:Phaser.Scale.FIT,autoCenter:Phaser.Scale.NO_CENTER},render:{pixelArt:false,antialias:true,roundPixels:false},scene:[PreloadScene,GameScene]});
       window.game=this.game; if (window.ResizeObserver) new ResizeObserver(()=>{ try{ this.game.scale.refresh(); }catch(e){} }).observe($('#game')); });   // refit the canvas whenever its container changes (HUD show/hide, rotation)
   },
   loaded(){ $('#ld-msg').textContent='Ready'; const go=$('#ld-start'); go.hidden=false; const start=()=>{ document.removeEventListener('keydown',start); go.removeEventListener('click',start); Audio.sfx('jingle'); $('#loader').classList.add('out'); setTimeout(()=>$('#loader').remove(),600); this.menu(); };
